@@ -17,7 +17,7 @@ namespace win_project_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InforForm());
+            Application.Run(new Form1());
         }
     }
 }

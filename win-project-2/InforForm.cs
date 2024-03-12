@@ -26,11 +26,11 @@ namespace win_project_2
         {
             LoadData();
         }
-
         private async void LoadData()
         {
             var realtime = new Data();
-            UserInfo userinfo = await realtime.GetData("info/" + GlobalVariables.Variable + "/");
+            UserInfo userinfo = await realtime.GetData("infor/" + "user0" + "/");
+            //System.Diagnostics.Debug.WriteLine(userinfo);
             rjTextBox1.Texts = userinfo.Name;
             rjTextBox2.Texts = userinfo.DateOfBirth;
             rjTextBox3.Texts = userinfo.Email;
@@ -62,11 +62,12 @@ namespace win_project_2
         {
             if (isEditing)
             {
-
+                var realtimedatabase = new Data();
+                //realtimedatabase.UploadImageAndGetUrl(FileImageName);
                 UserInfo userInfo = new UserInfo(rjTextBox1.Texts, rjTextBox2.Texts, rjTextBox3.Texts, "Chua nhap", rjTextBox4.Texts, rjTextBox5.Texts);
 
-                var realtimedatabase = new Data();
-                realtimedatabase.UploadData(userInfo);
+                
+                realtimedatabase.UploadData("infor/" + "user0" + "/" ,userInfo);
 
                 rjTextBox1.Enabled = false;
                 rjTextBox2.Enabled = false;

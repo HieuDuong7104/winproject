@@ -21,10 +21,8 @@ namespace win_project_2
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            string email = "test1@gmail.com";
-            string password = "123456";
-            var firebase = new Firebase();
-            await firebase.CreateUser(email, password);
+            var up = new Data();
+            up.uploadFile(@"C:\Users\LENOVO\Documents\Important\avatar_fb.jpg");
         }
 
         private async void button2_Click(object sender, EventArgs e)

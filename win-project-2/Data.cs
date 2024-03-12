@@ -6,6 +6,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using FireSharp;
+using System.Windows.Forms;
 
 namespace win_project_2
 {
@@ -24,22 +25,37 @@ namespace win_project_2
             client = new FirebaseClient(config);
         }
 
-        public async Task<string> UploadImageAndGetUrl(string localImagePath)
+        public async void uploadFile(string file_path)
         {
-            var storage = new FirebaseStorage("gs://win-project-dcfd0.appspot.com");
-            var imageUrl = await storage
-                .Child("folder_name")
-                .Child(Path.GetFileName(localImagePath))
-                .PutAsync(File.OpenRead(localImagePath));
+            // Sử dụng @ để chỉ định đường dẫn nguyên vẹn
+            var stream = File.Open(file_path, FileMode.Open);
 
-            return imageUrl;
+            var task = new FirebaseStorage("win-project-dcfd0.appspot.com")
+                .Child("files")
+                .Child(Path.GetFileName(file_path))
+                .PutAsync(stream);
+
+            try
+            {
+                var downloadUrl = await task;
+                // Sử dụng downloadUrl theo nhu cầu của bạn
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                stream.Close(); // Đảm bảo đóng stream sau khi sử dụng
+            }
         }
 
-        public async Task UploadData(UserInfo userinfo)
+
+        public async Task UploadData(string file_path ,UserInfo userinfo)
         {
             //userinfo.AvatarUrl = await UploadImageAndGetUrl(userinfo.AvatarUrl);
 
-            SetResponse response = await client.SetAsync("info/" + value + "/", userinfo);
+            SetResponse response = await client.SetAsync(file_path, userinfo);
         }
 
         public async Task<UserInfo> GetData(string path)
