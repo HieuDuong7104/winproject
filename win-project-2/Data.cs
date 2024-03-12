@@ -27,7 +27,6 @@ namespace win_project_2
 
         public async void uploadFile(string file_path)
         {
-            // Sử dụng @ để chỉ định đường dẫn nguyên vẹn
             var stream = File.Open(file_path, FileMode.Open);
 
             var task = new FirebaseStorage("win-project-dcfd0.appspot.com")
@@ -38,7 +37,7 @@ namespace win_project_2
             try
             {
                 var downloadUrl = await task;
-                // Sử dụng downloadUrl theo nhu cầu của bạn
+                
             }
             catch (Exception ex)
             {
@@ -46,14 +45,13 @@ namespace win_project_2
             }
             finally
             {
-                stream.Close(); // Đảm bảo đóng stream sau khi sử dụng
+                stream.Close();
             }
         }
 
 
         public async Task UploadData(string file_path ,UserInfo userinfo)
         {
-            //userinfo.AvatarUrl = await UploadImageAndGetUrl(userinfo.AvatarUrl);
 
             SetResponse response = await client.SetAsync(file_path, userinfo);
         }
