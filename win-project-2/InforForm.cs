@@ -32,7 +32,7 @@ namespace win_project_2
         {
             var realtime = new Data();
             UserInfo userinfo = await realtime.GetData("info/" + GlobalVariables.id + "/");
-            //System.Diagnostics.Debug.WriteLine(userinfo);
+            
             rjTextBox1.Texts = userinfo.Name;
             rjTextBox2.Texts = userinfo.DateOfBirth;
             rjTextBox3.Texts = userinfo.Email;
