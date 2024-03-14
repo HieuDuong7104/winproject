@@ -221,6 +221,7 @@
             this.rjButton1.BorderColor = System.Drawing.Color.Black;
             this.rjButton1.BorderRadius = 0;
             this.rjButton1.BorderSize = 1;
+            this.rjButton1.Enabled = false;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;

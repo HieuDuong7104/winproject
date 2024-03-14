@@ -25,7 +25,7 @@ namespace win_project_2
 
                 var data = new UserInfo("Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin");
 
-                realtimedatabase.UploadData("infor/" + "user0" +"/" , data);
+                realtimedatabase.UploadData("info/" + GlobalVariables.id +"/" , data);
             }
             catch (FirebaseAuthException ex)
             {
@@ -54,7 +54,5 @@ namespace win_project_2
                 return null;
             }
         }
-
-
     }
 }

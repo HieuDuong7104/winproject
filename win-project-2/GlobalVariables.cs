@@ -8,6 +8,6 @@ namespace win_project_2
 {
     public static class GlobalVariables
     {
-        public static string Variable { get; set; }
+        public static string id { get; set; } = "test1503";
     }
 }

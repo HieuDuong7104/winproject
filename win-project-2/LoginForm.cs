@@ -35,7 +35,7 @@ namespace win_project_2
         private async void guna2Button1_Click(object sender, EventArgs e)
         {
             string email = guna2TextBox1.Text;
-            GlobalVariables.Variable = email.Split('@')[0];
+            GlobalVariables.id = email.Split('@')[0];
             string password = guna2TextBox2.Text;
             var firebase = new Firebase();
             var signInResult = await firebase.SignInAsync(email, password);
@@ -60,7 +60,7 @@ namespace win_project_2
         private async void guna2Button2_Click(object sender, EventArgs e)
         {
             string email = guna2TextBox1.Text;
-            GlobalVariables.Variable = email.Split('@')[0];
+            GlobalVariables.id = email.Split('@')[0];
             string password = guna2TextBox2.Text;
             var firebase = new Firebase();
             await firebase.CreateUser(email, password);
