@@ -33,6 +33,8 @@ namespace win_project_2
             var realtime = new Data();
             UserInfo userinfo = await realtime.GetData("info/" + GlobalVariables.id + "/");
             
+            if (userinfo == null) { return; }
+
             rjTextBox1.Texts = userinfo.Name;
             rjTextBox2.Texts = userinfo.DateOfBirth;
             rjTextBox3.Texts = userinfo.Email;
@@ -120,6 +122,16 @@ namespace win_project_2
 
 
         private void rjTextBox5__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rjToggleButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

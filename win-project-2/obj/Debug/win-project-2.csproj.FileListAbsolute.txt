@@ -185,9 +185,6 @@ D:\window_app\winproject2\win-project-2\bin\Debug\System.Runtime.CompilerService
 D:\window_app\winproject2\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.App.config
 D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
-D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.SuggestedBindingRedirects.cache
-D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.exe.config
-D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.InforForm.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.LoginForm.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.GenerateResource.cache
@@ -195,7 +192,6 @@ D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.csproj.CoreCompi
 D:\window_app\winproject2\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
 D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.exe
 D:\window_app\winproject2\win-project-2\obj\Debug\win-project-2.pdb
-D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Form1.resources
 C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.App.config
 C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
 C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
@@ -267,3 +263,12 @@ C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\
 C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
 C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
 C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
+D:\window_app\winproject2\win-project-2\bin\Debug\FontAwesome.Sharp.dll
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FHome.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FMain.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FInfor.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
