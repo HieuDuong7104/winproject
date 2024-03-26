@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using win_project_2.Forms;
 
 namespace win_project_2
 {
@@ -17,7 +18,6 @@ namespace win_project_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FInfor());
         }
     }
 }

@@ -272,3 +272,4 @@ D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FInfor.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
