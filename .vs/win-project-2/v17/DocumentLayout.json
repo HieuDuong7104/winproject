@@ -1,66 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\window_app\\winproject2\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Downloads\\github12\\winproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\globalvariables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|c:\\users\\admin\\downloads\\github12\\winproject\\win-project-2\\forms\\fshowrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fshowrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|d:\\window_app\\winproject2\\win-project-2\\forms\\fuserinfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fuserinfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\forms\\fshowpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fshowpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\forms\\fuserinfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fuserinfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\forms\\frating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\frating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\forms\\frating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\frating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\forms\\frating.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\frating.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\forms\\finfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\finfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\usercontrols\\ucrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\usercontrols\\ucrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\forms\\finfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\finfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\userinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\formtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\formtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\formtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\formtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\nguoitho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\nguoitho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\nguoitimtho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\nguoitimtho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|D:\\window_app\\winproject2\\win-project-2\\dataclass\\firebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\dataclass\\firebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\forms\\fpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BF607292-C305-49BE-92B8-3D49F6D28DDA}|win-project-2\\win-project-2.csproj|solutionrelative:win-project-2\\forms\\fpostemloyee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,33 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormTest.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\FormTest.cs",
-              "RelativeDocumentMoniker": "win-project-2\\FormTest.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\FormTest.cs",
-              "RelativeToolTip": "win-project-2\\FormTest.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAcwEIAAABbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T15:35:26.993Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DB.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\DB.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\DB.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\DB.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\DB.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAASwCUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T15:07:36.451Z",
-              "IsPinned": true
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -104,158 +50,88 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FInfor.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FInfor.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FInfor.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FInfor.cs",
-              "RelativeToolTip": "win-project-2\\Forms\\FInfor.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAIwEsAAABMAAAA",
+              "DocumentIndex": 0,
+              "Title": "FShowRating.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FShowRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FShowRating.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FShowRating.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FShowRating.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T08:55:56.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FUserInfor.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FUserInfor.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FUserInfor.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FUserInfor.cs",
-              "RelativeToolTip": "win-project-2\\Forms\\FUserInfor.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAADwvzwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T07:58:34.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FUserInfor.cs [Design]",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FUserInfor.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FUserInfor.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FUserInfor.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FUserInfor.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T07:56:46.902Z",
+              "WhenOpened": "2024-03-27T18:36:24.741Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GlobalVariables.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\GlobalVariables.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\GlobalVariables.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\GlobalVariables.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\GlobalVariables.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA5AAAA",
+              "DocumentIndex": 5,
+              "Title": "UCRating.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\UserControls\\UCRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\UserControls\\UCRating.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\UserControls\\UCRating.cs [Design]",
+              "RelativeToolTip": "win-project-2\\UserControls\\UCRating.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T15:52:28.248Z",
+              "WhenOpened": "2024-03-27T18:34:48.302Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FRating.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FRating.Designer.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FRating.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FRating.Designer.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\FRating.Designer.cs",
+              "ViewState": "AQIAAJsAAAAAAAAAAAApwLYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T18:31:13.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\Program\\Program.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Program\\Program.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\Program\\Program.cs",
-              "RelativeToolTip": "win-project-2\\Program\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAqAAAA",
+              "Title": "FRating.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FRating.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FRating.cs",
+              "RelativeToolTip": "win-project-2\\Forms\\FRating.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwBMAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T15:39:18.594Z"
+              "WhenOpened": "2024-03-27T18:31:06.319Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FormTest.cs [Design]",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\FormTest.cs",
-              "RelativeDocumentMoniker": "win-project-2\\FormTest.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\FormTest.cs [Design]",
-              "RelativeToolTip": "win-project-2\\FormTest.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "FRating.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FRating.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FRating.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FRating.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FRating.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T15:35:09.034Z"
+              "WhenOpened": "2024-03-27T18:13:22.189Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Post.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\Post.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\Post.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\Post.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\Post.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "DocumentIndex": 1,
+              "Title": "FShowPostEmloyee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FShowPostEmloyee.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FShowPostEmloyee.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FShowPostEmloyee.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FShowPostEmloyee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:30:06.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NguoiTimTho.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\NguoiTimTho.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\NguoiTimTho.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\NguoiTimTho.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\NguoiTimTho.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAowB4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:28:08.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NguoiTho.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\NguoiTho.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\NguoiTho.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\NguoiTho.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\NguoiTho.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwB4AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:26:16.734Z"
+              "WhenOpened": "2024-03-27T18:07:36.703Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FInfor.cs [Design]",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FInfor.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\FInfor.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\Forms\\FInfor.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\FInfor.cs [Design]",
+              "Title": "FPostEmloyee.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FPostEmloyee.cs",
+              "RelativeDocumentMoniker": "win-project-2\\Forms\\FPostEmloyee.cs",
+              "ToolTip": "C:\\Users\\admin\\Downloads\\github12\\winproject\\win-project-2\\Forms\\FPostEmloyee.cs [Design]",
+              "RelativeToolTip": "win-project-2\\Forms\\FPostEmloyee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:20:49.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserInfo.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\UserInfo.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\UserInfo.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\UserInfo.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\UserInfo.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA+wBMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:18:43.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Firebase.cs",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\Firebase.cs",
-              "RelativeDocumentMoniker": "win-project-2\\DataClass\\Firebase.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\DataClass\\Firebase.cs",
-              "RelativeToolTip": "win-project-2\\DataClass\\Firebase.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:16:31.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "D:\\window_app\\winproject2\\win-project-2\\Forms\\LoginForm.cs",
-              "RelativeDocumentMoniker": "win-project-2\\Forms\\LoginForm.cs",
-              "ToolTip": "D:\\window_app\\winproject2\\win-project-2\\Forms\\LoginForm.cs [Design]",
-              "RelativeToolTip": "win-project-2\\Forms\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-25T10:16:26.38Z"
+              "WhenOpened": "2024-03-27T17:35:16.678Z"
             }
           ]
         }
