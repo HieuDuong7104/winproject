@@ -20,6 +20,7 @@ namespace win_project_2.DataClass
 
         private async void button1_Click(object sender, EventArgs e)
         {
+            //Up info NguoiTimTho (dùng khi tạo tk hoặc cập nhật thông tin)
             var dt = new DB();
             NguoiTimTho nguoiTimTho = new NguoiTimTho("", "", "Nguyễn Văn A", "01/01/1990", "0123456789", "http://example.com/avatar.jpg", "email@example.com", "123 Đường ABC, Quận 1", false, GlobalVariables.id);
             dt.UploadInfoNguoiTimTho(nguoiTimTho);
@@ -27,8 +28,11 @@ namespace win_project_2.DataClass
 
         private async void button2_Click(object sender, EventArgs e)
         {
+            //Trả về List gồm các NguoiTho mà NguoiTimTho yêu thích 
+
+
             var dt = new DB();
-            NguoiTimTho nguoitimtho = await dt.GetInfoNguoiTimTho("test1503");
+            NguoiTimTho nguoitimtho = await dt.GetInfoNguoiTimTho(GlobalVariables.id); //GlobalVariables.id là id của tk hiện đăng nhập, có thể sửa thành id của tk khác để xem ds fav của người khác
             //MessageBox.Show(nguoitimtho.FavThoIds);
             List<NguoiTho> listnguoitho = await dt.GetInfoFavTho(nguoitimtho.FavThoIds);
             foreach (NguoiTho nguoitho in listnguoitho)
@@ -46,6 +50,8 @@ namespace win_project_2.DataClass
 
         private async void button3_Click(object sender, EventArgs e)
         {
+            //Up Post lên để và cập nhật Posted của NguoiTimTho
+
             var dt = new DB();
             Post newPost = new Post("", "Sua may lanh", "...", "tphcm", "30/03/20224", "...", 200000, GlobalVariables.id);
             string temp = await dt.PostArticle(newPost);
@@ -54,6 +60,9 @@ namespace win_project_2.DataClass
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+            //Up info NguoiTho dùng khi tạo tk hoặc cập nhật info
+
             var dt = new DB();
             NguoiTho nguoiTho = new NguoiTho("", "Pham Van C", "15/03/2000", "291388287", "null.jpg", "test@gmail.com", "Ha Noi", true, GlobalVariables.id, "Game Dev", "Game", 20000000, "100", "Ha Noi", "12/12");
             dt.UploadInfoNguoiTho(nguoiTho);
@@ -61,8 +70,10 @@ namespace win_project_2.DataClass
 
         private async void button5_Click(object sender, EventArgs e)
         {
+            // Lấy List tất cả Post NguoiTimTho đã đăng
+
             var dt = new DB();
-            NguoiTimTho nguoiTimTho = await dt.GetInfoNguoiTimTho(GlobalVariables.id);
+            NguoiTimTho nguoiTimTho = await dt.GetInfoNguoiTimTho(GlobalVariables.id); //GlobalVariables.id là id của chính tk đang dùng, có thể sửa thành id của người khác để xem ds tất cả Post mà id này đã đăng
             List<Post> listPost = await dt.GetListPost(nguoiTimTho.PostIds);
             foreach (Post post in listPost)
             {
@@ -81,8 +92,11 @@ namespace win_project_2.DataClass
 
         private async void button6_Click(object sender, EventArgs e)
         {
+
+            //Trả về Ds tất cả Post đã thực hiện
+
             var dt = new DB();
-            NguoiTho nguoiTho = await dt.GetInfoNguoiTho(GlobalVariables.id);
+            NguoiTho nguoiTho = await dt.GetInfoNguoiTho(GlobalVariables.id); //GlobalVariables.id là id của chính tk đang dùng, có thể sửa thành id của người khác để xem ds tất cả Post mà id này đã đăng
             List<Post> listPost = await dt.GetListPost(nguoiTho.DonePostIds);
             foreach (Post post in listPost)
             {
@@ -100,6 +114,9 @@ namespace win_project_2.DataClass
 
         private async void button7_Click(object sender, EventArgs e)
         {
+
+            // Lấy Thông tin tất cả NguoiTimTho trả về List
+
             var dt = new DB();
             List<NguoiTimTho> listNguoiTimTho = await dt.GetAllNguoiTimTho();
             foreach (NguoiTimTho nguoiTimTho in listNguoiTimTho)
@@ -118,6 +135,9 @@ namespace win_project_2.DataClass
 
         private async void button8_Click(object sender, EventArgs e)
         {
+
+            //Lấy tất cả thông tin NguoiTho trả về List
+
             var dt = new DB();
             List<NguoiTho> listNguoiTho = await dt.GetAllNguoiTho();
             foreach (NguoiTho nguoiTho in listNguoiTho)
@@ -141,24 +161,42 @@ namespace win_project_2.DataClass
 
         private async void button9_Click(object sender, EventArgs e)
         {
+            // Thêm NguoiTho vào danh sách FavTho
+
             var dt = new DB();
-            await dt.AddUserToFavorites("test8");
+            await dt.AddUserToFavorites("test8"); //Thêm NguoiTho id = test8 vào ds yêu thích
         }
 
         private async void button11_Click(object sender, EventArgs e)
         {
+
+            //Thêm Post vào ds Done Post
+
             var dt = new DB();
-            await dt.AddPostToDonePost("1");
+            await dt.AddPostToDonePost("1"); //Thêm Post có id = 1 vào ds Post Done
         }
 
         private async void button12_Click(object sender, EventArgs e)
         {
+            //Thêm Id của bài đăng vào List Posted(ds tất cả bài đăng) của NguoiTimTho
+            /*
+             Hoặc đi kèm với Up Post và Up vừa cập nhật list posted
+             
+             var dt = new DB();
+            Post newPost = new Post("", "Sua may lanh", "...", "tphcm", "30/03/20224", "...", 200000, GlobalVariables.id);
+            string temp = await dt.PostArticle(newPost);
+            await dt.AddPostToPosted(temp);
+             */
+
             var dt = new DB();
             await dt.AddPostToPosted("1");
         }
 
         private async void button10_Click(object sender, EventArgs e)
         {
+
+            // Lấy tất cả các Post trả về List
+
             var dt = new DB();
             List<Post> listPosts =  await dt.GetAllPosts();
 

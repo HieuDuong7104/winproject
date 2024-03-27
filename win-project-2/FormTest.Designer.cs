@@ -88,7 +88,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(135, 65);
             this.button5.TabIndex = 4;
-            this.button5.Text = "Get List Post";
+            this.button5.Text = "Get List Posted";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
