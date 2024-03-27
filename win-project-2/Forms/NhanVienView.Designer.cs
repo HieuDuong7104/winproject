@@ -37,20 +37,20 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.rjProgressBar1 = new RJCodeAdvance.RJControls.RJProgressBar();
-            this.rjProgressBar2 = new RJCodeAdvance.RJControls.RJProgressBar();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
             this.rjProgressBar3 = new RJCodeAdvance.RJControls.RJProgressBar();
-            this.label22 = new System.Windows.Forms.Label();
+            this.rjProgressBar2 = new RJCodeAdvance.RJControls.RJProgressBar();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.rjProgressBar1 = new RJCodeAdvance.RJControls.RJProgressBar();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label26 = new System.Windows.Forms.Label();
@@ -182,127 +182,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 1175);
+            this.panel1.Size = new System.Drawing.Size(350, 1055);
             this.panel1.TabIndex = 25;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(49, 524);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 24);
-            this.label15.TabIndex = 28;
-            this.label15.Text = "079204029291";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(49, 589);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(131, 24);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "ĐỊA ĐIỂM LÀM VIỆC";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(49, 613);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 24);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "Tp. HCM";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(37, 872);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 24);
-            this.label19.TabIndex = 29;
-            this.label19.Text = "KỸ NĂNG";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(50, 928);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 24);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "skill1";
-            // 
-            // rjProgressBar1
-            // 
-            this.rjProgressBar1.ChannelColor = System.Drawing.Color.LightSteelBlue;
-            this.rjProgressBar1.ChannelHeight = 6;
-            this.rjProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.rjProgressBar1.Location = new System.Drawing.Point(100, 928);
-            this.rjProgressBar1.Name = "rjProgressBar1";
-            this.rjProgressBar1.ShowMaximun = false;
-            this.rjProgressBar1.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
-            this.rjProgressBar1.Size = new System.Drawing.Size(205, 19);
-            this.rjProgressBar1.SliderColor = System.Drawing.Color.PowderBlue;
-            this.rjProgressBar1.SliderHeight = 6;
-            this.rjProgressBar1.SymbolAfter = "";
-            this.rjProgressBar1.SymbolBefore = "";
-            this.rjProgressBar1.TabIndex = 26;
-            this.rjProgressBar1.Value = 50;
-            // 
-            // rjProgressBar2
-            // 
-            this.rjProgressBar2.ChannelColor = System.Drawing.Color.LightSteelBlue;
-            this.rjProgressBar2.ChannelHeight = 6;
-            this.rjProgressBar2.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar2.ForeColor = System.Drawing.Color.White;
-            this.rjProgressBar2.Location = new System.Drawing.Point(100, 975);
-            this.rjProgressBar2.Name = "rjProgressBar2";
-            this.rjProgressBar2.ShowMaximun = false;
-            this.rjProgressBar2.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
-            this.rjProgressBar2.Size = new System.Drawing.Size(205, 19);
-            this.rjProgressBar2.SliderColor = System.Drawing.Color.PowderBlue;
-            this.rjProgressBar2.SliderHeight = 6;
-            this.rjProgressBar2.SymbolAfter = "";
-            this.rjProgressBar2.SymbolBefore = "";
-            this.rjProgressBar2.TabIndex = 31;
-            this.rjProgressBar2.Value = 40;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label20.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(50, 975);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 24);
-            this.label20.TabIndex = 32;
-            this.label20.Text = "skill2";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label21.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(50, 1028);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 24);
-            this.label21.TabIndex = 32;
-            this.label21.Text = "skill1";
             // 
             // rjProgressBar3
             // 
@@ -322,16 +203,102 @@
             this.rjProgressBar3.TabIndex = 31;
             this.rjProgressBar3.Value = 70;
             // 
-            // label22
+            // rjProgressBar2
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label22.Location = new System.Drawing.Point(49, 671);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 24);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "EMAIL";
+            this.rjProgressBar2.ChannelColor = System.Drawing.Color.LightSteelBlue;
+            this.rjProgressBar2.ChannelHeight = 6;
+            this.rjProgressBar2.ForeBackColor = System.Drawing.Color.RoyalBlue;
+            this.rjProgressBar2.ForeColor = System.Drawing.Color.White;
+            this.rjProgressBar2.Location = new System.Drawing.Point(100, 975);
+            this.rjProgressBar2.Name = "rjProgressBar2";
+            this.rjProgressBar2.ShowMaximun = false;
+            this.rjProgressBar2.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
+            this.rjProgressBar2.Size = new System.Drawing.Size(205, 19);
+            this.rjProgressBar2.SliderColor = System.Drawing.Color.PowderBlue;
+            this.rjProgressBar2.SliderHeight = 6;
+            this.rjProgressBar2.SymbolAfter = "";
+            this.rjProgressBar2.SymbolBefore = "";
+            this.rjProgressBar2.TabIndex = 31;
+            this.rjProgressBar2.Value = 40;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label21.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label21.Location = new System.Drawing.Point(50, 1028);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(44, 24);
+            this.label21.TabIndex = 32;
+            this.label21.Text = "skill1";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label20.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label20.Location = new System.Drawing.Point(50, 975);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(47, 24);
+            this.label20.TabIndex = 32;
+            this.label20.Text = "skill2";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // rjProgressBar1
+            // 
+            this.rjProgressBar1.ChannelColor = System.Drawing.Color.LightSteelBlue;
+            this.rjProgressBar1.ChannelHeight = 6;
+            this.rjProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
+            this.rjProgressBar1.ForeColor = System.Drawing.Color.White;
+            this.rjProgressBar1.Location = new System.Drawing.Point(100, 928);
+            this.rjProgressBar1.Name = "rjProgressBar1";
+            this.rjProgressBar1.ShowMaximun = false;
+            this.rjProgressBar1.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
+            this.rjProgressBar1.Size = new System.Drawing.Size(205, 19);
+            this.rjProgressBar1.SliderColor = System.Drawing.Color.PowderBlue;
+            this.rjProgressBar1.SliderHeight = 6;
+            this.rjProgressBar1.SymbolAfter = "";
+            this.rjProgressBar1.SymbolBefore = "";
+            this.rjProgressBar1.TabIndex = 26;
+            this.rjProgressBar1.Value = 50;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label18.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(50, 928);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(44, 24);
+            this.label18.TabIndex = 30;
+            this.label18.Text = "skill1";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label19.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(37, 872);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(66, 24);
+            this.label19.TabIndex = 29;
+            this.label19.Text = "KỸ NĂNG";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(49, 613);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(58, 24);
+            this.label17.TabIndex = 28;
+            this.label17.Text = "Tp. HCM";
             // 
             // label23
             // 
@@ -344,16 +311,38 @@
             this.label23.TabIndex = 27;
             this.label23.Text = "nguyenvana@gmail.com";
             // 
-            // label1
+            // label22
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(37, 764);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 24);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "MỨC GIÁ";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label22.Location = new System.Drawing.Point(49, 671);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(49, 24);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "EMAIL";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(49, 589);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(131, 24);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "ĐỊA ĐIỂM LÀM VIỆC";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(49, 524);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(104, 24);
+            this.label15.TabIndex = 28;
+            this.label15.Text = "079204029291";
             // 
             // label24
             // 
@@ -365,6 +354,17 @@
             this.label24.Size = new System.Drawing.Size(102, 24);
             this.label24.TabIndex = 26;
             this.label24.Text = "100$/1 project";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(37, 764);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 24);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "MỨC GIÁ";
             // 
             // label25
             // 
@@ -490,7 +490,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 1175);
+            this.ClientSize = new System.Drawing.Size(932, 1055);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Web.UI.WebControls;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 
 
 namespace win_project_2.DataClass
@@ -18,7 +19,8 @@ namespace win_project_2.DataClass
     {
         private IFirebaseConfig config;
         private IFirebaseClient client;
-        public event Action OnStatusChanged;
+        public event Action<string> OnStatusChanged;
+
         public int postCount;
 
         string value = GlobalVariables.id;
@@ -30,7 +32,7 @@ namespace win_project_2.DataClass
                 BasePath = "https://win-project-dcfd0-default-rtdb.asia-southeast1.firebasedatabase.app/"
             };
             client = new FirebaseClient(config);
-            SubscribeToStatusChanges();
+
         }
 
         public async Task<string> uploadFile(string file_path)
@@ -110,7 +112,7 @@ namespace win_project_2.DataClass
 
         public async Task<Post> GetInfoPost(string id) // Lấy Thông tin Bài đăng theo id
         {
-            FirebaseResponse response = await client.GetAsync("post/" + id);
+            FirebaseResponse response = await client.GetAsync("post/timtho/" + id);
             Post post = response.ResultAs<Post>();
             return post;
         }
@@ -335,19 +337,38 @@ namespace win_project_2.DataClass
             }
         }
 
-
-        private async void SubscribeToStatusChanges()
+        public async void SubscribeToStatusChanges()
         {
             try
             {
-                await client.OnAsync("Post/tim-nv/", (sender, args, context) => {
-                    Console.WriteLine("Data changed!", args.Data);
-                    OnStatusChanged?.Invoke();
-                });
+                await client.OnAsync("post/timtho/",
+                    added: (s, args, context) =>
+                    {
+                        var data = JsonConvert.DeserializeObject<Dictionary<string, object>>(args.Data);
+                        if (data != null && data.ContainsKey("postCount"))
+                        {
+                            Console.WriteLine($"Added: {data["postCount"]}");
+                        }
+                        OnStatusChanged?.Invoke(args.Data);
+                    },
+                    changed: (s, args, context) =>
+                    {
+                        var data = JsonConvert.DeserializeObject<Dictionary<string, object>>(args.Data);
+                        if (data != null && data.ContainsKey("postCount"))
+                        {
+                            Console.WriteLine($"Changed: {data["postCount"]}");
+                        }
+                        OnStatusChanged?.Invoke(args.Data);
+                    },
+                    removed: (s, args, context) =>
+                    {
+                        Console.WriteLine($"Removed: {args.Path}");
+                        OnStatusChanged?.Invoke(args.Path);
+                    });
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error");
+                Console.WriteLine($"Error: {ex.Message}");
             }
         }
     }

@@ -16,6 +16,16 @@ namespace win_project_2.DataClass
         public FormTest()
         {
             InitializeComponent();
+            var dt = new DB();
+            //dt.OnStatusChanged += Database_NewPostIdAdded;
+
+            // Gọi hàm SubscribeToNewPostId() từ instance của class DB
+            //dt.SubscribeToStatusChanges();
+        }
+        private void Database_NewPostIdAdded(string postId)
+        {
+            // Xử lý postId mới tại đây
+            Console.WriteLine($"New post added with ID: {postId}");
         }
 
         private async void button1_Click(object sender, EventArgs e)
