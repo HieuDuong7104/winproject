@@ -14,10 +14,11 @@ namespace win_project_2
         public string Skills { get; set; }
         public string JobLocation { get; set; }
         public string Study { get; set; }
-        public List<Post> DonePosts { get; set; }
+        public string DonePostIds { get; set; }
 
-        // Constructor với tất cả các thuộc tính
-        public NguoiTho(string jobName, string description, double price, string skills, string jobLocation, string study, List<Post> donePosts)
+        // Constructor với tất cả các thuộc tính, kể cả thuộc tính từ lớp cơ sở UserInfo
+        public NguoiTho(string donePostIds, string name, string dateOfBirth, string phoneNumber, string avatarUrl, string email, string address, bool isTho, string id, string jobName, string description, double price, string skills, string jobLocation, string study)
+            : base(name, dateOfBirth, phoneNumber, avatarUrl, email, address, isTho, id)
         {
             JobName = jobName;
             Description = description;
@@ -25,14 +26,15 @@ namespace win_project_2
             Skills = skills;
             JobLocation = jobLocation;
             Study = study;
-            DonePosts = donePosts ?? new List<Post>(); 
+            DonePostIds = donePostIds ?? string.Empty;
         }
 
         // Constructor mặc định
-        public NguoiTho()
+        public NguoiTho() : base()
         {
-            DonePosts = new List<Post>();
+            DonePostIds = string.Empty;
         }
     }
+
 
 }

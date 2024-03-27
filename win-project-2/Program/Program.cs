@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using win_project_2.DataClass;
 
 namespace win_project_2
 {
     internal static class Program
     {
-        public static string globalString = "";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,7 +17,7 @@ namespace win_project_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FInfor());
+            Application.Run(new FormTest());
         }
     }
 }

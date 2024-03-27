@@ -85,10 +85,10 @@ namespace win_project_2
                 return;
             }
 
-            var newPost = new PostInfo(content, senderId, imageUrl, tag);
+            //var newPost = new Post(content, senderId, imageUrl, tag);
             Console.WriteLine(postCount);
-            SetResponse postResponse = await client.SetAsync("Post/" + post_type + "/" + postCount + "/" , newPost);
-            if (postResponse.StatusCode != System.Net.HttpStatusCode.OK)
+            //SetResponse postResponse = await client.SetAsync("Post/" + post_type + "/" + postCount + "/" , newPost);
+            //if (postResponse.StatusCode != System.Net.HttpStatusCode.OK)
             {
                 Console.WriteLine("Failed to post article.");
                 return;

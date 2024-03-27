@@ -6,23 +6,25 @@ using System.Threading.Tasks;
 
 namespace win_project_2.DataClass
 {
-    public class NguoiTimTho : UserInfo
-    {
-        List<NguoiTho> FavTho { get; set; }
-        List<Post> Posts { get; set; }
-
-
-
-        public NguoiTimTho(List<NguoiTho> favtho, List<Post> posts)
+    
+        public class NguoiTimTho : UserInfo
         {
-            FavTho = favtho ?? new List<NguoiTho>();
-            Posts = posts ?? new List<Post>();
+            public string FavThoIds { get; set; }
+            public string PostIds { get; set; }
+
+            public NguoiTimTho(string favThoIds, string postIds, string name, string dateOfBirth, string phoneNumber, string avatarUrl, string email, string address, Boolean istho, String id)
+                : base(name, dateOfBirth, phoneNumber, avatarUrl, email, address, istho, id)
+            {
+                FavThoIds = favThoIds ?? string.Empty;
+                PostIds = postIds ?? string.Empty;
+            }
+
+            public NguoiTimTho() : base()
+            {
+                FavThoIds = string.Empty;
+                PostIds = string.Empty;
+            }
         }
 
-        public NguoiTimTho()
-        {
-            FavTho = new List<NguoiTho>();
-            Posts = new List<Post>();
-        }
-    }
+    
 }

@@ -4,6 +4,7 @@ namespace win_project_2
 {
     public class Post
     {
+        public string Id { get; set; }
         public string Tag { get; set; }
         public string Description { get; set; }
         public string Location { get; set; }
@@ -13,8 +14,9 @@ namespace win_project_2
         public string SenderId { get; set; }
 
         public Post() { }
-        public Post(string tag, string description, string location, string date, string request, double price, string senderid)
+        public Post(string id, string tag, string description, string location, string date, string request, double price, string senderid)
         {
+            Id = id;
             Tag = tag;
             Description = description;
             Location = location;
