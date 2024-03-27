@@ -344,3 +344,5 @@ D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Numerics.Vectors
 D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\window_app\winproject2 - Copy\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources

@@ -22,7 +22,7 @@ namespace win_project_2.DataClass
         {
             //Up info NguoiTimTho (dùng khi tạo tk hoặc cập nhật thông tin)
             var dt = new DB();
-            NguoiTimTho nguoiTimTho = new NguoiTimTho("", "", "Nguyễn Văn A", "01/01/1990", "0123456789", "http://example.com/avatar.jpg", "email@example.com", "123 Đường ABC, Quận 1", false, GlobalVariables.id);
+            NguoiTimTho nguoiTimTho = new NguoiTimTho("", "", "Nguyễn Văn A", "01/01/1990", "0123456789", "", "email@example.com", "123 Đường ABC, Quận 1", false, GlobalVariables.id);
             dt.UploadInfoNguoiTimTho(nguoiTimTho);
         }
 
@@ -64,7 +64,7 @@ namespace win_project_2.DataClass
             //Up info NguoiTho dùng khi tạo tk hoặc cập nhật info
 
             var dt = new DB();
-            NguoiTho nguoiTho = new NguoiTho("", "Pham Van C", "15/03/2000", "291388287", "null.jpg", "test@gmail.com", "Ha Noi", true, GlobalVariables.id, "Game Dev", "Game", 20000000, "100", "Ha Noi", "12/12");
+            NguoiTho nguoiTho = new NguoiTho("", "Pham Van C", "15/03/2000", "291388287", "", "test@gmail.com", "Ha Noi", true, GlobalVariables.id, "Game Dev", "Game", 20000000, "100", "Ha Noi", "12/12", 4);
             dt.UploadInfoNguoiTho(nguoiTho);
         }
 
