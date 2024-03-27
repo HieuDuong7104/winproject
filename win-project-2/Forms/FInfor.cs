@@ -74,10 +74,10 @@ namespace win_project_2
             {
                 var realtimedatabase = new Data();
                 var path = await realtimedatabase.uploadFile(FileImageName);
-                UserInfo userInfo = new UserInfo(rjTextBox1.Texts, rjTextBox2.Texts, rjTextBox3.Texts, path, rjTextBox4.Texts, rjTextBox5.Texts);
+                //UserInfo userInfo = new UserInfo(rjTextBox1.Texts, rjTextBox2.Texts, rjTextBox3.Texts, path, rjTextBox4.Texts, rjTextBox5.Texts);
 
                 
-                realtimedatabase.UploadData("info/" + GlobalVariables.id + "/" ,userInfo);
+                //realtimedatabase.UploadData("info/" + GlobalVariables.id + "/" ,userInfo);
 
                 rjButton1.Enabled = false;
                 rjTextBox1.Enabled = false;
