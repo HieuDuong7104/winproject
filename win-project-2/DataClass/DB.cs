@@ -50,7 +50,7 @@ namespace win_project_2.DataClass
             }
             catch (Exception ex)
             {
-                //MessageBox.Show(ex.Message);
+                
             }
             finally
             {
