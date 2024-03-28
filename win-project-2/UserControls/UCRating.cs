@@ -27,5 +27,15 @@ namespace win_project_2.UserControls
             }
             guna2TextBox1.Text = review.Comment;
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
