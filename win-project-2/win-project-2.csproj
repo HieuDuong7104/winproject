@@ -266,6 +266,13 @@
     <Compile Include="DataClass\Data.cs" />
     <Compile Include="DataClass\DB.cs" />
     <Compile Include="DataClass\Firebase.cs" />
+    <Compile Include="DataClass\Review.cs" />
+    <Compile Include="Forms\FListReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FListReview.Designer.cs">
+      <DependentUpon>FListReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FPostEmloyee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -374,6 +381,9 @@
     <Compile Include="UserControls\UCRating.Designer.cs">
       <DependentUpon>UCRating.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\FListReview.resx">
+      <DependentUpon>FListReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FPostEmloyee.resx">
       <DependentUpon>FPostEmloyee.cs</DependentUpon>
     </EmbeddedResource>

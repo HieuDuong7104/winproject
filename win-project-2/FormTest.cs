@@ -74,7 +74,7 @@ namespace win_project_2.DataClass
             //Up info NguoiTho dùng khi tạo tk hoặc cập nhật info
 
             var dt = new DB();
-            NguoiTho nguoiTho = new NguoiTho("", "Pham Van C", "15/03/2000", "291388287", "", "test@gmail.com", "Ha Noi", true, GlobalVariables.id, "Game Dev", "Game", 20000000, "100", "Ha Noi", "12/12", 4);
+            NguoiTho nguoiTho = new NguoiTho("", "Pham Van C", "15/03/2000", "291388287", "", "test@gmail.com", "Ha Noi", true, GlobalVariables.id, "Game Dev", "Game", 20000000, "100", "Ha Noi", "12/12", 0);
             dt.UploadInfoNguoiTho(nguoiTho);
         }
 
@@ -223,6 +223,18 @@ namespace win_project_2.DataClass
                 Console.WriteLine("---------------------");
             }
 
+        }
+
+        private async void button13_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            List<Review> listReview = await dt.GetAllReview("test10");
+
+            foreach (Review rv in listReview)
+            {
+                Console.WriteLine(rv.Rating);
+                Console.WriteLine(rv.NguoiThoId);
+            }
         }
     }
 }

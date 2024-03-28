@@ -337,6 +337,36 @@ namespace win_project_2.DataClass
             }
         }
 
+        public async Task UpReview(Review review, string idnguoitho) // idnguoitho là id NguoiTho muốn đánh giá, GlobalVariables.id là id của người đang review (NguoiTimTho)
+        {
+            SetResponse response = await client.SetAsync("review/" + idnguoitho + "/" + GlobalVariables.id, review);
+        }
+
+        public async Task UpdateRate(string nguoithoid, float rate)
+        {
+            SetResponse response = await client.SetAsync("info/nguoitho/" + nguoithoid + "/rate", rate);
+        }
+
+        public async Task<List<Review>> GetAllReview(string nguoithoid)
+        {
+            FirebaseResponse response = await client.GetAsync("review/" + nguoithoid + "/");
+            if (response.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                // Lấy dictionary chứa tất cả bài đăng
+                var allReview = response.ResultAs<Dictionary<string, Review>>();
+
+                // Tạo một list để chứa tất cả thông tin bài đăng
+                List<Review> listReview = allReview.Values.ToList();
+
+                return listReview;
+            }
+            else
+            {
+                Console.WriteLine("Không thể lấy dữ liệu: " + response.StatusCode);
+                return new List<Review>(); // Trả về list rỗng nếu có lỗi
+            }
+        }
+
         public async void SubscribeToStatusChanges()
         {
             try

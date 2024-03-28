@@ -424,3 +424,9 @@ C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project
 C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
 C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.exe
 C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources

@@ -135,7 +135,7 @@ namespace win_project_2.Forms
             {
                 NguoiTho temp = await dt.GetInfoNguoiTho(GlobalVariables.id);
                 NguoiTho nguoitho = new NguoiTho(temp.DonePostIds, txb_Name.Text, "", txb_SDT.Text, path, txb_Email.Text, "", true, GlobalVariables.id, txb_JobName.Text, "", 1000, txb_Skill.Text
-                    , "", txb_Study.Text, ((int)guna2RatingStar1.Value));
+                    , "", txb_Study.Text, guna2RatingStar1.Value);
                 await dt.UploadInfoNguoiTho(nguoitho);
             }
             else
