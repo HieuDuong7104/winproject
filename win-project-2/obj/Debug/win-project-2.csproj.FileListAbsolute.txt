@@ -430,3 +430,12 @@ D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowPostE
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FPostEmloyee.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FRating.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowPostEmloyee.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FShowRating.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.DataClass.FormTest.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.FUserInfor.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
+C:\Users\minhn\OneDrive\Tài liệu\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources

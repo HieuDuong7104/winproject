@@ -381,6 +381,12 @@
     <Compile Include="UserControls\UCRating.Designer.cs">
       <DependentUpon>UCRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\FListReview.resx">
       <DependentUpon>FListReview.cs</DependentUpon>
     </EmbeddedResource>
@@ -436,6 +442,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Program\packages.config" />
     <None Include="Properties\Settings.settings">
