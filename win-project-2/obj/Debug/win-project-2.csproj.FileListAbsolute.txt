@@ -434,3 +434,6 @@ C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project
 C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListReview.resources
 C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowPost.resources
 C:\Users\admin\Downloads\github12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListPost.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FDetail.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListPost.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCShowPost.resources
