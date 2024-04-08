@@ -37,9 +37,26 @@ namespace win_project_2.Forms
 
         }
 
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        private async void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-
+            if(guna2TextBox1.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                var dt = new DB();
+                List<Post> listPost = await dt.GetAllPosts();
+                foreach (Post post in listPost)
+                {
+                    if(post.Tag == guna2TextBox1.Text)
+                    {
+                        var new_uc = new UCShowPost(post);
+                        flowLayoutPanel1.Controls.Add(new_uc);
+                    }
+                }
+            }
         }
     }
 }
