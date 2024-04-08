@@ -267,6 +267,18 @@
     <Compile Include="DataClass\DB.cs" />
     <Compile Include="DataClass\Firebase.cs" />
     <Compile Include="DataClass\Review.cs" />
+    <Compile Include="Forms\FDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FDetail.Designer.cs">
+      <DependentUpon>FDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FListPost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FListPost.Designer.cs">
+      <DependentUpon>FListPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FListReview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +308,12 @@
     </Compile>
     <Compile Include="Forms\FShowRating.Designer.cs">
       <DependentUpon>FShowRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FUserInfor - Copy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FUserInfor - Copy.Designer.cs">
+      <DependentUpon>FUserInfor - Copy.cs</DependentUpon>
     </Compile>
     <Compile Include="FormTest.cs">
       <SubType>Form</SubType>
@@ -381,6 +399,18 @@
     <Compile Include="UserControls\UCRating.Designer.cs">
       <DependentUpon>UCRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCShowPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCShowPost.Designer.cs">
+      <DependentUpon>UCShowPost.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FDetail.resx">
+      <DependentUpon>FDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FListPost.resx">
+      <DependentUpon>FListPost.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListReview.resx">
       <DependentUpon>FListReview.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FShowRating.resx">
       <DependentUpon>FShowRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FUserInfor - Copy.resx">
+      <DependentUpon>FUserInfor - Copy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTest.resx">
       <DependentUpon>FormTest.cs</DependentUpon>
@@ -436,6 +469,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCShowPost.resx">
+      <DependentUpon>UCShowPost.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Program\packages.config" />
     <None Include="Properties\Settings.settings">
