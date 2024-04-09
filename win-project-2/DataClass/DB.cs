@@ -127,7 +127,7 @@ namespace win_project_2.DataClass
 
             foreach (string id in ids)
             {
-                Post post = await GetInfoPost(id);
+                Post post = await GetInfoPost("p" + id);
                 postsList.Add(post);
             }
 
@@ -240,7 +240,7 @@ namespace win_project_2.DataClass
             }
 
             post.Id = postCount.ToString();
-            SetResponse postResponse = await client.SetAsync("post/timtho/" + post.Id + "/", post);
+            SetResponse postResponse = await client.SetAsync("post/timtho/" + "p" + post.Id + "/", post);
             if (postResponse.StatusCode != System.Net.HttpStatusCode.OK)
             {
                 Console.WriteLine("Failed to post article.");
