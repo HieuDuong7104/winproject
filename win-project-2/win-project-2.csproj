@@ -267,6 +267,12 @@
     <Compile Include="DataClass\DB.cs" />
     <Compile Include="DataClass\Firebase.cs" />
     <Compile Include="DataClass\Review.cs" />
+    <Compile Include="Forms\FDetail1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FDetail1.Designer.cs">
+      <DependentUpon>FDetail1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FListReview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,12 @@
     </Compile>
     <Compile Include="Forms\FRating.Designer.cs">
       <DependentUpon>FRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FShowListJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FShowListJob.Designer.cs">
+      <DependentUpon>FShowListJob.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FShowPostEmloyee.cs">
       <SubType>Form</SubType>
@@ -381,12 +393,21 @@
     <Compile Include="UserControls\UCRating.Designer.cs">
       <DependentUpon>UCRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCShowJobcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCShowJobcs.Designer.cs">
+      <DependentUpon>UCShowJobcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\FDetail1.resx">
+      <DependentUpon>FDetail1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListReview.resx">
       <DependentUpon>FListReview.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +416,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FRating.resx">
       <DependentUpon>FRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FShowListJob.resx">
+      <DependentUpon>FShowListJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FShowPostEmloyee.resx">
       <DependentUpon>FShowPostEmloyee.cs</DependentUpon>
@@ -442,6 +466,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCShowJobcs.resx">
+      <DependentUpon>UCShowJobcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
