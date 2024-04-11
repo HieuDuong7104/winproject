@@ -267,18 +267,6 @@
     <Compile Include="DataClass\DB.cs" />
     <Compile Include="DataClass\Firebase.cs" />
     <Compile Include="DataClass\Review.cs" />
-    <Compile Include="Forms\FDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FDetail.Designer.cs">
-      <DependentUpon>FDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FListPost.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FListPost.Designer.cs">
-      <DependentUpon>FListPost.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FListReview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,18 +381,12 @@
     <Compile Include="UserControls\UCRating.Designer.cs">
       <DependentUpon>UCRating.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCShowPost.cs">
+    <Compile Include="UserControls\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UCShowPost.Designer.cs">
-      <DependentUpon>UCShowPost.cs</DependentUpon>
+    <Compile Include="UserControls\UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\FDetail.resx">
-      <DependentUpon>FDetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FListPost.resx">
-      <DependentUpon>FListPost.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListReview.resx">
       <DependentUpon>FListReview.cs</DependentUpon>
     </EmbeddedResource>
@@ -461,8 +443,8 @@
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCShowPost.resx">
-      <DependentUpon>UCShowPost.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Program\packages.config" />
     <None Include="Properties\Settings.settings">
