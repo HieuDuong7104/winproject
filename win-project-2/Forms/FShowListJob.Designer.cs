@@ -29,21 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FShowListJob));
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.ucShowJobcs1 = new win_project_2.UserControls.UCShowJobcs();
-            this.guna2Panel1.SuspendLayout();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.ucShowJobcs1);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 103);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(589, 654);
-            this.guna2Panel1.TabIndex = 0;
             // 
             // guna2TextBox1
             // 
@@ -60,14 +49,15 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(76, 31);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2TextBox1.Location = new System.Drawing.Point(68, 25);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(286, 45);
+            this.guna2TextBox1.Size = new System.Drawing.Size(254, 36);
             this.guna2TextBox1.TabIndex = 1;
+            this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // guna2ImageButton1
             // 
@@ -77,40 +67,42 @@
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(379, 31);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(337, 25);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(64, 54);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(57, 43);
             this.guna2ImageButton1.TabIndex = 2;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
-            // ucShowJobcs1
+            // flowLayoutPanel1
             // 
-            this.ucShowJobcs1.Location = new System.Drawing.Point(11, 12);
-            this.ucShowJobcs1.Name = "ucShowJobcs1";
-            this.ucShowJobcs1.Size = new System.Drawing.Size(566, 199);
-            this.ucShowJobcs1.TabIndex = 0;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 98);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(500, 496);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
             // FShowListJob
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 757);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(524, 606);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FShowListJob";
             this.Text = "FShowListJob";
-            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private UserControls.UCShowJobcs ucShowJobcs1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

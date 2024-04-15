@@ -522,3 +522,8 @@ C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Numeric
 C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\admin\Downloads\git12\winproject\win-project-2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FDetail1.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowListJob.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources

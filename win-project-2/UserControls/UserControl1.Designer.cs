@@ -69,11 +69,11 @@
             // lb_Name
             // 
             this.lb_Name.AutoSize = true;
-            this.lb_Name.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lb_Name.Location = new System.Drawing.Point(134, 251);
             this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(77, 30);
+            this.lb_Name.Size = new System.Drawing.Size(75, 25);
             this.lb_Name.TabIndex = 3;
             this.lb_Name.Text = "Họ tên";
             this.lb_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,11 +81,11 @@
             // lb_job
             // 
             this.lb_job.AutoSize = true;
-            this.lb_job.Font = new System.Drawing.Font("Quicksand SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_job.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_job.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.lb_job.Location = new System.Drawing.Point(119, 290);
             this.lb_job.Name = "lb_job";
-            this.lb_job.Size = new System.Drawing.Size(107, 30);
+            this.lb_job.Size = new System.Drawing.Size(109, 25);
             this.lb_job.TabIndex = 3;
             this.lb_job.Text = "Công việc";
             this.lb_job.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
