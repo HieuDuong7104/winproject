@@ -36,14 +36,14 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(29, 47);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(923, 531);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1322, 531);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // FListNguoiTho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 606);
+            this.ClientSize = new System.Drawing.Size(1377, 606);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "FListNguoiTho";
             this.Text = "FListNguoiTho";

@@ -15,15 +15,17 @@ using Newtonsoft.Json;
 
 namespace win_project_2.DataClass
 {
-    internal class DB
+    public delegate void MessageReceivedHandler(string message);
+    public class DB
     {
         private IFirebaseConfig config;
         private IFirebaseClient client;
-        public event Action<string> OnStatusChanged;
 
+        
         public int postCount;
 
         string value = GlobalVariables.id;
+        public event MessageReceivedHandler OnMessageReceived;
         public DB()
         {
             config = new FirebaseConfig
@@ -32,8 +34,7 @@ namespace win_project_2.DataClass
                 BasePath = "https://win-project-dcfd0-default-rtdb.asia-southeast1.firebasedatabase.app/"
             };
             client = new FirebaseClient(config);
-
-        }
+    }
 
         public async Task<string> uploadFile(string file_path)
         {
@@ -367,39 +368,39 @@ namespace win_project_2.DataClass
             }
         }
 
-        public async void SubscribeToStatusChanges()
+        public async void SendMessage(string tinnhan)
         {
-            try
+            FirebaseResponse response = await client.GetAsync("message/idroom/count");
+            int count = response.ResultAs<int>();
+            count++;
+            SetResponse setResponse = await client.SetAsync("message/idroom/count", count);
+            SetResponse Messresponse = await client.SetAsync("message/" + "idroom/" + count, tinnhan);
+        }
+
+        public async Task<List<string>> GetAllMessagesAsync(string roomId)
+        {
+            FirebaseResponse response = await client.GetAsync("message/" + "idroom");
+            Dictionary<string, string> messages = response.ResultAs<Dictionary<string, string>>();
+            List<string> messageList = new List<string>();
+
+            foreach (var message in messages)
             {
-                await client.OnAsync("post/timtho/",
-                    added: (s, args, context) =>
-                    {
-                        var data = JsonConvert.DeserializeObject<Dictionary<string, object>>(args.Data);
-                        if (data != null && data.ContainsKey("postCount"))
-                        {
-                            Console.WriteLine($"Added: {data["postCount"]}");
-                        }
-                        OnStatusChanged?.Invoke(args.Data);
-                    },
-                    changed: (s, args, context) =>
-                    {
-                        var data = JsonConvert.DeserializeObject<Dictionary<string, object>>(args.Data);
-                        if (data != null && data.ContainsKey("postCount"))
-                        {
-                            Console.WriteLine($"Changed: {data["postCount"]}");
-                        }
-                        OnStatusChanged?.Invoke(args.Data);
-                    },
-                    removed: (s, args, context) =>
-                    {
-                        Console.WriteLine($"Removed: {args.Path}");
-                        OnStatusChanged?.Invoke(args.Path);
-                    });
+                messageList.Add(message.Value);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-            }
+
+            return messageList;
+        }
+
+        public string LatestMessage { get; private set; }
+
+        public async void ListenForNewMessages(string roomId)
+        {
+            EventStreamResponse response = await client.OnAsync("message/" + "idroom",
+                added: (sender, args, context) =>
+                {
+                    //Console.WriteLine("New message received: " + args.Data);
+                    OnMessageReceived?.Invoke(args.Data);
+                });
         }
     }
 }

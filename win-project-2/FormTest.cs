@@ -13,19 +13,20 @@ namespace win_project_2.DataClass
 {
     public partial class FormTest : Form
     {
+        private DB dt;
         public FormTest()
         {
             InitializeComponent();
-            var dt = new DB();
-            //dt.OnStatusChanged += Database_NewPostIdAdded;
-
-            // Gọi hàm SubscribeToNewPostId() từ instance của class DB
-            //dt.SubscribeToStatusChanges();
+            dt = new DB();
+            dt.OnMessageReceived += dt_OnMessageReceived;
+            dt.ListenForNewMessages("idroom");
         }
-        private void Database_NewPostIdAdded(string postId)
+
+        private void dt_OnMessageReceived(string message)
         {
-            // Xử lý postId mới tại đây
-            Console.WriteLine($"New post added with ID: {postId}");
+            // Xử lý tin nhắn mới tại đây
+            // Ví dụ: cập nhật giao diện người dùng hoặc lưu tin nhắn vào một biến
+            Console.WriteLine("Tin nhắn mới: " + message);
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -234,6 +235,25 @@ namespace win_project_2.DataClass
             {
                 Console.WriteLine(rv.Rating);
                 Console.WriteLine(rv.NguoiThoId);
+            }
+        }
+
+        private async void button14_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            string tinnhan = "hieu" + "-" + "thang" + "-" + "tin nhan 10";
+            dt.SendMessage(tinnhan);
+        }
+
+        private async void button15_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            List<string> listmess = await dt.GetAllMessagesAsync("");
+
+            foreach(string s in listmess)
+            {
+                Console.WriteLine(s);
+                Console.WriteLine("--------");
             }
         }
     }

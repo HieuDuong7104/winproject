@@ -266,6 +266,7 @@
     <Compile Include="DataClass\Data.cs" />
     <Compile Include="DataClass\DB.cs" />
     <Compile Include="DataClass\Firebase.cs" />
+    <Compile Include="DataClass\Message.cs" />
     <Compile Include="DataClass\Review.cs" />
     <Compile Include="Forms\FDetail1.cs">
       <SubType>Form</SubType>
