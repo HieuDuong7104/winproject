@@ -527,3 +527,8 @@ D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FShowListJ
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNguoiTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListChat.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources

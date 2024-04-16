@@ -274,6 +274,12 @@
     <Compile Include="Forms\FDetail1.Designer.cs">
       <DependentUpon>FDetail1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FListChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FListChat.Designer.cs">
+      <DependentUpon>FListChat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FListNguoiTho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -381,6 +387,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCListChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCListChat.Designer.cs">
+      <DependentUpon>UCListChat.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UCNhanvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -400,6 +412,18 @@
     <Compile Include="UserControls\UCRating.Designer.cs">
       <DependentUpon>UCRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCReceive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCReceive.Designer.cs">
+      <DependentUpon>UCReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCSendMesage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCSendMesage.Designer.cs">
+      <DependentUpon>UCSendMesage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UCShowJobcs.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -414,6 +438,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\FDetail1.resx">
       <DependentUpon>FDetail1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FListChat.resx">
+      <DependentUpon>FListChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListNguoiTho.resx">
       <DependentUpon>FListNguoiTho.cs</DependentUpon>
@@ -468,6 +495,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCListChat.resx">
+      <DependentUpon>UCListChat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCNhanvien.resx">
       <DependentUpon>UCNhanvien.cs</DependentUpon>
     </EmbeddedResource>
@@ -476,6 +506,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCReceive.resx">
+      <DependentUpon>UCReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCSendMesage.resx">
+      <DependentUpon>UCSendMesage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCShowJobcs.resx">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
