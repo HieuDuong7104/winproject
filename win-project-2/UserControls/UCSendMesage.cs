@@ -16,5 +16,11 @@ namespace win_project_2.UserControls
         {
             InitializeComponent();
         }
+        private string _title;
+        public string Title
+        {
+            get { return _title; }
+            set { _title = value; label1.Text = value; }
+        }
     }
 }
