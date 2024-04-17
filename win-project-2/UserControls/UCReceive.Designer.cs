@@ -40,10 +40,10 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.CadetBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.SteelBlue;
             this.guna2GradientPanel1.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(58, 2);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(21, 8);
             this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(316, 42);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(356, 52);
             this.guna2GradientPanel1.TabIndex = 1;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
@@ -51,21 +51,21 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(29, 7);
+            this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 26);
+            this.label1.Size = new System.Drawing.Size(100, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // UCReceive
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2GradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCReceive";
-            this.Size = new System.Drawing.Size(424, 50);
+            this.Size = new System.Drawing.Size(1120, 62);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

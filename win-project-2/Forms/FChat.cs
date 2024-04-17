@@ -16,7 +16,7 @@ namespace win_project_2.Forms
     public partial class FChat : Form
     {
         private DB dt;
-        public string receiver = "thang";
+        public string receiver = "hieu";
         public FChat()
         {
             InitializeComponent();
@@ -30,6 +30,8 @@ namespace win_project_2.Forms
             // Ví dụ: cập nhật giao diện người dùng hoặc lưu tin nhắn vào một biến
             Console.WriteLine("Tin nhắn mới: " + message);
             createMessage(message);
+            
+
         }
 
         private void createMessage(string input)
@@ -74,20 +76,24 @@ namespace win_project_2.Forms
             }
 
             // Kiểm tra xem có cần sử dụng Invoke không
-            if (flowLayoutPanel1.InvokeRequired)
+          
+             if (flowLayoutPanel1.InvokeRequired)
             {
                 // Sử dụng Invoke để thực hiện hành động từ UI thread
                 flowLayoutPanel1.Invoke(new Action(() =>
                 {
                     flowLayoutPanel1.Controls.Add(userControl);
+                    // Cuộn xuống sau khi thêm control
+                    flowLayoutPanel1.ScrollControlIntoView(userControl);
                 }));
             }
             else
             {
-                // Nếu đã ở UI thread, thêm control trực tiếp
+                // Nếu đã ở UI thread, thêm control và cuộn xuống trực tiếp
                 flowLayoutPanel1.Controls.Add(userControl);
+                // Cuộn xuống sau khi thêm control
+                flowLayoutPanel1.ScrollControlIntoView(userControl);
             }
-
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -102,7 +108,14 @@ namespace win_project_2.Forms
             {
                 string mess = GlobalVariables.id + "-" + receiver + "-" + guna2TextBox1.Text;
                 dt.SendMessage(mess);
+                guna2TextBox1.Clear();
             }
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
