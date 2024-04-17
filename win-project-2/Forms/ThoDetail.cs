@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DataClass;
+using win_project_2.UserControls;
 
 namespace win_project_2.Forms
 {
@@ -33,9 +34,21 @@ namespace win_project_2.Forms
                 guna2CirclePictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(nguoitho.AvatarUrl)));
 
             }
+
+            List<Review> listReview = await dt.GetAllReview(GlobalVariables.id);
+            foreach (Review review in listReview)
+            {
+                var new_uc = new UCRating(review);
+                flowLayoutPanel1.Controls.Add(new_uc);
+            }
         }
 
         private void guna2Shapes2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

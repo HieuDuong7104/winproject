@@ -270,8 +270,6 @@ D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FMain.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.FStatistic.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.FInfor.resources
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
-D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
-D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
 D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.csproj.App.config
 D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win-project-2.csproj.AssemblyReference.cache
 D:\window_app\winproject2 - Copy\win-project-2\obj\Debug\win_project_2.Forms.FChat.resources
@@ -624,3 +622,4 @@ C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.exe
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources

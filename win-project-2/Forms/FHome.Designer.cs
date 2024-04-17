@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ucNhanvien2 = new win_project_2.UCNhanvien();
-            this.ucNhanvien1 = new win_project_2.UCNhanvien();
+            //this.ucNhanvien2 = new win_project_2.UCNhanvien();
+            //this.ucNhanvien1 = new win_project_2.UCNhanvien();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 

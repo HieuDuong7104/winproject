@@ -18,7 +18,7 @@ namespace win_project_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FChat());
+            Application.Run(new ThoDetail());
         }
     }
 }
