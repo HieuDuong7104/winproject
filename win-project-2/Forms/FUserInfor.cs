@@ -145,5 +145,10 @@ namespace win_project_2.Forms
                 await dt.UploadInfoNguoiTimTho(nguoitimtho);
             }
         }
+
+        private void guna2Shapes2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

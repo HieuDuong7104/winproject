@@ -17,12 +17,7 @@ namespace win_project_2.Forms
             InitializeComponent();
         }
 
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
+        private void NhanVienView_Load(object sender, EventArgs e)
         {
 
         }

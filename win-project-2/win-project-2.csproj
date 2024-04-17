@@ -322,6 +322,12 @@
     <Compile Include="Forms\FShowRating.Designer.cs">
       <DependentUpon>FShowRating.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ThoDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ThoDetail.Designer.cs">
+      <DependentUpon>ThoDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,18 +399,6 @@
     <Compile Include="UserControls\UCListChat.Designer.cs">
       <DependentUpon>UCListChat.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UCNhanvien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCNhanvien.Designer.cs">
-      <DependentUpon>UCNhanvien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UCNhanVien2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UCNhanVien2.Designer.cs">
-      <DependentUpon>UCNhanVien2.cs</DependentUpon>
-    </Compile>
     <Compile Include="DataClass\UserInfo.cs" />
     <Compile Include="UserControls\UCRating.cs">
       <SubType>UserControl</SubType>
@@ -463,6 +457,9 @@
     <EmbeddedResource Include="Forms\FShowRating.resx">
       <DependentUpon>FShowRating.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThoDetail.resx">
+      <DependentUpon>ThoDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTest.resx">
       <DependentUpon>FormTest.cs</DependentUpon>
     </EmbeddedResource>
@@ -497,12 +494,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCListChat.resx">
       <DependentUpon>UCListChat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCNhanvien.resx">
-      <DependentUpon>UCNhanvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UCNhanVien2.resx">
-      <DependentUpon>UCNhanVien2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCRating.resx">
       <DependentUpon>UCRating.cs</DependentUpon>

@@ -44,12 +44,14 @@
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(73, 40);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(55, 32);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(197, 199);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(148, 162);
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // guna2ContextMenuStrip1
             // 
@@ -71,9 +73,10 @@
             this.lb_Name.AutoSize = true;
             this.lb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb_Name.Location = new System.Drawing.Point(134, 251);
+            this.lb_Name.Location = new System.Drawing.Point(100, 204);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(75, 25);
+            this.lb_Name.Size = new System.Drawing.Size(63, 20);
             this.lb_Name.TabIndex = 3;
             this.lb_Name.Text = "Họ tên";
             this.lb_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,9 +86,10 @@
             this.lb_job.AutoSize = true;
             this.lb_job.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_job.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lb_job.Location = new System.Drawing.Point(119, 290);
+            this.lb_job.Location = new System.Drawing.Point(89, 236);
+            this.lb_job.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_job.Name = "lb_job";
-            this.lb_job.Size = new System.Drawing.Size(109, 25);
+            this.lb_job.Size = new System.Drawing.Size(87, 20);
             this.lb_job.TabIndex = 3;
             this.lb_job.Text = "Công việc";
             this.lb_job.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,11 +109,11 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button1.Location = new System.Drawing.Point(24, 339);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button1.Location = new System.Drawing.Point(18, 275);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.guna2Button1.Size = new System.Drawing.Size(141, 46);
+            this.guna2Button1.Size = new System.Drawing.Size(106, 37);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Nhắn tin";
             this.guna2Button1.UseTransparentBackground = true;
@@ -128,12 +132,12 @@
             this.guna2Button2.FillColor = System.Drawing.Color.White;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button2.Location = new System.Drawing.Point(171, 339);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2Button2.Location = new System.Drawing.Point(128, 275);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.PressedColor = System.Drawing.Color.Red;
             this.guna2Button2.PressedDepth = 3;
-            this.guna2Button2.Size = new System.Drawing.Size(141, 46);
+            this.guna2Button2.Size = new System.Drawing.Size(106, 37);
             this.guna2Button2.TabIndex = 4;
             this.guna2Button2.Text = "Chi tiết";
             this.guna2Button2.UseTransparentBackground = true;
@@ -142,19 +146,21 @@
             // 
             this.guna2Shapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Shapes1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes1.Location = new System.Drawing.Point(-25, -35);
+            this.guna2Shapes1.Location = new System.Drawing.Point(-19, -28);
+            this.guna2Shapes1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
             this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes1.Size = new System.Drawing.Size(391, 490);
+            this.guna2Shapes1.Size = new System.Drawing.Size(293, 398);
             this.guna2Shapes1.TabIndex = 5;
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.Zoom = 80;
+            this.guna2Shapes1.Click += new System.EventHandler(this.guna2Shapes1_Click);
             // 
             // UCTho
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.guna2Button2);
@@ -163,8 +169,9 @@
             this.Controls.Add(this.lb_Name);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Shapes1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCTho";
-            this.Size = new System.Drawing.Size(339, 423);
+            this.Size = new System.Drawing.Size(254, 344);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);

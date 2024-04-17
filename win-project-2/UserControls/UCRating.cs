@@ -37,5 +37,10 @@ namespace win_project_2.UserControls
         {
 
         }
+
+        private void UCRating_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,530 +28,680 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.bnt_Huy = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Luu = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Shapes7 = new Guna.UI2.WinForms.Guna2Shapes();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rjProgressBar3 = new RJCodeAdvance.RJControls.RJProgressBar();
-            this.rjProgressBar2 = new RJCodeAdvance.RJControls.RJProgressBar();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.rjProgressBar1 = new RJCodeAdvance.RJControls.RJProgressBar();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txb_Skill = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txb_Study = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Shapes2 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.txb_Email = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txb_SDT = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txb_JobName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lb_FavTho = new System.Windows.Forms.Label();
+            this.lb_DoneJob = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txb_Name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.lb_YourJob = new System.Windows.Forms.Label();
+            this.lb_YourName = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_Profie = new System.Windows.Forms.Label();
+            this.guna2Shapes3 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2Shapes6 = new Guna.UI2.WinForms.Guna2Shapes();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // bnt_Huy
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(408, 230);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 24);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "HỌC VẤN";
+            this.bnt_Huy.Animated = true;
+            this.bnt_Huy.BackColor = System.Drawing.Color.Transparent;
+            this.bnt_Huy.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.bnt_Huy.BorderRadius = 10;
+            this.bnt_Huy.BorderThickness = 1;
+            this.bnt_Huy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bnt_Huy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bnt_Huy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bnt_Huy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bnt_Huy.FillColor = System.Drawing.Color.Transparent;
+            this.bnt_Huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.bnt_Huy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bnt_Huy.Location = new System.Drawing.Point(729, 448);
+            this.bnt_Huy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bnt_Huy.Name = "bnt_Huy";
+            this.bnt_Huy.Size = new System.Drawing.Size(77, 26);
+            this.bnt_Huy.TabIndex = 58;
+            this.bnt_Huy.Text = "HỦY";
+            this.bnt_Huy.UseTransparentBackground = true;
             // 
-            // label6
+            // btn_Luu
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(398, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(346, 58);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "Nguyen Van A";
+            this.btn_Luu.Animated = true;
+            this.btn_Luu.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Luu.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_Luu.BorderRadius = 10;
+            this.btn_Luu.BorderThickness = 2;
+            this.btn_Luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Luu.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btn_Luu.ForeColor = System.Drawing.Color.White;
+            this.btn_Luu.Location = new System.Drawing.Point(830, 448);
+            this.btn_Luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Luu.Name = "btn_Luu";
+            this.btn_Luu.Size = new System.Drawing.Size(77, 27);
+            this.btn_Luu.TabIndex = 59;
+            this.btn_Luu.Text = "LƯU";
+            this.btn_Luu.UseTransparentBackground = true;
             // 
-            // label7
+            // guna2Shapes7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(429, 271);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 25);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "- A";
-            // 
-            // rjCircularPictureBox1
-            // 
-            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox1.BorderSize = 2;
-            this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(66, 69);
-            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(171, 171);
-            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox1.TabIndex = 0;
-            this.rjCircularPictureBox1.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(36, 327);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(117, 24);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "MÔ TẢ BẢN THÂN";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(36, 464);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(128, 24);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "THÔNG TIN LIÊN HỆ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(36, 366);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(189, 24);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Kinh nghiệm, mong muốn,...";
+            this.guna2Shapes7.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.guna2Shapes7.BorderThickness = 3;
+            this.guna2Shapes7.FillColor = System.Drawing.SystemColors.Highlight;
+            this.guna2Shapes7.LineThickness = 3;
+            this.guna2Shapes7.Location = new System.Drawing.Point(-131, 58);
+            this.guna2Shapes7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes7.Name = "guna2Shapes7";
+            this.guna2Shapes7.PolygonSkip = 1;
+            this.guna2Shapes7.Rotate = 0F;
+            this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes7.Size = new System.Drawing.Size(61, 25);
+            this.guna2Shapes7.TabIndex = 57;
+            this.guna2Shapes7.Text = "guna2Shapes1";
+            this.guna2Shapes7.Zoom = 80;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(49, 500);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label14.Location = new System.Drawing.Point(44, 29);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(103, 24);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "SỐ ĐIỆN THOẠI";
+            this.label14.Size = new System.Drawing.Size(63, 18);
+            this.label14.TabIndex = 56;
+            this.label14.Text = "Privacy";
             // 
-            // panel1
+            // label13
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.rjProgressBar3);
-            this.panel1.Controls.Add(this.rjProgressBar2);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.rjProgressBar1);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label19);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label23);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label24);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.rjCircularPictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(350, 1055);
-            this.panel1.TabIndex = 25;
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label13.Location = new System.Drawing.Point(-61, 29);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(94, 18);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "Notification";
             // 
-            // rjProgressBar3
+            // label12
             // 
-            this.rjProgressBar3.ChannelColor = System.Drawing.Color.LightSteelBlue;
-            this.rjProgressBar3.ChannelHeight = 6;
-            this.rjProgressBar3.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar3.ForeColor = System.Drawing.Color.White;
-            this.rjProgressBar3.Location = new System.Drawing.Point(100, 1028);
-            this.rjProgressBar3.Name = "rjProgressBar3";
-            this.rjProgressBar3.ShowMaximun = false;
-            this.rjProgressBar3.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
-            this.rjProgressBar3.Size = new System.Drawing.Size(205, 19);
-            this.rjProgressBar3.SliderColor = System.Drawing.Color.PowderBlue;
-            this.rjProgressBar3.SliderHeight = 6;
-            this.rjProgressBar3.SymbolAfter = "";
-            this.rjProgressBar3.SymbolBefore = "";
-            this.rjProgressBar3.TabIndex = 31;
-            this.rjProgressBar3.Value = 70;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label12.Location = new System.Drawing.Point(-128, 29);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(57, 18);
+            this.label12.TabIndex = 54;
+            this.label12.Text = "Profile";
             // 
-            // rjProgressBar2
+            // txb_Skill
             // 
-            this.rjProgressBar2.ChannelColor = System.Drawing.Color.LightSteelBlue;
-            this.rjProgressBar2.ChannelHeight = 6;
-            this.rjProgressBar2.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar2.ForeColor = System.Drawing.Color.White;
-            this.rjProgressBar2.Location = new System.Drawing.Point(100, 975);
-            this.rjProgressBar2.Name = "rjProgressBar2";
-            this.rjProgressBar2.ShowMaximun = false;
-            this.rjProgressBar2.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
-            this.rjProgressBar2.Size = new System.Drawing.Size(205, 19);
-            this.rjProgressBar2.SliderColor = System.Drawing.Color.PowderBlue;
-            this.rjProgressBar2.SliderHeight = 6;
-            this.rjProgressBar2.SymbolAfter = "";
-            this.rjProgressBar2.SymbolBefore = "";
-            this.rjProgressBar2.TabIndex = 31;
-            this.rjProgressBar2.Value = 40;
+            this.txb_Skill.Animated = true;
+            this.txb_Skill.BorderColor = System.Drawing.Color.Gainsboro;
+            this.txb_Skill.BorderRadius = 6;
+            this.txb_Skill.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Skill.DefaultText = "";
+            this.txb_Skill.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_Skill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_Skill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Skill.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Skill.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Skill.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_Skill.ForeColor = System.Drawing.Color.DimGray;
+            this.txb_Skill.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Skill.Location = new System.Drawing.Point(665, 215);
+            this.txb_Skill.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txb_Skill.Name = "txb_Skill";
+            this.txb_Skill.PasswordChar = '\0';
+            this.txb_Skill.PlaceholderText = "Điền kỹ năng công việc ";
+            this.txb_Skill.SelectedText = "";
+            this.txb_Skill.Size = new System.Drawing.Size(305, 136);
+            this.txb_Skill.TabIndex = 53;
             // 
-            // label21
+            // label10
             // 
-            this.label21.AutoSize = true;
-            this.label21.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label21.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label21.Location = new System.Drawing.Point(50, 1028);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 24);
-            this.label21.TabIndex = 32;
-            this.label21.Text = "skill1";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.Location = new System.Drawing.Point(662, 178);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 18);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "Kỹ năng";
             // 
-            // label20
+            // label11
             // 
-            this.label20.AutoSize = true;
-            this.label20.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label20.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(50, 975);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(47, 24);
-            this.label20.TabIndex = 32;
-            this.label20.Text = "skill2";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // rjProgressBar1
-            // 
-            this.rjProgressBar1.ChannelColor = System.Drawing.Color.LightSteelBlue;
-            this.rjProgressBar1.ChannelHeight = 6;
-            this.rjProgressBar1.ForeBackColor = System.Drawing.Color.RoyalBlue;
-            this.rjProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.rjProgressBar1.Location = new System.Drawing.Point(100, 928);
-            this.rjProgressBar1.Name = "rjProgressBar1";
-            this.rjProgressBar1.ShowMaximun = false;
-            this.rjProgressBar1.ShowValue = RJCodeAdvance.RJControls.TextPosition.Right;
-            this.rjProgressBar1.Size = new System.Drawing.Size(205, 19);
-            this.rjProgressBar1.SliderColor = System.Drawing.Color.PowderBlue;
-            this.rjProgressBar1.SliderHeight = 6;
-            this.rjProgressBar1.SymbolAfter = "";
-            this.rjProgressBar1.SymbolBefore = "";
-            this.rjProgressBar1.TabIndex = 26;
-            this.rjProgressBar1.Value = 50;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(50, 928);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 24);
-            this.label18.TabIndex = 30;
-            this.label18.Text = "skill1";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Cursor = System.Windows.Forms.Cursors.Help;
-            this.label19.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(37, 872);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 24);
-            this.label19.TabIndex = 29;
-            this.label19.Text = "KỸ NĂNG";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(49, 613);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(58, 24);
-            this.label17.TabIndex = 28;
-            this.label17.Text = "Tp. HCM";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(50, 704);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(174, 24);
-            this.label23.TabIndex = 27;
-            this.label23.Text = "nguyenvana@gmail.com";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label22.Location = new System.Drawing.Point(49, 671);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 24);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "EMAIL";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(49, 589);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(131, 24);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "ĐỊA ĐIỂM LÀM VIỆC";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(49, 524);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(104, 24);
-            this.label15.TabIndex = 28;
-            this.label15.Text = "079204029291";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label24.Location = new System.Drawing.Point(50, 799);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(102, 24);
-            this.label24.TabIndex = 26;
-            this.label24.Text = "100$/1 project";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(37, 764);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 24);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "MỨC GIÁ";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label25.Location = new System.Drawing.Point(407, 136);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(199, 29);
-            this.label25.TabIndex = 24;
-            this.label25.Text = "software enginer";
-            this.label25.Click += new System.EventHandler(this.label25_Click);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(662, 135);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 18);
+            this.label11.TabIndex = 52;
+            this.label11.Text = "Khác";
             // 
             // guna2RatingStar1
             // 
-            this.guna2RatingStar1.Location = new System.Drawing.Point(612, 137);
+            this.guna2RatingStar1.BorderColor = System.Drawing.Color.Black;
+            this.guna2RatingStar1.BorderThickness = 1;
+            this.guna2RatingStar1.Location = new System.Drawing.Point(-29, 485);
+            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
             this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
-            this.guna2RatingStar1.Size = new System.Drawing.Size(120, 28);
-            this.guna2RatingStar1.TabIndex = 26;
-            this.guna2RatingStar1.Value = 4F;
+            this.guna2RatingStar1.Size = new System.Drawing.Size(56, 18);
+            this.guna2RatingStar1.TabIndex = 49;
             // 
-            // label26
+            // label9
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label26.Location = new System.Drawing.Point(429, 296);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(37, 25);
-            this.label26.TabIndex = 24;
-            this.label26.Text = "- B";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label27.Location = new System.Drawing.Point(429, 321);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(39, 25);
-            this.label27.TabIndex = 24;
-            this.label27.Text = "- C";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label28.Location = new System.Drawing.Point(433, 500);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(39, 25);
-            this.label28.TabIndex = 28;
-            this.label28.Text = "- C";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label29.Location = new System.Drawing.Point(433, 475);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(37, 25);
-            this.label29.TabIndex = 29;
-            this.label29.Text = "- B";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label30.Location = new System.Drawing.Point(433, 450);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(38, 25);
-            this.label30.TabIndex = 30;
-            this.label30.Text = "- A";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(412, 409);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(156, 24);
-            this.label31.TabIndex = 27;
-            this.label31.Text = "KINH NGHIỆM LÀM VIỆC";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(433, 704);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 25);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "- C";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(433, 679);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 25);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "- B";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(433, 654);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 25);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "- A";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(44, 513);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 15);
+            this.label9.TabIndex = 45;
+            this.label9.Text = "Thợ yêu thích";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(412, 613);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(-23, 513);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(184, 24);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "ĐÁNH GIÁ CỦA KHÁCH HÀNG";
+            this.label8.Size = new System.Drawing.Size(57, 15);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Đánh giá";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label7.Location = new System.Drawing.Point(-121, 513);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 15);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "Việc đã làm";
+            // 
+            // txb_Study
+            // 
+            this.txb_Study.Animated = true;
+            this.txb_Study.BorderColor = System.Drawing.Color.Gainsboro;
+            this.txb_Study.BorderRadius = 6;
+            this.txb_Study.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Study.DefaultText = "";
+            this.txb_Study.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_Study.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_Study.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Study.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Study.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Study.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_Study.ForeColor = System.Drawing.Color.DimGray;
+            this.txb_Study.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Study.Location = new System.Drawing.Point(221, 513);
+            this.txb_Study.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txb_Study.Name = "txb_Study";
+            this.txb_Study.PasswordChar = '\0';
+            this.txb_Study.PlaceholderText = "Điền thông tin về học vấn";
+            this.txb_Study.SelectedText = "";
+            this.txb_Study.Size = new System.Drawing.Size(670, 105);
+            this.txb_Study.TabIndex = 43;
+            // 
+            // guna2Shapes2
+            // 
+            this.guna2Shapes2.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Shapes2.BorderThickness = 1;
+            this.guna2Shapes2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Shapes2.LineThickness = 1;
+            this.guna2Shapes2.Location = new System.Drawing.Point(-281, 58);
+            this.guna2Shapes2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes2.Name = "guna2Shapes2";
+            this.guna2Shapes2.PolygonSkip = 1;
+            this.guna2Shapes2.Rotate = 0F;
+            this.guna2Shapes2.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes2.Size = new System.Drawing.Size(1528, 28);
+            this.guna2Shapes2.TabIndex = 40;
+            this.guna2Shapes2.Text = "guna2Shapes1";
+            this.guna2Shapes2.Zoom = 80;
+            // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Shapes1.BorderThickness = 1;
+            this.guna2Shapes1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Shapes1.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.guna2Shapes1.LineThickness = 1;
+            this.guna2Shapes1.Location = new System.Drawing.Point(164, 48);
+            this.guna2Shapes1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes1.Size = new System.Drawing.Size(34, 779);
+            this.guna2Shapes1.TabIndex = 41;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
+            // 
+            // txb_Email
+            // 
+            this.txb_Email.Animated = true;
+            this.txb_Email.BorderColor = System.Drawing.Color.Gainsboro;
+            this.txb_Email.BorderRadius = 6;
+            this.txb_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Email.DefaultText = "";
+            this.txb_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Email.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_Email.ForeColor = System.Drawing.Color.DimGray;
+            this.txb_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Email.Location = new System.Drawing.Point(221, 403);
+            this.txb_Email.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txb_Email.Name = "txb_Email";
+            this.txb_Email.PasswordChar = '\0';
+            this.txb_Email.PlaceholderText = "Điền Email";
+            this.txb_Email.SelectedText = "";
+            this.txb_Email.Size = new System.Drawing.Size(342, 30);
+            this.txb_Email.TabIndex = 38;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.Location = new System.Drawing.Point(218, 373);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 18);
+            this.label6.TabIndex = 37;
+            this.label6.Text = "Địa chỉ Email";
+            // 
+            // txb_SDT
+            // 
+            this.txb_SDT.Animated = true;
+            this.txb_SDT.BorderColor = System.Drawing.Color.Gainsboro;
+            this.txb_SDT.BorderRadius = 6;
+            this.txb_SDT.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_SDT.DefaultText = "";
+            this.txb_SDT.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_SDT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_SDT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SDT.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_SDT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SDT.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_SDT.ForeColor = System.Drawing.Color.DimGray;
+            this.txb_SDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_SDT.Location = new System.Drawing.Point(221, 331);
+            this.txb_SDT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txb_SDT.Name = "txb_SDT";
+            this.txb_SDT.PasswordChar = '\0';
+            this.txb_SDT.PlaceholderText = "Điền Email";
+            this.txb_SDT.SelectedText = "";
+            this.txb_SDT.Size = new System.Drawing.Size(342, 30);
+            this.txb_SDT.TabIndex = 39;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(218, 301);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 18);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "SĐT";
+            // 
+            // txb_JobName
+            // 
+            this.txb_JobName.Animated = true;
+            this.txb_JobName.BorderColor = System.Drawing.Color.Gainsboro;
+            this.txb_JobName.BorderRadius = 6;
+            this.txb_JobName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_JobName.DefaultText = "";
+            this.txb_JobName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_JobName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_JobName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_JobName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_JobName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_JobName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_JobName.ForeColor = System.Drawing.Color.DimGray;
+            this.txb_JobName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_JobName.Location = new System.Drawing.Point(221, 254);
+            this.txb_JobName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txb_JobName.Name = "txb_JobName";
+            this.txb_JobName.PasswordChar = '\0';
+            this.txb_JobName.PlaceholderText = "Điền Nghề nghiệp";
+            this.txb_JobName.SelectedText = "";
+            this.txb_JobName.Size = new System.Drawing.Size(342, 30);
+            this.txb_JobName.TabIndex = 35;
+            // 
+            // lb_FavTho
+            // 
+            this.lb_FavTho.AutoSize = true;
+            this.lb_FavTho.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_FavTho.Location = new System.Drawing.Point(71, 476);
+            this.lb_FavTho.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_FavTho.Name = "lb_FavTho";
+            this.lb_FavTho.Size = new System.Drawing.Size(18, 20);
+            this.lb_FavTho.TabIndex = 34;
+            this.lb_FavTho.Text = "0";
+            // 
+            // lb_DoneJob
+            // 
+            this.lb_DoneJob.AutoSize = true;
+            this.lb_DoneJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_DoneJob.Location = new System.Drawing.Point(-104, 476);
+            this.lb_DoneJob.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_DoneJob.Name = "lb_DoneJob";
+            this.lb_DoneJob.Size = new System.Drawing.Size(18, 20);
+            this.lb_DoneJob.TabIndex = 33;
+            this.lb_DoneJob.Text = "0";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(218, 223);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 18);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Nghề nghiệp";
+            // 
+            // txb_Name
+            // 
+            this.txb_Name.Animated = true;
+            this.txb_Name.BorderColor = System.Drawing.Color.Gainsboro;
+            this.txb_Name.BorderRadius = 6;
+            this.txb_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Name.DefaultText = "";
+            this.txb_Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txb_Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txb_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txb_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Name.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txb_Name.ForeColor = System.Drawing.Color.DimGray;
+            this.txb_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txb_Name.Location = new System.Drawing.Point(221, 178);
+            this.txb_Name.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txb_Name.Name = "txb_Name";
+            this.txb_Name.PasswordChar = '\0';
+            this.txb_Name.PlaceholderText = "Điền họ và tên ";
+            this.txb_Name.SelectedText = "";
+            this.txb_Name.Size = new System.Drawing.Size(342, 30);
+            this.txb_Name.TabIndex = 31;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(-55, 258);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(106, 115);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 30;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // lb_YourJob
+            // 
+            this.lb_YourJob.AutoSize = true;
+            this.lb_YourJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_YourJob.Location = new System.Drawing.Point(-32, 427);
+            this.lb_YourJob.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_YourJob.Name = "lb_YourJob";
+            this.lb_YourJob.Size = new System.Drawing.Size(71, 18);
+            this.lb_YourJob.TabIndex = 29;
+            this.lb_YourJob.Text = "YourJob";
+            // 
+            // lb_YourName
+            // 
+            this.lb_YourName.AutoSize = true;
+            this.lb_YourName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_YourName.Location = new System.Drawing.Point(-45, 391);
+            this.lb_YourName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_YourName.Name = "lb_YourName";
+            this.lb_YourName.Size = new System.Drawing.Size(100, 18);
+            this.lb_YourName.TabIndex = 28;
+            this.lb_YourName.Text = "Tên của bạn";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(218, 456);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 18);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Giới thiệu bản thân";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(218, 148);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Họ và Tên";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(218, 105);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 18);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Thông tin cơ bản";
+            // 
+            // lb_Profie
+            // 
+            this.lb_Profie.AutoSize = true;
+            this.lb_Profie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Profie.Location = new System.Drawing.Point(-29, 222);
+            this.lb_Profie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_Profie.Name = "lb_Profie";
+            this.lb_Profie.Size = new System.Drawing.Size(56, 18);
+            this.lb_Profie.TabIndex = 24;
+            this.lb_Profie.Text = "Hồ Sơ";
+            // 
+            // guna2Shapes3
+            // 
+            this.guna2Shapes3.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Shapes3.BorderThickness = 1;
+            this.guna2Shapes3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Shapes3.LineThickness = 1;
+            this.guna2Shapes3.Location = new System.Drawing.Point(146, 479);
+            this.guna2Shapes3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes3.Name = "guna2Shapes3";
+            this.guna2Shapes3.PolygonSkip = 1;
+            this.guna2Shapes3.Rotate = 0F;
+            this.guna2Shapes3.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes3.Size = new System.Drawing.Size(824, 28);
+            this.guna2Shapes3.TabIndex = 42;
+            this.guna2Shapes3.Text = "guna2Shapes1";
+            this.guna2Shapes3.Zoom = 80;
+            // 
+            // guna2Shapes5
+            // 
+            this.guna2Shapes5.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Shapes5.BorderThickness = 1;
+            this.guna2Shapes5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Shapes5.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.guna2Shapes5.LineThickness = 1;
+            this.guna2Shapes5.Location = new System.Drawing.Point(23, 466);
+            this.guna2Shapes5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes5.Name = "guna2Shapes5";
+            this.guna2Shapes5.PolygonSkip = 1;
+            this.guna2Shapes5.Rotate = 0F;
+            this.guna2Shapes5.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes5.Size = new System.Drawing.Size(34, 71);
+            this.guna2Shapes5.TabIndex = 48;
+            this.guna2Shapes5.Text = "guna2Shapes4";
+            this.guna2Shapes5.Zoom = 80;
+            // 
+            // guna2Shapes4
+            // 
+            this.guna2Shapes4.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Shapes4.BorderThickness = 1;
+            this.guna2Shapes4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Shapes4.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.guna2Shapes4.LineThickness = 1;
+            this.guna2Shapes4.Location = new System.Drawing.Point(-57, 466);
+            this.guna2Shapes4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes4.Name = "guna2Shapes4";
+            this.guna2Shapes4.PolygonSkip = 1;
+            this.guna2Shapes4.Rotate = 0F;
+            this.guna2Shapes4.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes4.Size = new System.Drawing.Size(34, 71);
+            this.guna2Shapes4.TabIndex = 47;
+            this.guna2Shapes4.Text = "guna2Shapes4";
+            this.guna2Shapes4.Zoom = 80;
+            // 
+            // guna2Shapes6
+            // 
+            this.guna2Shapes6.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Shapes6.BorderThickness = 1;
+            this.guna2Shapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Shapes6.LineOrientation = System.Windows.Forms.Orientation.Vertical;
+            this.guna2Shapes6.LineThickness = 1;
+            this.guna2Shapes6.Location = new System.Drawing.Point(623, 58);
+            this.guna2Shapes6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Shapes6.Name = "guna2Shapes6";
+            this.guna2Shapes6.PolygonSkip = 1;
+            this.guna2Shapes6.Rotate = 0F;
+            this.guna2Shapes6.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
+            this.guna2Shapes6.Size = new System.Drawing.Size(34, 465);
+            this.guna2Shapes6.TabIndex = 50;
+            this.guna2Shapes6.Text = "guna2Shapes6";
+            this.guna2Shapes6.Zoom = 80;
             // 
             // NhanVienView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 1055);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label31);
+            this.ClientSize = new System.Drawing.Size(1066, 765);
+            this.Controls.Add(this.bnt_Huy);
+            this.Controls.Add(this.btn_Luu);
+            this.Controls.Add(this.guna2Shapes7);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txb_Skill);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.guna2RatingStar1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label25);
+            this.Controls.Add(this.txb_Study);
+            this.Controls.Add(this.guna2Shapes2);
+            this.Controls.Add(this.guna2Shapes1);
+            this.Controls.Add(this.txb_Email);
             this.Controls.Add(this.label6);
+            this.Controls.Add(this.txb_SDT);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txb_JobName);
+            this.Controls.Add(this.lb_FavTho);
+            this.Controls.Add(this.lb_DoneJob);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txb_Name);
+            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.lb_YourJob);
+            this.Controls.Add(this.lb_YourName);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_Profie);
+            this.Controls.Add(this.guna2Shapes3);
+            this.Controls.Add(this.guna2Shapes5);
+            this.Controls.Add(this.guna2Shapes4);
+            this.Controls.Add(this.guna2Shapes6);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NhanVienView";
             this.Text = "NhanVienView";
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.NhanVienView_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
+
+        private Guna.UI2.WinForms.Guna2Button bnt_Huy;
+        private Guna.UI2.WinForms.Guna2Button btn_Luu;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes7;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private RJCodeAdvance.RJControls.RJProgressBar rjProgressBar3;
-        private RJCodeAdvance.RJControls.RJProgressBar rjProgressBar2;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private RJCodeAdvance.RJControls.RJProgressBar rjProgressBar1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2TextBox txb_Skill;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2TextBox txb_Study;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes2;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
+        private Guna.UI2.WinForms.Guna2TextBox txb_Email;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2TextBox txb_SDT;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2TextBox txb_JobName;
+        private System.Windows.Forms.Label lb_FavTho;
+        private System.Windows.Forms.Label lb_DoneJob;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2TextBox txb_Name;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private System.Windows.Forms.Label lb_YourJob;
+        private System.Windows.Forms.Label lb_YourName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_Profie;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes3;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes5;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes4;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes6;
     }
 }

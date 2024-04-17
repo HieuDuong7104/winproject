@@ -41,5 +41,15 @@ namespace win_project_2.UserControls
         {
 
         }
+
+        private void guna2Shapes1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
