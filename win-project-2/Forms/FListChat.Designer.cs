@@ -30,7 +30,7 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnClose = new FontAwesome.Sharp.IconButton();
-            this.ucListChat1 = new win_project_2.UserControls.UCListChat();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,8 +40,9 @@
             this.guna2Panel1.Controls.Add(this.btnClose);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(409, 35);
+            this.guna2Panel1.Size = new System.Drawing.Size(570, 28);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnClose
@@ -53,30 +54,32 @@
             this.btnClose.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(341, 0);
+            this.btnClose.Location = new System.Drawing.Point(509, 2);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(69, 35);
+            this.btnClose.Size = new System.Drawing.Size(61, 28);
             this.btnClose.TabIndex = 3;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
-            // ucListChat1
+            // flowLayoutPanel1
             // 
-            this.ucListChat1.Location = new System.Drawing.Point(12, 41);
-            this.ucListChat1.Name = "ucListChat1";
-            this.ucListChat1.Size = new System.Drawing.Size(385, 84);
-            this.ucListChat1.TabIndex = 1;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 50);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(546, 365);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // FListChat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 506);
-            this.Controls.Add(this.ucListChat1);
+            this.ClientSize = new System.Drawing.Size(570, 427);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FListChat";
             this.Text = "FListChat";
+            this.Load += new System.EventHandler(this.FListChat_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -86,6 +89,6 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private FontAwesome.Sharp.IconButton btnClose;
-        private UserControls.UCListChat ucListChat1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

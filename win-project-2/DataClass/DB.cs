@@ -368,14 +368,16 @@ namespace win_project_2.DataClass
             }
         }
 
-        public async void SendMessage(string tinnhan)
+        public async void SendMessage(string roomId, string tinnhan)
         {
-            FirebaseResponse response = await client.GetAsync("message/idroom/count");
-            int count = response.ResultAs<int>();
+            FirebaseResponse response = await client.GetAsync("message/" + roomId + "/" + "count");
+            // Kiểm tra nếu giá trị trả về là null và gán count = 0
+            int count = response.Body == "null" ? 0 : response.ResultAs<int>();
             count++;
-            SetResponse setResponse = await client.SetAsync("message/idroom/count", count);
-            SetResponse Messresponse = await client.SetAsync("message/" + "idroom/" + count, tinnhan);
+            SetResponse setResponse = await client.SetAsync("message/" + roomId + "/" + "count", count);
+            SetResponse Messresponse = await client.SetAsync("message/" + roomId + "/" + count, tinnhan);
         }
+
 
         public async Task<List<string>> GetAllMessagesAsync(string roomId)
         {
@@ -395,12 +397,55 @@ namespace win_project_2.DataClass
 
         public async void ListenForNewMessages(string roomId)
         {
-            EventStreamResponse response = await client.OnAsync("message/" + "idroom",
+            EventStreamResponse response = await client.OnAsync("message/" + roomId + "/",
                 added: (sender, args, context) =>
                 {
                     //Console.WriteLine("New message received: " + args.Data);
                     OnMessageReceived?.Invoke(args.Data);
                 });
         }
+
+        public async Task AddtoContact(string id)
+        {
+            FirebaseResponse response = await client.GetAsync("contactlist/" + GlobalVariables.id);
+            var contact = response.ResultAs<string>();
+
+            // Kiểm tra nếu contact là null hoặc không chứa id
+            if (contact == null || !contact.Contains(id))
+            {
+                // Nếu contact là null hoặc rỗng, gán trực tiếp id
+                contact = contact == null || contact == "" ? id : contact + "," + id;
+
+                SetResponse setResponse = await client.SetAsync("contactlist/" + GlobalVariables.id, contact);
+                if (setResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    Console.WriteLine("OK");
+                }
+                else
+                {
+                    Console.WriteLine("Có lỗi xảy ra");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Đã tồn tại");
+            }
+        }
+
+        public async Task<string> GetContactList(string userId)
+        {
+            FirebaseResponse response = await client.GetAsync("contactlist/" + userId);
+            string contactList = response.ResultAs<string>(); // Lấy chuỗi contact list
+
+            if (contactList != null)
+            {
+                return contactList; // Trả về chuỗi contact list nếu tồn tại
+            }
+            else
+            {
+                return ""; // Trả về chuỗi rỗng nếu không tìm thấy
+            }
+        }
+
     }
 }

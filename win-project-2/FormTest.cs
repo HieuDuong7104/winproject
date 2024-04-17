@@ -242,7 +242,7 @@ namespace win_project_2.DataClass
         {
             var dt = new DB();
             string tinnhan = "hieu" + "-" + "thang" + "-" + "tin nhan 10";
-            dt.SendMessage(tinnhan);
+            //dt.SendMessage(tinnhan);
         }
 
         private async void button15_Click(object sender, EventArgs e)

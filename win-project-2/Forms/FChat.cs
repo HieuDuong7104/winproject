@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿using Firebase.Auth;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,13 +17,21 @@ namespace win_project_2.Forms
     public partial class FChat : Form
     {
         private DB dt;
-        public string receiver = "hieu";
-        public FChat()
+        public string receiver = "";
+        public string combinedString = "";
+        public FChat(string id)
         {
             InitializeComponent();
             dt = new DB();
             dt.OnMessageReceived += dt_OnMessageReceived;
-            dt.ListenForNewMessages("idroom");
+            receiver = id;
+            string[] users = new string[] { GlobalVariables.id, id };
+            Array.Sort(users);
+
+            // Ghép hai chuỗi đã sắp xếp
+            combinedString = String.Join("-", users);
+            dt.ListenForNewMessages(combinedString);
+            
         }
         private async void dt_OnMessageReceived(string message)
         {
@@ -107,7 +116,7 @@ namespace win_project_2.Forms
             if(guna2TextBox1.Text != "")
             {
                 string mess = GlobalVariables.id + "-" + receiver + "-" + guna2TextBox1.Text;
-                dt.SendMessage(mess);
+                dt.SendMessage(combinedString ,mess);
                 guna2TextBox1.Clear();
             }
 

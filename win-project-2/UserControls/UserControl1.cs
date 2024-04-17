@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Firebase.Auth;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,11 +11,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using win_project_2.DataClass;
+using win_project_2.Forms;
 
 namespace win_project_2.UserControls
 {
     public partial class UCTho : UserControl
     {
+        public string id = "";
         public UCTho(NguoiTho nguoitho)
         {
             InitializeComponent();
@@ -30,6 +33,7 @@ namespace win_project_2.UserControls
                 guna2CirclePictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(nguoitho.AvatarUrl)));
 
             }
+            id = nguoitho.Id;
         }
 
         private void lb_job_Click(object sender, EventArgs e)
@@ -50,6 +54,17 @@ namespace win_project_2.UserControls
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private async void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            await dt.AddtoContact(id);
+            string[] users = new string[] { GlobalVariables.id, id };
+            Array.Sort(users);
+            string combinedString = String.Join("-", users);
+            FChat f = new FChat(id);
+            f.ShowDialog();
         }
     }
 }
