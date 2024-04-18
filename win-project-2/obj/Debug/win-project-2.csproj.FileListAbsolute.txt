@@ -610,8 +610,6 @@ C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCListChat.resources
-C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
-C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCReceive.resources
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
@@ -623,3 +621,4 @@ C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-proj.20E8
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.exe
 C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.pdb
 D:\window_app\winproject2\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources
+C:\Users\admin\Documents\GitHub\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources

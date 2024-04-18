@@ -16,9 +16,11 @@ namespace win_project_2.Forms
 {
     public partial class ThoDetail : Form
     {
-        public ThoDetail()
+        //private NguoiTho nguoitho;
+        public ThoDetail(NguoiTho nguoiTho)
         {
             InitializeComponent();
+            //this.nguoitho = nguoitho;
         }
 
         private async void ThoDetail_Load(object sender, EventArgs e)

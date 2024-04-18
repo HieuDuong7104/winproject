@@ -15,8 +15,10 @@ using win_project_2.Forms;
 
 namespace win_project_2.UserControls
 {
+
     public partial class UCTho : UserControl
     {
+        public NguoiTho Tho { get; private set; }
         public string id = "";
         public UCTho(NguoiTho nguoitho)
         {
@@ -65,6 +67,12 @@ namespace win_project_2.UserControls
             string combinedString = String.Join("-", users);
             FChat f = new FChat(id);
             f.ShowDialog();
+        }
+
+        private void bt_detail_Click(object sender, EventArgs e)
+        {
+            var newForm = new ThoDetail(Tho); 
+            newForm.ShowDialog();
         }
     }
 }
