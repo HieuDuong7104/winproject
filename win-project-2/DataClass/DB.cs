@@ -355,7 +355,10 @@ namespace win_project_2.DataClass
             {
                 // Lấy dictionary chứa tất cả bài đăng
                 var allReview = response.ResultAs<Dictionary<string, Review>>();
-
+                if (allReview == null)
+                {
+                    return null;
+                }
                 // Tạo một list để chứa tất cả thông tin bài đăng
                 List<Review> listReview = allReview.Values.ToList();
 

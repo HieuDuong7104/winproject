@@ -453,7 +453,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ThoDetail";
             this.Text = "ThoDetail";
-            this.Load += new System.EventHandler(this.ThoDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

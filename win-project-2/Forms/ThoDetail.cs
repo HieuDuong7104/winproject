@@ -16,17 +16,16 @@ namespace win_project_2.Forms
 {
     public partial class ThoDetail : Form
     {
-        //private NguoiTho nguoitho;
-        public ThoDetail(NguoiTho nguoiTho)
+        public ThoDetail(string id)
         {
             InitializeComponent();
-            //this.nguoitho = nguoitho;
+            LoadData(id);
         }
 
-        private async void ThoDetail_Load(object sender, EventArgs e)
+        private async void LoadData(string id)
         {
             var dt = new DB();
-            NguoiTho nguoitho = await dt.GetInfoNguoiTho(GlobalVariables.id);
+            NguoiTho nguoitho = await dt.GetInfoNguoiTho(id);
             lb_Name.Text = nguoitho.Name;
             lb_job.Text = nguoitho.JobName;
             lb_Mail.Text = nguoitho.Email;
@@ -37,7 +36,11 @@ namespace win_project_2.Forms
 
             }
 
-            List<Review> listReview = await dt.GetAllReview(GlobalVariables.id);
+            List<Review> listReview = await dt.GetAllReview(id);
+            if (listReview == null)
+            {
+                return;
+            }
             foreach (Review review in listReview)
             {
                 var new_uc = new UCRating(review);

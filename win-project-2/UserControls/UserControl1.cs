@@ -71,8 +71,8 @@ namespace win_project_2.UserControls
 
         private void bt_detail_Click(object sender, EventArgs e)
         {
-            var newForm = new ThoDetail(Tho); 
-            newForm.ShowDialog();
+            ThoDetail f = new ThoDetail(id);
+            f.ShowDialog();
         }
     }
 }
