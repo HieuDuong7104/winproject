@@ -49,7 +49,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lb_Job1 = new System.Windows.Forms.Label();
             this.lb_Name1 = new System.Windows.Forms.Label();
-            this.guna2RatingStar1 = new Guna.UI2.WinForms.Guna2RatingStar();
+            this.rating = new Guna.UI2.WinForms.Guna2RatingStar();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -283,7 +283,7 @@
             // 
             this.panel1.Controls.Add(this.lb_Job1);
             this.panel1.Controls.Add(this.lb_Name1);
-            this.panel1.Controls.Add(this.guna2RatingStar1);
+            this.panel1.Controls.Add(this.rating);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
@@ -320,16 +320,16 @@
             this.lb_Name1.Text = "Họ và Tên";
             this.lb_Name1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2RatingStar1
+            // rating
             // 
-            this.guna2RatingStar1.BorderColor = System.Drawing.Color.Black;
-            this.guna2RatingStar1.BorderThickness = 1;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(155, 397);
-            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2RatingStar1.Name = "guna2RatingStar1";
-            this.guna2RatingStar1.RatingColor = System.Drawing.Color.Yellow;
-            this.guna2RatingStar1.Size = new System.Drawing.Size(75, 22);
-            this.guna2RatingStar1.TabIndex = 42;
+            this.rating.BorderColor = System.Drawing.Color.Black;
+            this.rating.BorderThickness = 1;
+            this.rating.Location = new System.Drawing.Point(155, 397);
+            this.rating.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rating.Name = "rating";
+            this.rating.RatingColor = System.Drawing.Color.Yellow;
+            this.rating.Size = new System.Drawing.Size(75, 22);
+            this.rating.TabIndex = 42;
             // 
             // label9
             // 
@@ -546,7 +546,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lb_Job1;
         private System.Windows.Forms.Label lb_Name1;
-        private Guna.UI2.WinForms.Guna2RatingStar guna2RatingStar1;
+        private Guna.UI2.WinForms.Guna2RatingStar rating;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
