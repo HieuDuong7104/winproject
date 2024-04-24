@@ -33,6 +33,7 @@ namespace win_project_2.Forms
                 foreach (string user in userArray)
                 {
                     UCListChat uc = new UCListChat(user);
+                    uc.ParentFListChat = this;
                     flowLayoutPanel1.Controls.Add(uc);
                 }
             }
@@ -41,6 +42,17 @@ namespace win_project_2.Forms
         private void FListChat_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void DisplayInPanel(string id)
+        {
+            this.panel1.Controls.Clear();
+            FChat f = new FChat(id);
+            f.TopLevel = false;
+            f.FormBorderStyle = FormBorderStyle.None;
+            f.Dock = DockStyle.Fill;
+            this.panel1.Controls.Add(f);
+            f.Show();
         }
 
         private void btnClose_Click(object sender, EventArgs e)

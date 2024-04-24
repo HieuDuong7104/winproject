@@ -14,6 +14,7 @@ namespace win_project_2.UserControls
 {
     public partial class UCListChat : UserControl
     {
+        public FListChat ParentFListChat { get; set; }
         public string ID = "";
         public UCListChat(string id)
         {
@@ -45,8 +46,7 @@ namespace win_project_2.UserControls
 
         private void btn_chat_Click(object sender, EventArgs e)
         {
-            FChat f = new FChat(ID);
-            f.ShowDialog();
+            this.ParentFListChat.DisplayInPanel(ID);
         }
     }
 }

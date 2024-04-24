@@ -22,63 +22,36 @@ namespace win_project_2.Forms
         public FChat(string id)
         {
             InitializeComponent();
-            LoadData(GlobalVariables.id);
             dt = new DB();
             dt.OnMessageReceived += dt_OnMessageReceived;
             receiver = id;
             string[] users = new string[] { GlobalVariables.id, id };
             Array.Sort(users);
-
-            // Ghép hai chuỗi đã sắp xếp
             combinedString = String.Join("-", users);
             dt.ListenForNewMessages(combinedString);
             
         }
-        public async void LoadData(string id)
-        {
-            var dt = new DB();
-            string contact = await dt.GetContactList(id);
-
-            if (contact != "")
-            {
-                string[] userArray = contact.Split(',');
-
-                foreach (string user in userArray)
-                {
-                    UCListChat uc = new UCListChat(user);
-                    flowLayoutPanel2.Controls.Add(uc);
-                }
-            }
-        }
         public async void dt_OnMessageReceived(string message)
         {
-            // Xử lý tin nhắn mới tại đây
-            // Ví dụ: cập nhật giao diện người dùng hoặc lưu tin nhắn vào một biến
-            Console.WriteLine("Tin nhắn mới: " + message);
             createMessage(message);
-            
-
         }
 
         private void createMessage(string input)
         {
             if (!input.Contains("-"))
             {
-                Console.WriteLine("Chuỗi không hợp lệ. Không có dấu '-' để tách.");
-                return; // Dừng hàm nếu không có dấu '-'
+                return;
             }
 
             string[] parts = input.Split('-');
             if (parts.Length < 3)
             {
-                Console.WriteLine("Chuỗi không hợp lệ. Cần có ít nhất hai dấu '-' để tách thành ba phần.");
-                return; // Dừng hàm nếu không đủ phần để tách
+                return;
             }
 
-            // Gán giá trị cho các biến từ các phần tách được
             string sender = parts[0];
             string receive = parts[1];
-            string content = String.Join("-", parts.Skip(2)); // Nối lại phần còn lại của chuỗi nếu có nhiều hơn một dấu '-'
+            string content = String.Join("-", parts.Skip(2));
 
 
             Console.WriteLine($"sender = {sender}, receive = {receive}, content = {content}");
@@ -88,36 +61,27 @@ namespace win_project_2.Forms
             if (GlobalVariables.id == sender)
             {
                 UCSendMesage userControl2 = new UCSendMesage();
-                //userControl2.Dock = DockStyle.Top;
                 userControl2.Title = content;
                 userControl = userControl2;
             }
             else
             {
                 UCReceive userControl3 = new UCReceive();
-                //userControl3.Dock = DockStyle.Top;
                 userControl3.Title = content;
-                //userControl3.Icon = guna2CirclePictureBox2.Image;
                 userControl = userControl3;
             }
-
-            // Kiểm tra xem có cần sử dụng Invoke không
           
              if (flowLayoutPanel1.InvokeRequired)
             {
-                // Sử dụng Invoke để thực hiện hành động từ UI thread
                 flowLayoutPanel1.Invoke(new Action(() =>
                 {
                     flowLayoutPanel1.Controls.Add(userControl);
-                    // Cuộn xuống sau khi thêm control
                     flowLayoutPanel1.ScrollControlIntoView(userControl);
                 }));
             }
             else
             {
-                // Nếu đã ở UI thread, thêm control và cuộn xuống trực tiếp
                 flowLayoutPanel1.Controls.Add(userControl);
-                // Cuộn xuống sau khi thêm control
                 flowLayoutPanel1.ScrollControlIntoView(userControl);
             }
         }
