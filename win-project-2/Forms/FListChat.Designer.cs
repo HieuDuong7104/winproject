@@ -43,7 +43,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1336, 28);
+            this.guna2Panel1.Size = new System.Drawing.Size(1503, 35);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnClose
@@ -55,33 +55,35 @@
             this.btnClose.IconColor = System.Drawing.Color.WhiteSmoke;
             this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(1272, 2);
+            this.btnClose.Location = new System.Drawing.Point(1434, -2);
             this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(61, 28);
+            this.btnClose.Size = new System.Drawing.Size(69, 35);
             this.btnClose.TabIndex = 3;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 50);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(14, 62);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(319, 469);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(489, 589);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(353, 50);
+            this.panel1.Location = new System.Drawing.Point(548, 50);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(971, 469);
+            this.panel1.Size = new System.Drawing.Size(943, 601);
             this.panel1.TabIndex = 2;
             // 
             // FListChat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 531);
+            this.ClientSize = new System.Drawing.Size(1503, 664);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2Panel1);

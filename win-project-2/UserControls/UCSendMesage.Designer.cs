@@ -41,7 +41,7 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.RoyalBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.SteelBlue;
             this.guna2GradientPanel1.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(795, 3);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(484, 3);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(325, 52);
             this.guna2GradientPanel1.TabIndex = 0;
@@ -63,7 +63,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2GradientPanel1);
             this.Name = "UCSendMesage";
-            this.Size = new System.Drawing.Size(1120, 62);
+            this.Size = new System.Drawing.Size(809, 62);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

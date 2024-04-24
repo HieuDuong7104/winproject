@@ -40,7 +40,7 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.CadetBlue;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.SteelBlue;
             this.guna2GradientPanel1.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(21, 8);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(58, 8);
             this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(356, 52);
@@ -65,7 +65,7 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCReceive";
-            this.Size = new System.Drawing.Size(1120, 62);
+            this.Size = new System.Drawing.Size(674, 62);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

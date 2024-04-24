@@ -61,7 +61,7 @@
             // 
             // btn_chat
             // 
-            this.btn_chat.Location = new System.Drawing.Point(298, 22);
+            this.btn_chat.Location = new System.Drawing.Point(266, 22);
             this.btn_chat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_chat.Name = "btn_chat";
             this.btn_chat.Size = new System.Drawing.Size(196, 46);
