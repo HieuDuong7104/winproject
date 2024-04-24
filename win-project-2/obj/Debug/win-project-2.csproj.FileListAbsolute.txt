@@ -452,8 +452,6 @@ C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.LoginForm.resources
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.NhanVienView.resources
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Properties.Resources.resources
-C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UCNhanvien.resources
-C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UCNhanVien2.resources
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRating.resources
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
 C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
@@ -643,3 +641,4 @@ D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCRe
 D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCSendMesage.resources
 D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCShowJobcs.resources
 D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCTho.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.ThoDetail.resources

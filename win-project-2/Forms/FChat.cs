@@ -22,6 +22,7 @@ namespace win_project_2.Forms
         public FChat(string id)
         {
             InitializeComponent();
+            LoadData(GlobalVariables.id);
             dt = new DB();
             dt.OnMessageReceived += dt_OnMessageReceived;
             receiver = id;
@@ -33,7 +34,23 @@ namespace win_project_2.Forms
             dt.ListenForNewMessages(combinedString);
             
         }
-        private async void dt_OnMessageReceived(string message)
+        public async void LoadData(string id)
+        {
+            var dt = new DB();
+            string contact = await dt.GetContactList(id);
+
+            if (contact != "")
+            {
+                string[] userArray = contact.Split(',');
+
+                foreach (string user in userArray)
+                {
+                    UCListChat uc = new UCListChat(user);
+                    flowLayoutPanel2.Controls.Add(uc);
+                }
+            }
+        }
+        public async void dt_OnMessageReceived(string message)
         {
             // Xử lý tin nhắn mới tại đây
             // Ví dụ: cập nhật giao diện người dùng hoặc lưu tin nhắn vào một biến
