@@ -14,12 +14,13 @@ namespace win_project_2.Forms
     public partial class FRating : Form
     {
 
-        public string NguoiThoId = "test10";
+        public string NguoiThoId = "";
         public string NguoiTimThoId = GlobalVariables.id;
         string FileImageName = "";
-        public FRating()
+        public FRating(string nguoithoid)
         {
             InitializeComponent();
+            NguoiThoId =nguoithoid;
         }
 
         private void rjButton1_Click(object sender, EventArgs e)

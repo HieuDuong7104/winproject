@@ -20,6 +20,15 @@ namespace win_project_2.DataClass
             dt = new DB();
             dt.OnMessageReceived += dt_OnMessageReceived;
             dt.ListenForNewMessages("idroom");
+
+            dt.OnNotificationReceived += dt_OnNotifyReceived;
+            dt.ListenForNewNotify(GlobalVariables.id);
+
+        }
+
+        private void dt_OnNotifyReceived(string notification)
+        {
+            Console.WriteLine("Thông báo mới: " + notification);
         }
 
         private void dt_OnMessageReceived(string message)
@@ -255,6 +264,12 @@ namespace win_project_2.DataClass
                 Console.WriteLine(s);
                 Console.WriteLine("--------");
             }
+        }
+
+        private async void button16_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            await dt.NotifyWorker("test10", "đã nhận");
         }
     }
 }

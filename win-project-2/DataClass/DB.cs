@@ -16,6 +16,7 @@ using Newtonsoft.Json;
 namespace win_project_2.DataClass
 {
     public delegate void MessageReceivedHandler(string message);
+    public delegate void NotificationReceivedHandler(string notification);
     public class DB
     {
         private IFirebaseConfig config;
@@ -26,6 +27,7 @@ namespace win_project_2.DataClass
 
         string value = GlobalVariables.id;
         public event MessageReceivedHandler OnMessageReceived;
+        public event NotificationReceivedHandler OnNotificationReceived;
         public DB()
         {
             config = new FirebaseConfig
@@ -448,6 +450,61 @@ namespace win_project_2.DataClass
             {
                 return ""; // Trả về chuỗi rỗng nếu không tìm thấy
             }
+        }
+
+        public async Task ApplyForJob(string jobId, string workerId)
+        {
+            // Lấy danh sách ID người thợ đã apply từ database
+            FirebaseResponse response = await client.GetAsync("jobs/" + jobId + "/applicants");
+            var applicants = response.ResultAs<string>();
+
+            // Kiểm tra xem người thợ đã apply chưa
+            if (applicants == null || !applicants.Contains(workerId))
+            {
+                // Cập nhật danh sách người thợ đã apply
+                applicants = applicants == null || applicants == "" ? workerId : applicants + "," + workerId;
+                SetResponse setResponse = await client.SetAsync("jobs/" + jobId + "/applicants", applicants);
+
+                if (setResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    Console.WriteLine("Người thợ đã được thêm vào danh sách ứng viên.");
+                }
+                else
+                {
+                    Console.WriteLine("Có lỗi xảy ra khi thêm người thợ vào danh sách ứng viên.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Người thợ đã tồn tại trong danh sách ứng viên.");
+            }
+        }
+
+        public async Task NotifyWorker(string workerId, string message)
+        {
+            // Gửi thông báo đến người thợ
+            PushResponse pushResponse = await client.PushAsync("notifications/" + workerId, message);
+
+            if (pushResponse.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                Console.WriteLine("Thông báo đã được gửi.");
+            }
+            else
+            {
+                Console.WriteLine("Có lỗi xảy ra khi gửi thông báo.");
+            }
+        }
+
+        public string LatestNotify { get; private set; }
+
+        public async void ListenForNewNotify(string workerId)
+        {
+            EventStreamResponse response = await client.OnAsync("notifications/" + workerId + "/",
+                added: (sender, args, context) =>
+                {
+                    //Console.WriteLine("New notification received: " + args.Data);
+                    OnNotificationReceived?.Invoke(args.Data);
+                });
         }
 
     }
