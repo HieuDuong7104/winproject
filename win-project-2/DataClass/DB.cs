@@ -63,21 +63,19 @@ namespace win_project_2.DataClass
             }
             return downloadUrl;
         }
-
-        //NguoiTimTho
-        public async Task UploadInfoNguoiTimTho(NguoiTimTho nguoitimtho) // Upload Info của NguoiTimTho
+        public async Task UploadInfoNguoiTimTho(NguoiTimTho nguoitimtho)
         {
             SetResponse response = await client.SetAsync("info/nguoitimtho/" + GlobalVariables.id, nguoitimtho);
         }
 
-        public async Task<NguoiTimTho> GetInfoNguoiTimTho(string id) // Lấy Info của NguoiTimTho theo id
+        public async Task<NguoiTimTho> GetInfoNguoiTimTho(string id)
         {
             FirebaseResponse response = await client.GetAsync("info/nguoitimtho/" + id);
             NguoiTimTho nguoitimtho = response.ResultAs<NguoiTimTho>();
             return nguoitimtho;
         }
 
-        public async Task<List<NguoiTho>> GetInfoFavTho(string Ids) // Lấy List FavTho của NguoiTimTho
+        public async Task<List<NguoiTho>> GetInfoFavTho(string Ids) 
         {
             if (string.IsNullOrEmpty(Ids)) return null;
 
@@ -93,34 +91,14 @@ namespace win_project_2.DataClass
 
             return usersList;
         }
-        /*
-         
-            var dt = new DB();
-            NguoiTimTho nguoitimtho = await dt.GetInfoNguoiTimTho("test1503");
-            //MessageBox.Show(nguoitimtho.FavThoIds);
-            List<NguoiTho> listnguoitho = await dt.GetInfoFavTho(nguoitimtho.FavThoIds);
-            foreach (NguoiTho nguoitho in listnguoitho)
-            {
-                Console.WriteLine("Tên: " + nguoitho.Name);
-                Console.WriteLine("Ngày sinh: " + nguoitho.DateOfBirth);
-                Console.WriteLine("Số điện thoại: " + nguoitho.PhoneNumber);
-                Console.WriteLine("Email: " + nguoitho.Email);
-                Console.WriteLine("Địa chỉ: " + nguoitho.Address);
-                // In thêm các thông tin khác của NguoiTho nếu cần
-                Console.WriteLine("---------------------");
-            }
-
-         */
-
-
-        public async Task<Post> GetInfoPost(string id) // Lấy Thông tin Bài đăng theo id
+        public async Task<Post> GetInfoPost(string id)
         {
             FirebaseResponse response = await client.GetAsync("post/timtho/" + id);
             Post post = response.ResultAs<Post>();
             return post;
         }
 
-        public async Task<List<Post>> GetListPost(string Ids) // Lấy List tất cả Post
+        public async Task<List<Post>> GetListPost(string Ids)
         {
             if (string.IsNullOrEmpty(Ids)) return null;
 
@@ -177,10 +155,7 @@ namespace win_project_2.DataClass
             FirebaseResponse response = await client.GetAsync("info/nguoitimtho/");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                // Lấy dictionary chứa tất cả người tìm thợ
                 var allNguoiTimTho = response.ResultAs<Dictionary<string, NguoiTimTho>>();
-
-                // Tạo một list để chứa tất cả thông tin người tìm thợ
                 List<NguoiTimTho> listNguoiTimTho = allNguoiTimTho.Values.ToList();
 
                 return listNguoiTimTho;
@@ -188,13 +163,10 @@ namespace win_project_2.DataClass
             else
             {
                 Console.WriteLine("Không thể lấy dữ liệu: " + response.StatusCode);
-                return new List<NguoiTimTho>(); // Trả về list rỗng nếu có lỗi
+                return new List<NguoiTimTho>();
             }
         }
 
-
-
-        //NguoiTho
         public async Task UploadInfoNguoiTho(NguoiTho nguoitho)
         {
             SetResponse response = await client.SetAsync("info/nguoitho/" + GlobalVariables.id, nguoitho);
@@ -212,10 +184,7 @@ namespace win_project_2.DataClass
             FirebaseResponse response = await client.GetAsync("info/nguoitho/");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                // Lấy dictionary chứa tất cả thông tin người thợ
                 var allNguoiTho = response.ResultAs<Dictionary<string, NguoiTho>>();
-
-                // Tạo một list để chứa tất cả thông tin người thợ
                 List<NguoiTho> listNguoiTho = allNguoiTho.Values.ToList();
 
                 return listNguoiTho;
@@ -223,12 +192,10 @@ namespace win_project_2.DataClass
             else
             {
                 Console.WriteLine("Không thể lấy dữ liệu: " + response.StatusCode);
-                return new List<NguoiTho>(); // Trả về list rỗng nếu có lỗi
+                return new List<NguoiTho>();
             }
         }
 
-
-        //Post
         public async Task<string> PostArticle(Post post)
         {
             FirebaseResponse response = await client.GetAsync("numPost/timtho");
@@ -239,7 +206,7 @@ namespace win_project_2.DataClass
             if (setResponse.StatusCode != System.Net.HttpStatusCode.OK)
             {
                 Console.WriteLine("Failed to increment post count.");
-                return null; // Hoặc xử lý lỗi theo cách khác
+                return null;
             }
 
             post.Id = postCount.ToString();
@@ -247,7 +214,7 @@ namespace win_project_2.DataClass
             if (postResponse.StatusCode != System.Net.HttpStatusCode.OK)
             {
                 Console.WriteLine("Failed to post article.");
-                return null; // Hoặc xử lý lỗi theo cách khác
+                return null;
             }
 
             return post.Id;
@@ -259,10 +226,7 @@ namespace win_project_2.DataClass
             FirebaseResponse response = await client.GetAsync("post/timtho/");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                // Lấy dictionary chứa tất cả bài đăng
                 var allPosts = response.ResultAs<Dictionary<string, Post>>();
-
-                // Tạo một list để chứa tất cả thông tin bài đăng
                 List<Post> listPosts = allPosts.Values.ToList();
 
                 return listPosts;
@@ -270,7 +234,7 @@ namespace win_project_2.DataClass
             else
             {
                 Console.WriteLine("Không thể lấy dữ liệu: " + response.StatusCode);
-                return new List<Post>(); // Trả về list rỗng nếu có lỗi
+                return new List<Post>();
             }
         }
 
@@ -309,21 +273,14 @@ namespace win_project_2.DataClass
 
         public async Task AddPostToPosted(string postId)
         {
-
             FirebaseResponse response = await client.GetAsync("info/nguoitimtho/" + GlobalVariables.id + "/PostIds");
             var Posted = response.ResultAs<string>();
+            string[] postedArray = Posted?.Split(',') ?? new string[0];
 
-
-            if (!Posted.Contains(postId))
+            if (!postedArray.Contains(postId))
             {
-                if (Posted == "")
-                {
-                    Posted += postId;
-                }
-                else
-                {
-                    Posted += "," + postId;
-                }
+                Posted = String.IsNullOrEmpty(Posted) ? postId : Posted + "," + postId;
+
                 SetResponse setResponse = await client.SetAsync("info/nguoitimtho/" + GlobalVariables.id + "/PostIds", Posted);
                 if (setResponse.StatusCode == System.Net.HttpStatusCode.OK)
                 {
@@ -340,7 +297,8 @@ namespace win_project_2.DataClass
             }
         }
 
-        public async Task UpReview(Review review, string idnguoitho) // idnguoitho là id NguoiTho muốn đánh giá, GlobalVariables.id là id của người đang review (NguoiTimTho)
+
+        public async Task UpReview(Review review, string idnguoitho) 
         {
             SetResponse response = await client.SetAsync("review/" + idnguoitho + "/" + GlobalVariables.id, review);
         }
@@ -355,13 +313,11 @@ namespace win_project_2.DataClass
             FirebaseResponse response = await client.GetAsync("review/" + nguoithoid + "/");
             if (response.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                // Lấy dictionary chứa tất cả bài đăng
                 var allReview = response.ResultAs<Dictionary<string, Review>>();
                 if (allReview == null)
                 {
                     return null;
                 }
-                // Tạo một list để chứa tất cả thông tin bài đăng
                 List<Review> listReview = allReview.Values.ToList();
 
                 return listReview;
@@ -369,14 +325,13 @@ namespace win_project_2.DataClass
             else
             {
                 Console.WriteLine("Không thể lấy dữ liệu: " + response.StatusCode);
-                return new List<Review>(); // Trả về list rỗng nếu có lỗi
+                return new List<Review>();
             }
         }
 
         public async void SendMessage(string roomId, string tinnhan)
         {
             FirebaseResponse response = await client.GetAsync("message/" + roomId + "/" + "count");
-            // Kiểm tra nếu giá trị trả về là null và gán count = 0
             int count = response.Body == "null" ? 0 : response.ResultAs<int>();
             count++;
             SetResponse setResponse = await client.SetAsync("message/" + roomId + "/" + "count", count);
@@ -405,7 +360,6 @@ namespace win_project_2.DataClass
             EventStreamResponse response = await client.OnAsync("message/" + roomId + "/",
                 added: (sender, args, context) =>
                 {
-                    //Console.WriteLine("New message received: " + args.Data);
                     OnMessageReceived?.Invoke(args.Data);
                 });
         }
@@ -414,14 +368,10 @@ namespace win_project_2.DataClass
         {
             FirebaseResponse response = await client.GetAsync("contactlist/" + GlobalVariables.id);
             var contact = response.ResultAs<string>();
-
-            // Chuyển chuỗi thành mảng sử dụng Split
             string[] contactsArray = contact?.Split(',') ?? new string[0];
 
-            // Kiểm tra xem id có tồn tại trong mảng không
             if (!contactsArray.Contains(id))
             {
-                // Cập nhật chuỗi contact bằng cách thêm id mới
                 contact = contact == null || contact == "" ? id : contact + "," + id;
 
                 SetResponse setResponse = await client.SetAsync("contactlist/" + GlobalVariables.id, contact);
@@ -434,7 +384,6 @@ namespace win_project_2.DataClass
                     Console.WriteLine("Có lỗi xảy ra");
                 }
 
-                // Thêm GlobalVariables.id vào danh sách liên lạc của id
                 response = await client.GetAsync("contactlist/" + id);
                 var reverseContact = response.ResultAs<string>();
                 string[] reverseContactsArray = reverseContact?.Split(',') ?? new string[0];
@@ -468,28 +417,25 @@ namespace win_project_2.DataClass
         public async Task<string> GetContactList(string userId)
         {
             FirebaseResponse response = await client.GetAsync("contactlist/" + userId);
-            string contactList = response.ResultAs<string>(); // Lấy chuỗi contact list
+            string contactList = response.ResultAs<string>();
 
             if (contactList != null)
             {
-                return contactList; // Trả về chuỗi contact list nếu tồn tại
+                return contactList;
             }
             else
             {
-                return ""; // Trả về chuỗi rỗng nếu không tìm thấy
+                return "";
             }
         }
 
         public async Task ApplyForJob(string jobId, string workerId)
         {
-            // Lấy danh sách ID người thợ đã apply từ database
             FirebaseResponse response = await client.GetAsync("jobs/" + jobId + "/applicants");
             var applicants = response.ResultAs<string>();
 
-            // Kiểm tra xem người thợ đã apply chưa
             if (applicants == null || !applicants.Contains(workerId))
             {
-                // Cập nhật danh sách người thợ đã apply
                 applicants = applicants == null || applicants == "" ? workerId : applicants + "," + workerId;
                 SetResponse setResponse = await client.SetAsync("jobs/" + jobId + "/applicants", applicants);
 
@@ -510,7 +456,6 @@ namespace win_project_2.DataClass
 
         public async Task NotifyWorker(string workerId, string message)
         {
-            // Gửi thông báo đến người thợ
             PushResponse pushResponse = await client.PushAsync("notifications/" + workerId, message);
 
             if (pushResponse.StatusCode == System.Net.HttpStatusCode.OK)

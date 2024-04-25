@@ -50,8 +50,6 @@ namespace win_project_2.Forms
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             LoadImage(ref FileImageName);
-
-            // Sử dụng using để đảm bảo tài nguyên được giải phóng
             using (var tempImage = new Bitmap(FileImageName))
             {
                 guna2PictureBox1.Image = new Bitmap(tempImage);
