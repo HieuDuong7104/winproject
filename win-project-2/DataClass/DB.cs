@@ -415,10 +415,13 @@ namespace win_project_2.DataClass
             FirebaseResponse response = await client.GetAsync("contactlist/" + GlobalVariables.id);
             var contact = response.ResultAs<string>();
 
-            // Kiểm tra nếu contact là null hoặc không chứa id
-            if (contact == null || !contact.Contains(id))
+            // Chuyển chuỗi thành mảng sử dụng Split
+            string[] contactsArray = contact?.Split(',') ?? new string[0];
+
+            // Kiểm tra xem id có tồn tại trong mảng không
+            if (!contactsArray.Contains(id))
             {
-                // Nếu contact là null hoặc rỗng, gán trực tiếp id
+                // Cập nhật chuỗi contact bằng cách thêm id mới
                 contact = contact == null || contact == "" ? id : contact + "," + id;
 
                 SetResponse setResponse = await client.SetAsync("contactlist/" + GlobalVariables.id, contact);
@@ -430,12 +433,37 @@ namespace win_project_2.DataClass
                 {
                     Console.WriteLine("Có lỗi xảy ra");
                 }
+
+                // Thêm GlobalVariables.id vào danh sách liên lạc của id
+                response = await client.GetAsync("contactlist/" + id);
+                var reverseContact = response.ResultAs<string>();
+                string[] reverseContactsArray = reverseContact?.Split(',') ?? new string[0];
+
+                if (!reverseContactsArray.Contains(GlobalVariables.id))
+                {
+                    reverseContact = reverseContact == null || reverseContact == "" ? GlobalVariables.id : reverseContact + "," + GlobalVariables.id;
+                    SetResponse reverseSetResponse = await client.SetAsync("contactlist/" + id, reverseContact);
+                    if (reverseSetResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                    {
+                        Console.WriteLine("OK - GlobalVariables.id đã được thêm vào danh sách liên lạc của ID.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Có lỗi xảy ra khi thêm GlobalVariables.id vào danh sách liên lạc của ID.");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("GlobalVariables.id đã tồn tại trong danh sách liên lạc của ID.");
+                }
             }
             else
             {
-                Console.WriteLine("Đã tồn tại");
+                Console.WriteLine("ID đã tồn tại trong danh sách liên lạc.");
             }
         }
+
+
 
         public async Task<string> GetContactList(string userId)
         {

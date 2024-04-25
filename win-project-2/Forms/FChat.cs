@@ -22,6 +22,7 @@ namespace win_project_2.Forms
         public FChat(string id)
         {
             InitializeComponent();
+            lb_name.Text = id;
             dt = new DB();
             dt.OnMessageReceived += dt_OnMessageReceived;
             receiver = id;
@@ -29,7 +30,6 @@ namespace win_project_2.Forms
             Array.Sort(users);
             combinedString = String.Join("-", users);
             dt.ListenForNewMessages(combinedString);
-            
         }
         public async void dt_OnMessageReceived(string message)
         {
