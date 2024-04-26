@@ -104,6 +104,7 @@
             this.pt_Chat.TabIndex = 55;
             this.pt_Chat.TabStop = false;
             this.pt_Chat.UseTransparentBackground = true;
+            this.pt_Chat.Click += new System.EventHandler(this.pt_Chat_Click_1);
             // 
             // pt_TimTho
             // 
@@ -118,6 +119,7 @@
             this.pt_TimTho.TabIndex = 54;
             this.pt_TimTho.TabStop = false;
             this.pt_TimTho.UseTransparentBackground = true;
+            this.pt_TimTho.Click += new System.EventHandler(this.pt_TimTho_Click_1);
             // 
             // pt_TimViec
             // 
@@ -130,6 +132,7 @@
             this.pt_TimViec.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pt_TimViec.TabIndex = 53;
             this.pt_TimViec.TabStop = false;
+            this.pt_TimViec.Click += new System.EventHandler(this.pt_TimViec_Click_1);
             // 
             // guna2Shapes1
             // 
@@ -172,9 +175,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(1281, 578);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 32);
+            this.label2.Size = new System.Drawing.Size(136, 32);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Nhắn tin";
+            this.label2.Text = "Đăng bài";
             // 
             // label1
             // 
@@ -269,7 +272,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2120, 1175);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.guna2PictureBox1);

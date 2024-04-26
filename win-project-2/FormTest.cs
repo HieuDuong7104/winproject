@@ -73,7 +73,7 @@ namespace win_project_2.DataClass
             //Up Post lên để và cập nhật Posted của NguoiTimTho
 
             var dt = new DB();
-            Post newPost = new Post("", "Sua may lanh", "...", "tphcm", "30/03/20224", "...", 200000, GlobalVariables.id);
+            Post newPost = new Post("", "Sua may lanh", "...", "tphcm", "30/03/20224", "...", "200000", GlobalVariables.id);
             string temp = await dt.PostArticle(newPost);
             await dt.AddPostToPosted(temp);
         }

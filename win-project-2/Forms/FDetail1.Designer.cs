@@ -153,6 +153,7 @@
             this.lb_tag.Name = "lb_tag";
             this.lb_tag.Size = new System.Drawing.Size(180, 19);
             this.lb_tag.TabIndex = 61;
+            this.lb_tag.Text = null;
             this.lb_tag.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_location
@@ -297,6 +298,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(111, 36);
             this.guna2Button2.TabIndex = 72;
             this.guna2Button2.Text = "Nhắn tin";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // FDetail1
             // 
@@ -322,7 +324,6 @@
             this.Controls.Add(this.guna2HtmlLabel6);
             this.Controls.Add(this.guna2HtmlLabel5);
             this.Controls.Add(this.guna2HtmlLabel4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FDetail1";
             this.Text = "FDetail1";

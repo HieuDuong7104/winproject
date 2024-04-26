@@ -42,7 +42,7 @@
             // lb_tag
             // 
             this.lb_tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_tag.Location = new System.Drawing.Point(53, 15);
+            this.lb_tag.Location = new System.Drawing.Point(13, 12);
             this.lb_tag.Name = "lb_tag";
             this.lb_tag.Size = new System.Drawing.Size(387, 27);
             this.lb_tag.TabIndex = 0;
@@ -52,7 +52,7 @@
             // lb_senderid
             // 
             this.lb_senderid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_senderid.Location = new System.Drawing.Point(92, 42);
+            this.lb_senderid.Location = new System.Drawing.Point(142, 56);
             this.lb_senderid.Name = "lb_senderid";
             this.lb_senderid.Size = new System.Drawing.Size(348, 21);
             this.lb_senderid.TabIndex = 1;
@@ -62,7 +62,7 @@
             // lb_price
             // 
             this.lb_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_price.Location = new System.Drawing.Point(143, 70);
+            this.lb_price.Location = new System.Drawing.Point(205, 102);
             this.lb_price.Name = "lb_price";
             this.lb_price.Size = new System.Drawing.Size(235, 29);
             this.lb_price.TabIndex = 2;
@@ -72,7 +72,7 @@
             // lb_location
             // 
             this.lb_location.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_location.Location = new System.Drawing.Point(143, 108);
+            this.lb_location.Location = new System.Drawing.Point(205, 169);
             this.lb_location.Name = "lb_location";
             this.lb_location.Size = new System.Drawing.Size(235, 17);
             this.lb_location.TabIndex = 3;
@@ -83,7 +83,7 @@
             // 
             this.guna2PictureBox1.Image = global::win_project_2.Properties.Resources.dollar;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(110, 70);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(146, 102);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(28, 29);
@@ -95,7 +95,7 @@
             // 
             this.guna2PictureBox2.Image = global::win_project_2.Properties.Resources.location;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(110, 103);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(146, 157);
             this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(28, 29);
@@ -112,10 +112,10 @@
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(269, 127);
+            this.guna2Button1.Location = new System.Drawing.Point(417, 188);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(160, 26);
+            this.guna2Button1.Size = new System.Drawing.Size(95, 26);
             this.guna2Button1.TabIndex = 69;
             this.guna2Button1.Text = "xem thêm";
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -134,7 +134,7 @@
             this.Controls.Add(this.lb_tag);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCShowJobcs";
-            this.Size = new System.Drawing.Size(498, 159);
+            this.Size = new System.Drawing.Size(940, 264);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);

@@ -13,6 +13,7 @@ namespace win_project_2.Forms
 {
     public partial class FDetail1 : Form
     {
+        string id = "";
         public FDetail1(string id_post)
         {
             InitializeComponent();
@@ -28,6 +29,18 @@ namespace win_project_2.Forms
             lb_price.Text = post.Price.ToString();
             lb_request.Text = post.Request;
             lb_tag.Text = post.Tag;
+            id = post.SenderId;
+        }
+
+        private async void guna2Button2_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            await dt.AddtoContact(id);
+            string[] users = new string[] { GlobalVariables.id, id };
+            Array.Sort(users);
+            string combinedString = String.Join("-", users);
+            FChat f = new FChat(id);
+            f.ShowDialog();
         }
     }
 }

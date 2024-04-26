@@ -50,7 +50,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(298, 2);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(804, 80);
+            this.guna2Panel1.Size = new System.Drawing.Size(871, 62);
             this.guna2Panel1.TabIndex = 0;
             // 
             // lb_name
@@ -58,7 +58,7 @@
             this.lb_name.AutoSize = true;
             this.lb_name.Font = new System.Drawing.Font("Microsoft Tai Le", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_name.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lb_name.Location = new System.Drawing.Point(127, 30);
+            this.lb_name.Location = new System.Drawing.Point(109, 20);
             this.lb_name.Name = "lb_name";
             this.lb_name.Size = new System.Drawing.Size(63, 23);
             this.lb_name.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(57, 51);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(44, 43);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -81,7 +81,7 @@
             // 
             this.guna2Panel2.Controls.Add(this.guna2TextBox1);
             this.guna2Panel2.Controls.Add(this.iconButton1);
-            this.guna2Panel2.Location = new System.Drawing.Point(298, 324);
+            this.guna2Panel2.Location = new System.Drawing.Point(298, 478);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(836, 80);
@@ -102,7 +102,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Location = new System.Drawing.Point(48, 18);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
@@ -117,7 +117,7 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 35;
-            this.iconButton1.Location = new System.Drawing.Point(716, 18);
+            this.iconButton1.Location = new System.Drawing.Point(730, 18);
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(93, 42);
@@ -130,19 +130,20 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(308, 86);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(794, 213);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(771, 371);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.BackColor = System.Drawing.SystemColors.Control;
             this.guna2Panel3.Controls.Add(this.guna2Panel1);
             this.guna2Panel3.Controls.Add(this.flowLayoutPanel1);
             this.guna2Panel3.Controls.Add(this.guna2Panel2);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(12, 0);
+            this.guna2Panel3.Location = new System.Drawing.Point(-229, 0);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1172, 582);
+            this.guna2Panel3.Size = new System.Drawing.Size(1172, 624);
             this.guna2Panel3.TabIndex = 4;
             // 
             // FChat
@@ -150,7 +151,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1184, 582);
+            this.ClientSize = new System.Drawing.Size(943, 624);
             this.Controls.Add(this.guna2Panel3);
             this.Name = "FChat";
             this.Text = "FChat";
