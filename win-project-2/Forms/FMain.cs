@@ -30,11 +30,11 @@ namespace win_project_2
         {
             InitializeComponent();
             CollapseMenu();
-            OpenChildForm(new FHome());
+            OpenChildForm(new FHome(this));
             this.Padding = new Padding(2);
             this.BackColor = Color.FromArgb(98, 102, 244);//Border color
         }
-        
+
 
         //Overridden methods
         protected override void WndProc(ref Message m)
@@ -158,7 +158,7 @@ namespace win_project_2
                 }
             }
         }
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
             //open only form
             if (currentChildForm != null)
@@ -260,20 +260,21 @@ namespace win_project_2
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FHome());
+
+            OpenChildForm(new FHome(this));
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            this.Hide(); 
+            this.Hide();
             LoginForm loginForm = new LoginForm();
-            loginForm.FormClosed += (s, args) => this.Close(); 
-            loginForm.Show(); 
+            loginForm.FormClosed += (s, args) => this.Close();
+            loginForm.Show();
         }
 
         private void btnChat_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new FChat());
+            OpenChildForm(new FListChat());
         }
 
         private void btnStatistic_Click(object sender, EventArgs e)
@@ -282,6 +283,11 @@ namespace win_project_2
         }
 
         private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelTittleBar_Paint(object sender, PaintEventArgs e)
         {
 
         }
