@@ -16,5 +16,10 @@ namespace win_project_2.Forms
         {
             InitializeComponent();
         }
+
+        private void guna2TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

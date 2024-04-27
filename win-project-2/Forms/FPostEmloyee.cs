@@ -17,5 +17,16 @@ namespace win_project_2.Forms
             InitializeComponent();
         }
 
+        private void guna2HtmlLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

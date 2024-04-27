@@ -29,5 +29,7 @@ namespace win_project_2.Forms
             lb_request.Text = post.Request;
             lb_tag.Text = post.Tag;
         }
+
+        
     }
 }
