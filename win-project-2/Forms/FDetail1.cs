@@ -42,5 +42,7 @@ namespace win_project_2.Forms
             FChat f = new FChat(id);
             f.ShowDialog();
         }
+
+        
     }
 }
