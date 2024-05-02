@@ -11,12 +11,15 @@ using System.Web.UI.WebControls;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
+using System.Security.Cryptography;
 
 
 namespace win_project_2.DataClass
 {
     public delegate void MessageReceivedHandler(string message);
     public delegate void NotificationReceivedHandler(string notification);
+    public delegate void Notify_nt(string notify_nt);
+    public delegate void Notify_ntt(string notify_ntt);
     public class DB
     {
         private IFirebaseConfig config;
@@ -28,6 +31,8 @@ namespace win_project_2.DataClass
         string value = GlobalVariables.id;
         public event MessageReceivedHandler OnMessageReceived;
         public event NotificationReceivedHandler OnNotificationReceived;
+        public event Notify_nt OnNotify_nt;
+        public event Notify_ntt OnNotify_ntt;
         public DB()
         {
             config = new FirebaseConfig
@@ -460,7 +465,7 @@ namespace win_project_2.DataClass
 
             if (pushResponse.StatusCode == System.Net.HttpStatusCode.OK)
             {
-                Console.WriteLine("Thông báo đã được gửi.");
+                //Console.WriteLine("Thông báo đã được gửi.");
             }
             else
             {
@@ -468,7 +473,7 @@ namespace win_project_2.DataClass
             }
         }
 
-        public string LatestNotify { get; private set; }
+        //public string LatestNotify { get; private set; }
 
         public async void ListenForNewNotify(string workerId)
         {
@@ -480,5 +485,87 @@ namespace win_project_2.DataClass
                 });
         }
 
+
+
+
+
+        //
+        public async Task ApplyforJob(string id_job, string nt_id, string ntt_id)
+        {
+            SetResponse setResponse = await client.SetAsync($"nt_notify/{nt_id}/{id_job}", $"WAIT-{id_job}");
+            if (setResponse.StatusCode == System.Net.HttpStatusCode.OK)
+            {
+                Console.WriteLine("Người thợ đã được thêm vào danh sách ứng viên.");
+            }
+            else
+            {
+                Console.WriteLine("Có lỗi xảy ra khi thêm người thợ vào danh sách ứng viên.");
+            }
+
+            FirebaseResponse response = await client.GetAsync($"ntt_notify/{id_job}/");
+            var waitlist = response.ResultAs<string>();
+
+            if (waitlist == null)
+            {
+                waitlist = $"p{id_job}-{nt_id}";
+                SetResponse resetResponse = await client.SetAsync($"ntt_notify/{ntt_id}/p{id_job}/", waitlist);
+                if (resetResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    Console.WriteLine("Danh sách ứng viên đã được khởi tạo.");
+                }
+                else
+                {
+                    Console.WriteLine("Có lỗi xảy ra khi khởi tạo danh sách ứng viên.");
+                }
+            }
+        }
+
+        public async Task AcceptWorker(string id_job, string nt_id, string ntt_id) //người tìm thợ
+        {
+            SetResponse setResponse = await client.SetAsync($"nt_notify/{nt_id}/{id_job}", $"ACCEPT-{id_job}");
+            FirebaseResponse response = await client.DeleteAsync($"ntt_notify/{ntt_id}/{id_job}");
+        }
+
+        public async Task CompleteJob(string id_job, string nt_id, string ntt_id) //người thợ
+        {
+            SetResponse setResponse = await client.SetAsync($"ntt_notify/{ntt_id}/{id_job}", $"COMPLETE-{id_job}");
+        }
+
+
+
+
+
+
+
+
+        //public string LatestNotify_nt { get; private set; }
+
+        public async void ListenForNewNotify_nt()
+        {
+            EventStreamResponse response = await client.OnAsync("nt_notify/" + GlobalVariables.id + "/",
+                added: (sender, args, context) =>
+                {
+                    OnNotify_nt?.Invoke(args.Data);
+                },
+                changed: (sender, args, content) =>
+                {
+                    OnNotify_nt?.Invoke(args.Data);
+                });
+        }
+
+        //public string LatestNotify_ntt { get; private set; }
+
+        public async void ListenForNewNotify_ntt()
+        {
+            EventStreamResponse response = await client.OnAsync("ntt_notify/" + GlobalVariables.id + "/",
+                added: (sender, args, context) =>
+                {
+                    OnNotify_ntt?.Invoke(args.Data);
+                },
+                changed: (sender, args, content) =>
+                {
+                    OnNotify_ntt?.Invoke(args.Data);
+                });
+        }
     }
 }

@@ -729,3 +729,5 @@ C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.
 C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-proj.20E85E94.Up2Date
 C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.exe
 C:\Users\user\Documents\GitHub\winproject\win-project-2\obj\Debug\win-project-2.pdb
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
+D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNTapply.resources

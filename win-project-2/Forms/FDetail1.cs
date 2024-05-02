@@ -13,11 +13,13 @@ namespace win_project_2.Forms
 {
     public partial class FDetail1 : Form
     {
-        string id = "";
+        string id_sender = "";
+        string id_job = "";
         public FDetail1(string id_post)
         {
             InitializeComponent();
             LoadData(id_post);
+            id_job = id_post;
         }
 
         public async void LoadData(string id_post)
@@ -29,20 +31,24 @@ namespace win_project_2.Forms
             lb_price.Text = post.Price.ToString();
             lb_request.Text = post.Request;
             lb_tag.Text = post.Tag;
-            id = post.SenderId;
+            id_sender = post.SenderId;
         }
 
         private async void guna2Button2_Click(object sender, EventArgs e)
         {
             var dt = new DB();
-            await dt.AddtoContact(id);
-            string[] users = new string[] { GlobalVariables.id, id };
+            await dt.AddtoContact(id_sender);
+            string[] users = new string[] { GlobalVariables.id, id_sender };
             Array.Sort(users);
             string combinedString = String.Join("-", users);
-            FChat f = new FChat(id);
+            FChat f = new FChat(id_sender);
             f.ShowDialog();
         }
 
-        
+        private async void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            await dt.ApplyforJob(id_job, GlobalVariables.id, id_sender);
+        }
     }
 }

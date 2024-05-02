@@ -30,6 +30,7 @@ namespace win_project_2.Forms
             Array.Sort(users);
             combinedString = String.Join("-", users);
             dt.ListenForNewMessages(combinedString);
+            lb_name.Text = GlobalVariables.other_user;
         }
         public async void dt_OnMessageReceived(string message)
         {

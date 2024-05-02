@@ -18,12 +18,20 @@ namespace win_project_2.DataClass
         {
             InitializeComponent();
             dt = new DB();
-            dt.OnMessageReceived += dt_OnMessageReceived;
-            dt.ListenForNewMessages("idroom");
+            //dt.OnMessageReceived += dt_OnMessageReceived;
+            //dt.ListenForNewMessages("idroom");
 
             dt.OnNotificationReceived += dt_OnNotifyReceived;
-            dt.ListenForNewNotify(GlobalVariables.id);
+            dt.ListenForNewNotify("test10");
 
+            dt.OnNotify_nt += dt_OnNotify_nt;
+            dt.ListenForNewNotify_nt();
+
+        }
+
+        private void dt_OnNotify_nt(string notify_nt)
+        {
+            Console.WriteLine("NT" + notify_nt);
         }
 
         private void dt_OnNotifyReceived(string notification)
@@ -269,7 +277,6 @@ namespace win_project_2.DataClass
         private async void button16_Click(object sender, EventArgs e)
         {
             var dt = new DB();
-            await dt.NotifyWorker("test10", "đã nhận");
         }
     }
 }

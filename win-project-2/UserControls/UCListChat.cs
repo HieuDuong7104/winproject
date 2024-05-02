@@ -46,7 +46,7 @@ namespace win_project_2.UserControls
 
         private void btn_chat_Click(object sender, EventArgs e)
         {
-
+            GlobalVariables.other_user = lb_name.Text;
             this.ParentFListChat.DisplayInPanel(ID);
 
            

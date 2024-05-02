@@ -286,6 +286,12 @@
     <Compile Include="Forms\FListNguoiTho.Designer.cs">
       <DependentUpon>FListNguoiTho.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FListNTapply.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FListNTapply.Designer.cs">
+      <DependentUpon>FListNTapply.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FListReview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -393,6 +399,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCAccept.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCAccept.Designer.cs">
+      <DependentUpon>UCAccept.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UCListChat.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -438,6 +450,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListNguoiTho.resx">
       <DependentUpon>FListNguoiTho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FListNTapply.resx">
+      <DependentUpon>FListNTapply.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListReview.resx">
       <DependentUpon>FListReview.cs</DependentUpon>
@@ -491,6 +506,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCAccept.resx">
+      <DependentUpon>UCAccept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCListChat.resx">
       <DependentUpon>UCListChat.cs</DependentUpon>
