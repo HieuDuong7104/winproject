@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Firebase.Auth;
+using win_project_2.DataClass;
 
 namespace win_project_2
 {
@@ -20,12 +21,6 @@ namespace win_project_2
             try
             {
                 var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(email, password);
-
-                var realtimedatabase = new Data();
-
-                //var data = new UserInfo("Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin", "Chưa nhập thông tin");
-
-                //realtimedatabase.UploadData("info/" + GlobalVariables.id +"/" , data);
             }
             catch (FirebaseAuthException ex)
             {
@@ -53,6 +48,17 @@ namespace win_project_2
             {
                 return null;
             }
+        }
+
+        public async Task<bool> CheckIsTho(string username)
+        {
+            var dt = new DB();
+            NguoiTho nguoitho = await dt.GetInfoNguoiTho(username);
+            if (nguoitho == null)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

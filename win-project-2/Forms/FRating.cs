@@ -53,7 +53,6 @@ namespace win_project_2.Forms
             using (var tempImage = new Bitmap(FileImageName))
             {
                 guna2PictureBox1.Image = new Bitmap(tempImage);
-
             }
         }
 
@@ -84,6 +83,7 @@ namespace win_project_2.Forms
             }
             
             await dt.UpdateRate(NguoiThoId, nguoitho.rate);
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)

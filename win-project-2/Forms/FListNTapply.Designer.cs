@@ -34,9 +34,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(93, 65);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(62, 65);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1027, 517);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1227, 483);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // FListNTapply

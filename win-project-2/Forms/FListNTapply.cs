@@ -14,34 +14,36 @@ namespace win_project_2.Forms
 {
     public partial class FListNTapply : Form
     {
-        private DB dt;
         public FListNTapply()
         {
             InitializeComponent();
-            dt = new DB();
-
-            dt.OnNotify_ntt += dt_OnNotify_ntt;
-            dt.ListenForNewNotify_ntt();
+            LoadData();
         }
 
-        public async void dt_OnNotify_ntt(string notify_ntt)
+        public async void LoadData()
         {
-            string input = notify_ntt;
-            char[] delimiter = { '-' };
-
-            string[] parts = input.Split(delimiter, StringSplitOptions.RemoveEmptyEntries);
-
-            string id_job = parts[0];
-
-            string remainingPart = string.Join("-", parts.Skip(1));
-            
-            foreach (var user in remainingPart.Split(delimiter))
+            this.flowLayoutPanel1.Controls.Clear();
+            var dt = new DB();
+            List<string> list = await dt.GetAllApply();
+            foreach (string item in list)
             {
-                UCAccept new_uc = new UCAccept(id_job, user, GlobalVariables.id);   
-                flowLayoutPanel1.Invoke(new Action(() =>
+                string[] parts = item.Split('-');
+                if (parts[1] == "COMPLETE")
                 {
+                    UCWriteRV new_uc = new UCWriteRV(parts[2]);
+                    new_uc.ParentFListNTapply = this;
                     flowLayoutPanel1.Controls.Add(new_uc);
-                }));
+                }
+                else
+                {
+                    string[] users = parts[1].Split(',');
+                    foreach (string user in users)
+                    {
+                        UCAccept new_uc = new UCAccept(parts[0], user);
+                        new_uc.ParentFListNTapply = this;
+                        flowLayoutPanel1.Controls.Add(new_uc);
+                    }
+                }
             }
         }
     }

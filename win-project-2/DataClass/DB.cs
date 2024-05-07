@@ -485,14 +485,10 @@ namespace win_project_2.DataClass
                 });
         }
 
-
-
-
-
         //
         public async Task ApplyforJob(string id_job, string nt_id, string ntt_id)
         {
-            SetResponse setResponse = await client.SetAsync($"nt_notify/{nt_id}/{id_job}", $"WAIT-{id_job}");
+            SetResponse setResponse = await client.SetAsync($"nt_notify/{nt_id}/{id_job}", $"WAIT-"+$"{id_job}");
             if (setResponse.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 Console.WriteLine("Người thợ đã được thêm vào danh sách ứng viên.");
@@ -502,13 +498,13 @@ namespace win_project_2.DataClass
                 Console.WriteLine("Có lỗi xảy ra khi thêm người thợ vào danh sách ứng viên.");
             }
 
-            FirebaseResponse response = await client.GetAsync($"ntt_notify/{id_job}/");
+            FirebaseResponse response = await client.GetAsync($"ntt_notify/{ntt_id}/{id_job}/");
             var waitlist = response.ResultAs<string>();
 
             if (waitlist == null)
             {
-                waitlist = $"p{id_job}-{nt_id}";
-                SetResponse resetResponse = await client.SetAsync($"ntt_notify/{ntt_id}/p{id_job}/", waitlist);
+                waitlist = $"{id_job}-{nt_id}";
+                SetResponse resetResponse = await client.SetAsync($"ntt_notify/{ntt_id}/{id_job}/", waitlist);
                 if (resetResponse.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     Console.WriteLine("Danh sách ứng viên đã được khởi tạo.");
@@ -517,6 +513,29 @@ namespace win_project_2.DataClass
                 {
                     Console.WriteLine("Có lỗi xảy ra khi khởi tạo danh sách ứng viên.");
                 }
+            }
+            else
+            {
+                string[] parts = waitlist.Split('-');
+                string[] users = parts[1].Split(',');
+
+                // Kiểm tra xem my_id có trong danh sách người dùng không
+                bool containsMyId = false;
+                foreach (string user in users)
+                {
+                    if (user == nt_id)
+                    {
+                        containsMyId = true;
+                        break;
+                    }
+                }
+
+                if (!containsMyId)
+                {
+                    waitlist += $",{nt_id}";
+                    SetResponse resetResponse = await client.SetAsync($"ntt_notify/{ntt_id}/{id_job}/", waitlist);
+                }
+
             }
         }
 
@@ -528,44 +547,40 @@ namespace win_project_2.DataClass
 
         public async Task CompleteJob(string id_job, string nt_id, string ntt_id) //người thợ
         {
-            SetResponse setResponse = await client.SetAsync($"ntt_notify/{ntt_id}/{id_job}", $"COMPLETE-{id_job}");
+            SetResponse setResponse = await client.SetAsync($"ntt_notify/{ntt_id}/{id_job}", $"{id_job}-COMPLETE-{nt_id}");
+            FirebaseResponse response = await client.DeleteAsync($"nt_notify/{nt_id}/{id_job}");
         }
 
-
-
-
-
-
-
-
-        //public string LatestNotify_nt { get; private set; }
-
-        public async void ListenForNewNotify_nt()
+        public async Task<List<string>> GetAllWaitJob()
         {
-            EventStreamResponse response = await client.OnAsync("nt_notify/" + GlobalVariables.id + "/",
-                added: (sender, args, context) =>
-                {
-                    OnNotify_nt?.Invoke(args.Data);
-                },
-                changed: (sender, args, content) =>
-                {
-                    OnNotify_nt?.Invoke(args.Data);
-                });
+            FirebaseResponse response = await client.GetAsync("nt_notify/" + GlobalVariables.id);
+            Dictionary<string, string> job = response.ResultAs<Dictionary<string, string>>();
+            List<string> jobList = new List<string>();
+
+            foreach (var j in job)
+            {
+                jobList.Add(j.Value);
+            }
+
+            return jobList;
         }
 
-        //public string LatestNotify_ntt { get; private set; }
-
-        public async void ListenForNewNotify_ntt()
+        public async Task<List<string>> GetAllApply()
         {
-            EventStreamResponse response = await client.OnAsync("ntt_notify/" + GlobalVariables.id + "/",
-                added: (sender, args, context) =>
-                {
-                    OnNotify_ntt?.Invoke(args.Data);
-                },
-                changed: (sender, args, content) =>
-                {
-                    OnNotify_ntt?.Invoke(args.Data);
-                });
+            FirebaseResponse response = await client.GetAsync("ntt_notify/" + GlobalVariables.id);
+            Dictionary<string, string> job = response.ResultAs<Dictionary<string, string>>();
+            if (job == null)
+            {
+                return null;
+            }
+            List<string> jobList = new List<string>();
+
+            foreach (var j in job)
+            {
+                jobList.Add(j.Value);
+            }
+
+            return jobList;
         }
     }
 }

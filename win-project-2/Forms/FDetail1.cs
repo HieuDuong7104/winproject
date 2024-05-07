@@ -25,7 +25,7 @@ namespace win_project_2.Forms
         public async void LoadData(string id_post)
         {
             var dt = new DB();
-            Post post = await dt.GetInfoPost("p" + id_post);
+            Post post = await dt.GetInfoPost(id_post);
             lb_des.Text = post.Description;
             lb_location.Text = post.Location;
             lb_price.Text = post.Price.ToString();

@@ -48,9 +48,11 @@ namespace win_project_2.UserControls
         {
             GlobalVariables.other_user = lb_name.Text;
             this.ParentFListChat.DisplayInPanel(ID);
-
-           
         }
 
+        private void UCListChat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

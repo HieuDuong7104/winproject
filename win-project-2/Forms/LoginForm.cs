@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using win_project_2.DataClass;
 
 namespace win_project_2
 {
@@ -44,6 +45,7 @@ namespace win_project_2
             {
                 
                 MessageBox.Show("Đăng nhập thành công.");
+                GlobalVariables.isTho = await firebase.CheckIsTho(GlobalVariables.id);
 
             }
             else
@@ -54,14 +56,8 @@ namespace win_project_2
 
         private async void guna2Button2_Click(object sender, EventArgs e)
         {
-            string email = guna2TextBox1.Text;
-            GlobalVariables.id = email.Split('@')[0];
-            string password = guna2TextBox2.Text;
-            var firebase = new Firebase();
-            await firebase.CreateUser(email, password);
-
-            
-
+           FInfor f = new FInfor();
+            f.ShowDialog();
         }
     }
 }

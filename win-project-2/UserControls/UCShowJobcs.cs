@@ -22,7 +22,7 @@ namespace win_project_2.UserControls
 
         public async void LoadData(Post post)
         {
-            id_post = post.Id;
+            id_post = "p" + post.Id;
             lb_tag.Text = post.Tag;
             lb_location.Text = post.Location;
             lb_price.Text = post.Price.ToString();

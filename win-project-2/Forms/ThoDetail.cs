@@ -20,10 +20,11 @@ namespace win_project_2.Forms
     {
         private int favCount,doneJob;
         public string id;
-        public ThoDetail(string id)
+        public ThoDetail(string _id)
         {
             InitializeComponent();
-            LoadData(id);
+            LoadData(_id);
+            id = _id;
 
         }
         public async Task<int> CountFav(string id)

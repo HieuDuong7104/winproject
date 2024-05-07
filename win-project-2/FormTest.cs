@@ -13,37 +13,9 @@ namespace win_project_2.DataClass
 {
     public partial class FormTest : Form
     {
-        private DB dt;
         public FormTest()
         {
             InitializeComponent();
-            dt = new DB();
-            //dt.OnMessageReceived += dt_OnMessageReceived;
-            //dt.ListenForNewMessages("idroom");
-
-            dt.OnNotificationReceived += dt_OnNotifyReceived;
-            dt.ListenForNewNotify("test10");
-
-            dt.OnNotify_nt += dt_OnNotify_nt;
-            dt.ListenForNewNotify_nt();
-
-        }
-
-        private void dt_OnNotify_nt(string notify_nt)
-        {
-            Console.WriteLine("NT" + notify_nt);
-        }
-
-        private void dt_OnNotifyReceived(string notification)
-        {
-            Console.WriteLine("Thông báo mới: " + notification);
-        }
-
-        private void dt_OnMessageReceived(string message)
-        {
-            // Xử lý tin nhắn mới tại đây
-            // Ví dụ: cập nhật giao diện người dùng hoặc lưu tin nhắn vào một biến
-            Console.WriteLine("Tin nhắn mới: " + message);
         }
 
         private async void button1_Click(object sender, EventArgs e)

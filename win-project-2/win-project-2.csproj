@@ -298,6 +298,12 @@
     <Compile Include="Forms\FListReview.Designer.cs">
       <DependentUpon>FListReview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FListWaitJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FListWaitJob.Designer.cs">
+      <DependentUpon>FListWaitJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FPostEmloyee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -436,6 +442,18 @@
     <Compile Include="UserControls\UCShowJobcs.Designer.cs">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UCWaitJob.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCWaitJob.Designer.cs">
+      <DependentUpon>UCWaitJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCWriteRV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UCWriteRV.Designer.cs">
+      <DependentUpon>UCWriteRV.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -456,6 +474,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FListReview.resx">
       <DependentUpon>FListReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FListWaitJob.resx">
+      <DependentUpon>FListWaitJob.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FPostEmloyee.resx">
       <DependentUpon>FPostEmloyee.cs</DependentUpon>
@@ -524,6 +545,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UCShowJobcs.resx">
       <DependentUpon>UCShowJobcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCWaitJob.resx">
+      <DependentUpon>UCWaitJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UCWriteRV.resx">
+      <DependentUpon>UCWriteRV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

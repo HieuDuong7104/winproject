@@ -14,27 +14,36 @@ namespace win_project_2.UserControls
 {
     public partial class UCAccept : UserControl
     {
-        string id_job = "";
-        string id_nt = "";
-        string id_ntt = "";
-        public UCAccept(string job, string nt, string ntt)
+        public FListNTapply ParentFListNTapply { get; set; }
+        public string _idjob = "";
+        public string _idnt = "";
+        public string _idntt = GlobalVariables.id;
+        public UCAccept(string idjob, string status)
         {
             InitializeComponent();
-            id_job = job;
-            id_nt = nt;
-            id_ntt = ntt;
+            _idjob = idjob;
+            LoadData(status);
+        }
+
+        public async void LoadData(string status)
+        {
+            _idnt = status;
+            var dt = new DB();
+            NguoiTho nguoiTho = await dt.GetInfoNguoiTho(_idnt);
+            lb_name.Text = nguoiTho.Name;
+            
         }
 
 
         private async void btn_accept_Click(object sender, EventArgs e)
         {
             var dt = new DB();
-            await dt.AcceptWorker(id_job, id_nt, id_ntt);
+            await dt.AcceptWorker(_idjob, _idnt, _idntt);
         }
 
         private async void btn_info_Click(object sender, EventArgs e)
         {
-            ThoDetail f = new ThoDetail(id_nt);
+            ThoDetail f = new ThoDetail(_idnt);
             f.ShowDialog();
         }
     }
