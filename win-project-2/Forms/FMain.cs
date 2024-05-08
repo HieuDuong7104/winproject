@@ -291,5 +291,17 @@ namespace win_project_2
         {
 
         }
+
+        private void btnNotify_Click(object sender, EventArgs e)
+        {
+            if (GlobalVariables.isTho)
+            {
+                OpenChildForm(new FListWaitJob());
+            }
+            else
+            {
+                OpenChildForm(new FListNTapply());
+            }
+        }
     }
 }

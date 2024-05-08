@@ -557,6 +557,11 @@ namespace win_project_2.DataClass
             Dictionary<string, string> job = response.ResultAs<Dictionary<string, string>>();
             List<string> jobList = new List<string>();
 
+            if(job == null)
+            {
+                return null;
+            }
+
             foreach (var j in job)
             {
                 jobList.Add(j.Value);

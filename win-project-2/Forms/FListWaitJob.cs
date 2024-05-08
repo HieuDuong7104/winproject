@@ -27,6 +27,10 @@ namespace win_project_2.Forms
             this.flowLayoutPanel1.Controls.Clear();
             var dt = new DB();
             List<string> listWaitJob = await dt.GetAllWaitJob();
+            if (listWaitJob == null)
+            {
+                return;
+            }
             foreach (string str in listWaitJob)
             {
                 Console.WriteLine(str);

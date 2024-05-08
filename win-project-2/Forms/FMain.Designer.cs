@@ -40,6 +40,7 @@
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.btnNotify = new FontAwesome.Sharp.IconButton();
             this.panelMenu2.SuspendLayout();
             this.panelTittleBar.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,7 @@
             // panelMenu2
             // 
             this.panelMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelMenu2.Controls.Add(this.btnNotify);
             this.panelMenu2.Controls.Add(this.btnSignOut);
             this.panelMenu2.Controls.Add(this.btnUser);
             this.panelMenu2.Controls.Add(this.btnStatistic);
@@ -65,7 +67,7 @@
             this.btnSignOut.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnSignOut.FlatAppearance.BorderSize = 0;
             this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignOut.Font = new System.Drawing.Font("Quicksand", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnSignOut.ForeColor = System.Drawing.Color.White;
             this.btnSignOut.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
             this.btnSignOut.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -87,7 +89,7 @@
             this.btnUser.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnUser.FlatAppearance.BorderSize = 0;
             this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUser.Font = new System.Drawing.Font("Quicksand", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnUser.ForeColor = System.Drawing.Color.White;
             this.btnUser.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
             this.btnUser.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -109,7 +111,7 @@
             this.btnStatistic.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStatistic.FlatAppearance.BorderSize = 0;
             this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStatistic.Font = new System.Drawing.Font("Quicksand", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnStatistic.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnStatistic.ForeColor = System.Drawing.Color.White;
             this.btnStatistic.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
             this.btnStatistic.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -131,7 +133,7 @@
             this.btnChat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnChat.FlatAppearance.BorderSize = 0;
             this.btnChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChat.Font = new System.Drawing.Font("Quicksand", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnChat.ForeColor = System.Drawing.Color.White;
             this.btnChat.IconChar = FontAwesome.Sharp.IconChar.Message;
             this.btnChat.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -153,7 +155,7 @@
             this.btnHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Quicksand", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.House;
             this.btnHome.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -175,7 +177,7 @@
             this.btnMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnMenu.FlatAppearance.BorderSize = 0;
             this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Font = new System.Drawing.Font("Quicksand", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnMenu.ForeColor = System.Drawing.Color.White;
             this.btnMenu.IconChar = FontAwesome.Sharp.IconChar.Navicon;
             this.btnMenu.IconColor = System.Drawing.Color.WhiteSmoke;
@@ -270,6 +272,28 @@
             this.panelDesktop.TabIndex = 1;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
+            // btnNotify
+            // 
+            this.btnNotify.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNotify.FlatAppearance.BorderSize = 0;
+            this.btnNotify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotify.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnNotify.ForeColor = System.Drawing.Color.White;
+            this.btnNotify.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
+            this.btnNotify.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNotify.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNotify.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotify.Location = new System.Drawing.Point(0, 560);
+            this.btnNotify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNotify.Name = "btnNotify";
+            this.btnNotify.Size = new System.Drawing.Size(307, 112);
+            this.btnNotify.TabIndex = 6;
+            this.btnNotify.Tag = "User";
+            this.btnNotify.Text = "Notification";
+            this.btnNotify.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNotify.UseVisualStyleBackColor = true;
+            this.btnNotify.Click += new System.EventHandler(this.btnNotify_Click);
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,5 +325,6 @@
         private FontAwesome.Sharp.IconButton btnClose;
         private FontAwesome.Sharp.IconButton btnMaximize;
         private FontAwesome.Sharp.IconButton btnMinimize;
+        private FontAwesome.Sharp.IconButton btnNotify;
     }
 }
