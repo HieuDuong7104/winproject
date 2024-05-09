@@ -25,6 +25,7 @@ namespace win_project_2.Forms
             this.flowLayoutPanel1.Controls.Clear();
             var dt = new DB();
             List<string> list = await dt.GetAllApply();
+            if (list == null) { return; }
             foreach (string item in list)
             {
                 string[] parts = item.Split('-');

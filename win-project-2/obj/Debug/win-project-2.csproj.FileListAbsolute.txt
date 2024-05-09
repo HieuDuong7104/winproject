@@ -734,3 +734,8 @@ D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNTappl
 D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListWaitJob.resources
 D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWaitJob.resources
 D:\window_app\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWriteRV.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListNTapply.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.Forms.FListWaitJob.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCAccept.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWaitJob.resources
+C:\Users\admin\Downloads\git12\winproject\win-project-2\obj\Debug\win_project_2.UserControls.UCWriteRV.resources

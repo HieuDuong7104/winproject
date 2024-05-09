@@ -35,18 +35,19 @@
             // 
             // lb_name
             // 
-            this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(135, 64);
+            this.lb_name.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lb_name.Location = new System.Drawing.Point(96, 73);
             this.lb_name.Name = "lb_name";
-            this.lb_name.Size = new System.Drawing.Size(44, 16);
+            this.lb_name.Size = new System.Drawing.Size(563, 31);
             this.lb_name.TabIndex = 0;
             this.lb_name.Text = "label1";
             // 
             // btn_rv
             // 
-            this.btn_rv.Location = new System.Drawing.Point(547, 44);
+            this.btn_rv.Location = new System.Drawing.Point(743, 52);
+            this.btn_rv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_rv.Name = "btn_rv";
-            this.btn_rv.Size = new System.Drawing.Size(164, 57);
+            this.btn_rv.Size = new System.Drawing.Size(184, 67);
             this.btn_rv.TabIndex = 1;
             this.btn_rv.Text = "Viết đánh giá";
             this.btn_rv.UseVisualStyleBackColor = true;
@@ -54,24 +55,26 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(547, 107);
+            this.button1.Location = new System.Drawing.Point(615, 127);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(8, 8);
+            this.button1.Size = new System.Drawing.Size(9, 10);
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // UCWriteRV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_rv);
             this.Controls.Add(this.lb_name);
+            this.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCWriteRV";
-            this.Size = new System.Drawing.Size(746, 150);
+            this.Size = new System.Drawing.Size(1135, 179);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

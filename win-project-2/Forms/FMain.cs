@@ -275,6 +275,7 @@ namespace win_project_2
         private void btnChat_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FListChat());
+           
         }
 
         private void btnStatistic_Click(object sender, EventArgs e)

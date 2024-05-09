@@ -50,5 +50,10 @@ namespace win_project_2.Forms
             var dt = new DB();
             await dt.ApplyforJob(id_job, GlobalVariables.id, id_sender);
         }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

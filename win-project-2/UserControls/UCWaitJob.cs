@@ -55,5 +55,7 @@ namespace win_project_2.UserControls
             await dt.CompleteJob(_idjob, GlobalVariables.id, _idntt);
             this.ParentFListWaitJob.LoadData();
         }
+
+        
     }
 }
