@@ -25,5 +25,15 @@ namespace win_project_2.Forms
             string temp = await dt.PostArticle(newPost);
             await dt.AddPostToPosted(temp);
         }
+
+        private void lb_loca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

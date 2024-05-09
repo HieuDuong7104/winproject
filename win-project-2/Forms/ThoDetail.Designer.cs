@@ -55,12 +55,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lb_FavTho = new System.Windows.Forms.Label();
             this.lb_DoneJob = new System.Windows.Forms.Label();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lb_Profie = new System.Windows.Forms.Label();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.bt_addFavTho = new Guna.UI2.WinForms.Guna2Button();
             this.bnt_Mess = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +69,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1055, 105);
+            this.label11.Location = new System.Drawing.Point(444, 439);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 22);
             this.label11.TabIndex = 43;
@@ -145,7 +145,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(441, 459);
+            this.label3.Location = new System.Drawing.Point(897, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 22);
             this.label3.TabIndex = 30;
@@ -177,13 +177,13 @@
             this.guna2Shapes3.BorderThickness = 1;
             this.guna2Shapes3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Shapes3.LineThickness = 1;
-            this.guna2Shapes3.Location = new System.Drawing.Point(353, 486);
+            this.guna2Shapes3.Location = new System.Drawing.Point(419, 447);
             this.guna2Shapes3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Shapes3.Name = "guna2Shapes3";
             this.guna2Shapes3.PolygonSkip = 1;
             this.guna2Shapes3.Rotate = 0F;
             this.guna2Shapes3.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes3.Size = new System.Drawing.Size(1099, 34);
+            this.guna2Shapes3.Size = new System.Drawing.Size(319, 34);
             this.guna2Shapes3.TabIndex = 40;
             this.guna2Shapes3.Text = "guna2Shapes1";
             this.guna2Shapes3.Zoom = 80;
@@ -195,13 +195,13 @@
             this.guna2Shapes6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Shapes6.LineOrientation = System.Windows.Forms.Orientation.Vertical;
             this.guna2Shapes6.LineThickness = 1;
-            this.guna2Shapes6.Location = new System.Drawing.Point(1004, 48);
+            this.guna2Shapes6.Location = new System.Drawing.Point(840, 58);
             this.guna2Shapes6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Shapes6.Name = "guna2Shapes6";
             this.guna2Shapes6.PolygonSkip = 1;
             this.guna2Shapes6.Rotate = 0F;
             this.guna2Shapes6.Shape = Guna.UI2.WinForms.Enums.ShapeType.Line;
-            this.guna2Shapes6.Size = new System.Drawing.Size(45, 433);
+            this.guna2Shapes6.Size = new System.Drawing.Size(45, 743);
             this.guna2Shapes6.TabIndex = 41;
             this.guna2Shapes6.Text = "guna2Shapes6";
             this.guna2Shapes6.Zoom = 80;
@@ -249,22 +249,22 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(467, 549);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(901, 187);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(873, 220);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(510, 480);
             this.flowLayoutPanel1.TabIndex = 44;
             // 
             // guna2Shapes7
             // 
             this.guna2Shapes7.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes7.Location = new System.Drawing.Point(331, 507);
+            this.guna2Shapes7.Location = new System.Drawing.Point(815, 105);
             this.guna2Shapes7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Shapes7.Name = "guna2Shapes7";
             this.guna2Shapes7.PolygonSkip = 1;
             this.guna2Shapes7.Rotate = 0F;
             this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes7.Size = new System.Drawing.Size(1139, 300);
+            this.guna2Shapes7.Size = new System.Drawing.Size(677, 637);
             this.guna2Shapes7.TabIndex = 45;
             this.guna2Shapes7.Text = "guna2Shapes7";
             this.guna2Shapes7.Zoom = 80;
@@ -273,7 +273,7 @@
             // 
             this.lb_Ex.AutoSize = true;
             this.lb_Ex.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_Ex.Location = new System.Drawing.Point(1055, 158);
+            this.lb_Ex.Location = new System.Drawing.Point(444, 494);
             this.lb_Ex.Name = "lb_Ex";
             this.lb_Ex.Size = new System.Drawing.Size(117, 24);
             this.lb_Ex.TabIndex = 29;
@@ -381,19 +381,6 @@
             this.lb_DoneJob.TabIndex = 36;
             this.lb_DoneJob.Text = "0";
             // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(123, 109);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(141, 128);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 34;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
             // lb_Profie
             // 
             this.lb_Profie.AutoSize = true;
@@ -487,11 +474,25 @@
             this.bnt_Mess.UseTransparentBackground = true;
             this.bnt_Mess.Click += new System.EventHandler(this.bnt_Mess_Click);
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(123, 109);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(141, 128);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 34;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // ThoDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1381, 784);
+            this.ClientSize = new System.Drawing.Size(1526, 784);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bnt_Mess);
             this.Controls.Add(this.bt_addFavTho);
             this.Controls.Add(this.panel1);
@@ -505,7 +506,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lb_job);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.lb_Ex);
             this.Controls.Add(this.lb_Name);
             this.Controls.Add(this.label2);

@@ -55,7 +55,7 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(1225, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(622, 36);
             this.guna2TextBox1.TabIndex = 1;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -79,9 +79,9 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 98);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(146, 107);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1432, 496);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1432, 755);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // FShowListJob
@@ -89,7 +89,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1450, 696);
+            this.ClientSize = new System.Drawing.Size(1662, 969);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2TextBox1);

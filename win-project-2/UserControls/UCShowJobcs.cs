@@ -34,5 +34,10 @@ namespace win_project_2.UserControls
             FDetail1 f = new FDetail1(id_post);
             f.ShowDialog();
         }
+
+        private void lb_location_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

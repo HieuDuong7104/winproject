@@ -74,5 +74,10 @@ namespace win_project_2.UserControls
             ThoDetail f = new ThoDetail(id);
             f.ShowDialog();
         }
+
+        private void guna2Shapes1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

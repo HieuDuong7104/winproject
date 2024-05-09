@@ -34,7 +34,7 @@ namespace win_project_2.Forms
             id_sender = post.SenderId;
         }
 
-        private async void guna2Button2_Click(object sender, EventArgs e)
+        private async void Chat_click(object sender, EventArgs e)
         {
             var dt = new DB();
             await dt.AddtoContact(id_sender);
@@ -45,10 +45,18 @@ namespace win_project_2.Forms
             f.ShowDialog();
         }
 
-        private async void guna2Button1_Click(object sender, EventArgs e)
+        private async void Nopdon_click(object sender, EventArgs e)
         {
             var dt = new DB();
             await dt.ApplyforJob(id_job, GlobalVariables.id, id_sender);
         }
+
+        private void lb_request_Click(object sender, EventArgs e)
+        {
+
+        }
+                                                   
+
+
     }
 }

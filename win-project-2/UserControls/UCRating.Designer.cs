@@ -41,14 +41,16 @@
             // guna2RatingStar1
             // 
             this.guna2RatingStar1.Enabled = false;
-            this.guna2RatingStar1.Location = new System.Drawing.Point(276, 11);
+            this.guna2RatingStar1.Location = new System.Drawing.Point(245, 9);
+            this.guna2RatingStar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2RatingStar1.Name = "guna2RatingStar1";
-            this.guna2RatingStar1.Size = new System.Drawing.Size(153, 42);
+            this.guna2RatingStar1.Size = new System.Drawing.Size(136, 34);
             this.guna2RatingStar1.TabIndex = 17;
             // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2TextBox1.BorderRadius = 20;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -57,23 +59,24 @@
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(51, 97);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.guna2TextBox1.Location = new System.Drawing.Point(45, 78);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(669, 123);
+            this.guna2TextBox1.Size = new System.Drawing.Size(595, 98);
             this.guna2TextBox1.TabIndex = 13;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 71);
+            this.label3.Location = new System.Drawing.Point(43, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 22);
+            this.label3.Size = new System.Drawing.Size(149, 18);
             this.label3.TabIndex = 12;
             this.label3.Text = "Ý kiến đánh giá:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -81,19 +84,21 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(104, 18);
+            this.label2.Location = new System.Drawing.Point(92, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 20);
+            this.label2.Size = new System.Drawing.Size(148, 16);
             this.label2.TabIndex = 11;
             this.label2.Text = "Tên người đánh giá";
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.guna2PictureBox1.BorderRadius = 20;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(51, 240);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(45, 192);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(238, 149);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(212, 119);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 15;
             this.guna2PictureBox1.TabStop = false;
@@ -103,17 +108,18 @@
             // 
             this.guna2CirclePictureBox2.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(40, 3);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(36, 2);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(57, 49);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(51, 39);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox2.TabIndex = 10;
             this.guna2CirclePictureBox2.TabStop = false;
             // 
             // UCRating
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2RatingStar1);
             this.Controls.Add(this.guna2PictureBox1);
@@ -121,8 +127,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.guna2CirclePictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCRating";
-            this.Size = new System.Drawing.Size(888, 426);
+            this.Size = new System.Drawing.Size(789, 341);
             this.Load += new System.EventHandler(this.UCRating_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();

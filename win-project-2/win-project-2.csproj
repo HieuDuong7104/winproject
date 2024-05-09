@@ -611,6 +611,24 @@
   <ItemGroup>
     <None Include="Resources\presentation.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1766.png_1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budgetfriendlypng-1537655147446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8351763.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8226784.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1305696.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\job-work.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

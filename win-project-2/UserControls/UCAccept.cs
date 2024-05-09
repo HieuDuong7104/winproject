@@ -46,5 +46,10 @@ namespace win_project_2.UserControls
             ThoDetail f = new ThoDetail(_idnt);
             f.ShowDialog();
         }
+
+        private void UCAccept_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

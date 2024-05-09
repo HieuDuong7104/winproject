@@ -28,23 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lb_name = new System.Windows.Forms.Label();
             this.btn_rv = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.SuspendLayout();
             // 
             // lb_name
             // 
             this.lb_name.AutoSize = true;
+            this.lb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_name.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lb_name.Location = new System.Drawing.Point(135, 64);
             this.lb_name.Name = "lb_name";
-            this.lb_name.Size = new System.Drawing.Size(44, 16);
+            this.lb_name.Size = new System.Drawing.Size(80, 31);
             this.lb_name.TabIndex = 0;
             this.lb_name.Text = "label1";
             // 
             // btn_rv
             // 
-            this.btn_rv.Location = new System.Drawing.Point(547, 44);
+            this.btn_rv.Location = new System.Drawing.Point(547, 51);
             this.btn_rv.Name = "btn_rv";
             this.btn_rv.Size = new System.Drawing.Size(164, 57);
             this.btn_rv.TabIndex = 1;
@@ -61,15 +66,31 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BorderColor = System.Drawing.Color.White;
+            this.guna2Shapes1.FillColor = System.Drawing.Color.White;
+            this.guna2Shapes1.Location = new System.Drawing.Point(-46, -6);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
+            this.guna2Shapes1.Size = new System.Drawing.Size(870, 164);
+            this.guna2Shapes1.TabIndex = 3;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
+            // 
             // UCWriteRV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_rv);
             this.Controls.Add(this.lb_name);
+            this.Controls.Add(this.guna2Shapes1);
             this.Name = "UCWriteRV";
-            this.Size = new System.Drawing.Size(746, 150);
+            this.Size = new System.Drawing.Size(827, 161);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,5 +101,7 @@
         private System.Windows.Forms.Label lb_name;
         private System.Windows.Forms.Button btn_rv;
         private System.Windows.Forms.Button button1;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
     }
 }

@@ -81,11 +81,12 @@
             // 
             this.guna2Panel2.Controls.Add(this.guna2TextBox1);
             this.guna2Panel2.Controls.Add(this.iconButton1);
-            this.guna2Panel2.Location = new System.Drawing.Point(298, 478);
+            this.guna2Panel2.Location = new System.Drawing.Point(308, 659);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(836, 80);
             this.guna2Panel2.TabIndex = 1;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2TextBox1
             // 
@@ -130,7 +131,7 @@
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(308, 86);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(771, 371);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(771, 523);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // guna2Panel3
@@ -143,7 +144,7 @@
             this.guna2Panel3.Location = new System.Drawing.Point(-229, 0);
             this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(1172, 624);
+            this.guna2Panel3.Size = new System.Drawing.Size(1172, 804);
             this.guna2Panel3.TabIndex = 4;
             // 
             // FChat
@@ -151,7 +152,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(943, 624);
+            this.ClientSize = new System.Drawing.Size(943, 804);
             this.Controls.Add(this.guna2Panel3);
             this.Name = "FChat";
             this.Text = "FChat";

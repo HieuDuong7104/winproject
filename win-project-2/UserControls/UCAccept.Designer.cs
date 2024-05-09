@@ -31,11 +31,12 @@
             this.btn_info = new System.Windows.Forms.Button();
             this.btn_dsth = new System.Windows.Forms.Button();
             this.lb_name = new System.Windows.Forms.Label();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.SuspendLayout();
             // 
             // btn_info
             // 
-            this.btn_info.Location = new System.Drawing.Point(202, 40);
+            this.btn_info.Location = new System.Drawing.Point(266, 66);
             this.btn_info.Name = "btn_info";
             this.btn_info.Size = new System.Drawing.Size(196, 47);
             this.btn_info.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // btn_dsth
             // 
-            this.btn_dsth.Location = new System.Drawing.Point(460, 40);
+            this.btn_dsth.Location = new System.Drawing.Point(524, 66);
             this.btn_dsth.Name = "btn_dsth";
             this.btn_dsth.Size = new System.Drawing.Size(164, 47);
             this.btn_dsth.TabIndex = 1;
@@ -56,21 +57,41 @@
             // lb_name
             // 
             this.lb_name.AutoSize = true;
-            this.lb_name.Location = new System.Drawing.Point(15, 55);
+            this.lb_name.BackColor = System.Drawing.Color.White;
+            this.lb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_name.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lb_name.Location = new System.Drawing.Point(70, 74);
             this.lb_name.Name = "lb_name";
-            this.lb_name.Size = new System.Drawing.Size(93, 16);
+            this.lb_name.Size = new System.Drawing.Size(146, 25);
             this.lb_name.TabIndex = 2;
             this.lb_name.Text = "ĐƠN XIN VIỆC";
+            // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BorderColor = System.Drawing.Color.White;
+            this.guna2Shapes1.FillColor = System.Drawing.Color.White;
+            this.guna2Shapes1.Location = new System.Drawing.Point(-43, 18);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
+            this.guna2Shapes1.Size = new System.Drawing.Size(883, 141);
+            this.guna2Shapes1.TabIndex = 3;
+            this.guna2Shapes1.Text = "guna2Shapes1";
+            this.guna2Shapes1.Zoom = 80;
             // 
             // UCAccept
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.lb_name);
             this.Controls.Add(this.btn_dsth);
             this.Controls.Add(this.btn_info);
+            this.Controls.Add(this.guna2Shapes1);
             this.Name = "UCAccept";
-            this.Size = new System.Drawing.Size(761, 132);
+            this.Size = new System.Drawing.Size(816, 182);
+            this.Load += new System.EventHandler(this.UCAccept_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +102,6 @@
         private System.Windows.Forms.Button btn_info;
         private System.Windows.Forms.Button btn_dsth;
         private System.Windows.Forms.Label lb_name;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
     }
 }

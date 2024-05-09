@@ -36,19 +36,20 @@
             this.lb_job = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.bt_detail = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(73, 39);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(97, 74);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(197, 199);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(197, 186);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
@@ -72,7 +73,7 @@
             // 
             this.lb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lb_Name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb_Name.Location = new System.Drawing.Point(47, 261);
+            this.lb_Name.Location = new System.Drawing.Point(64, 282);
             this.lb_Name.Name = "lb_Name";
             this.lb_Name.Size = new System.Drawing.Size(245, 25);
             this.lb_Name.TabIndex = 3;
@@ -83,7 +84,7 @@
             // 
             this.lb_job.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_job.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.lb_job.Location = new System.Drawing.Point(33, 300);
+            this.lb_job.Location = new System.Drawing.Point(50, 321);
             this.lb_job.Name = "lb_job";
             this.lb_job.Size = new System.Drawing.Size(279, 25);
             this.lb_job.TabIndex = 3;
@@ -105,7 +106,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-            this.guna2Button1.Location = new System.Drawing.Point(24, 338);
+            this.guna2Button1.Location = new System.Drawing.Point(51, 359);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -129,7 +130,7 @@
             this.bt_detail.FillColor = System.Drawing.Color.White;
             this.bt_detail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bt_detail.ForeColor = System.Drawing.Color.DimGray;
-            this.bt_detail.Location = new System.Drawing.Point(171, 338);
+            this.bt_detail.Location = new System.Drawing.Point(198, 359);
             this.bt_detail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bt_detail.Name = "bt_detail";
             this.bt_detail.PressedColor = System.Drawing.Color.Red;
@@ -144,17 +145,16 @@
             // 
             this.guna2Shapes1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Shapes1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes1.Location = new System.Drawing.Point(-25, -34);
+            this.guna2Shapes1.Location = new System.Drawing.Point(-3, 2);
             this.guna2Shapes1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Shapes1.Name = "guna2Shapes1";
             this.guna2Shapes1.PolygonSkip = 1;
             this.guna2Shapes1.Rotate = 0F;
             this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
             this.guna2Shapes1.Size = new System.Drawing.Size(391, 490);
-            this.guna2Shapes1.TabIndex = 5;
+            this.guna2Shapes1.TabIndex = 7;
             this.guna2Shapes1.Text = "guna2Shapes1";
             this.guna2Shapes1.Zoom = 80;
-            this.guna2Shapes1.Click += new System.EventHandler(this.guna2Shapes1_Click);
             // 
             // UCTho
             // 
@@ -169,7 +169,7 @@
             this.Controls.Add(this.guna2Shapes1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCTho";
-            this.Size = new System.Drawing.Size(339, 423);
+            this.Size = new System.Drawing.Size(391, 510);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -185,7 +185,7 @@
         private System.Windows.Forms.Label lb_job;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button bt_detail;
-        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
     }
 }

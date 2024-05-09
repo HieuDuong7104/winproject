@@ -113,5 +113,10 @@ namespace win_project_2.Forms
         {
             this.Close();
         }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
