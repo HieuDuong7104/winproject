@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -30,13 +32,24 @@ namespace win_project_2.UserControls
             {
                 NguoiTimTho nguoitimtho = await dt.GetInfoNguoiTimTho(id);
                 lb_name.Text = nguoitimtho.Name;
-                ID = id; 
+                ID = id;
+                if (nguoitimtho.AvatarUrl != "")
+                {
+                    GlobalVariables.url_avt_other_user = nguoitimtho.AvatarUrl;
+                    guna2CirclePictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(nguoitimtho.AvatarUrl)));
+                }
             }
             else
             {
                 lb_name.Text = nguoitho.Name;
                 ID = id;
+                if (nguoitho.AvatarUrl != "")
+                {
+                    GlobalVariables.url_avt_other_user = nguoitho.AvatarUrl;
+                    guna2CirclePictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(nguoitho.AvatarUrl)));
+                }
             }
+
         }
 
         private void lb_name_Click(object sender, EventArgs e)

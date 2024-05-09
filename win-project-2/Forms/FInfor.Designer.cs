@@ -57,7 +57,6 @@
             this.txt_name.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_name.BorderRadius = 0;
             this.txt_name.BorderSize = 2;
-            this.txt_name.Enabled = false;
             this.txt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_name.Location = new System.Drawing.Point(264, 103);
@@ -100,7 +99,6 @@
             this.txt_date.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_date.BorderRadius = 0;
             this.txt_date.BorderSize = 2;
-            this.txt_date.Enabled = false;
             this.txt_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_date.Location = new System.Drawing.Point(264, 223);
@@ -123,7 +121,6 @@
             this.txt_mail.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_mail.BorderRadius = 0;
             this.txt_mail.BorderSize = 2;
-            this.txt_mail.Enabled = false;
             this.txt_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_mail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_mail.Location = new System.Drawing.Point(264, 325);
@@ -157,7 +154,6 @@
             this.txt_phonenumber.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_phonenumber.BorderRadius = 0;
             this.txt_phonenumber.BorderSize = 2;
-            this.txt_phonenumber.Enabled = false;
             this.txt_phonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_phonenumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_phonenumber.Location = new System.Drawing.Point(264, 510);
@@ -190,7 +186,6 @@
             this.txt_address.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_address.BorderRadius = 0;
             this.txt_address.BorderSize = 2;
-            this.txt_address.Enabled = false;
             this.txt_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_address.Location = new System.Drawing.Point(264, 589);
@@ -223,7 +218,6 @@
             this.rjButton1.BorderColor = System.Drawing.Color.Black;
             this.rjButton1.BorderRadius = 0;
             this.rjButton1.BorderSize = 1;
-            this.rjButton1.Enabled = false;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
@@ -332,7 +326,6 @@
             this.txt_pass.BorderFocusColor = System.Drawing.Color.HotPink;
             this.txt_pass.BorderRadius = 0;
             this.txt_pass.BorderSize = 2;
-            this.txt_pass.Enabled = false;
             this.txt_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txt_pass.Location = new System.Drawing.Point(264, 431);

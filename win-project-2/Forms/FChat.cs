@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,7 +24,6 @@ namespace win_project_2.Forms
         public FChat(string id)
         {
             InitializeComponent();
-            lb_name.Text = id;
             dt = new DB();
             dt.OnMessageReceived += dt_OnMessageReceived;
             receiver = id;
@@ -31,6 +32,12 @@ namespace win_project_2.Forms
             combinedString = String.Join("-", users);
             dt.ListenForNewMessages(combinedString);
             lb_name.Text = GlobalVariables.other_user;
+
+            if (GlobalVariables.url_avt_other_user != "")
+            {
+                guna2CirclePictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(GlobalVariables.url_avt_other_user)));
+                GlobalVariables.url_avt_other_user = "";
+            }
         }
         public async void dt_OnMessageReceived(string message)
         {

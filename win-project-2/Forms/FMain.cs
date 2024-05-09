@@ -278,6 +278,11 @@ namespace win_project_2
            
         }
 
+        public void openFChat()
+        {
+            OpenChildForm(new FListChat());
+        }
+
         private void btnStatistic_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FStatistic());
