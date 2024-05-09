@@ -27,7 +27,7 @@ namespace win_project_2.UserControls
         {
             var dt = new DB();
             NguoiTho nguoiTho = await dt.GetInfoNguoiTho(status);
-            lb_name.Text = nguoiTho.Name + " ĐÃ HOÀN THÀNH CÔNG VIỆC";
+            lb_name.Text = nguoiTho.Name + "   ĐÃ HOÀN THÀNH CÔNG VIỆC";
         }
 
         private void btn_rv_Click(object sender, EventArgs e)
@@ -35,5 +35,7 @@ namespace win_project_2.UserControls
             FRating f = new FRating(_idnt);
             f.Show();
         }
+
+        
     }
 }

@@ -18,6 +18,7 @@ namespace win_project_2.UserControls
 
     public partial class UCTho : UserControl
     {
+        public FMain ParentFMain { get; set; }
         public NguoiTho Tho { get; private set; }
         public string id = "";
         public UCTho(NguoiTho nguoitho)
@@ -33,7 +34,6 @@ namespace win_project_2.UserControls
             if (nguoitho.AvatarUrl != "")
             {
                 guna2CirclePictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(nguoitho.AvatarUrl)));
-
             }
             id = nguoitho.Id;
         }
@@ -62,11 +62,10 @@ namespace win_project_2.UserControls
         {
             var dt = new DB();
             await dt.AddtoContact(id);
-            string[] users = new string[] { GlobalVariables.id, id };
-            Array.Sort(users);
-            string combinedString = String.Join("-", users);
+            GlobalVariables.other_user = id;
             FChat f = new FChat(id);
             f.ShowDialog();
+            //this.ParentFMain.openFChat();
         }
 
         private void bt_detail_Click(object sender, EventArgs e)
