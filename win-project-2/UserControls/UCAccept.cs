@@ -37,19 +37,29 @@ namespace win_project_2.UserControls
 
         private async void btn_accept_Click(object sender, EventArgs e)
         {
-            var dt = new DB();
-            await dt.AcceptWorker(_idjob, _idnt, _idntt);
+
         }
 
         private async void btn_info_Click(object sender, EventArgs e)
         {
-            ThoDetail f = new ThoDetail(_idnt);
-            f.ShowDialog();
+
         }
 
         private void UCAccept_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private async void btn_accept_Click_1(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            await dt.AcceptWorker(_idjob, _idnt, _idntt);
+        }
+
+        private void btn_infor_Click(object sender, EventArgs e)
+        {
+            ThoDetail f = new ThoDetail(_idnt);
+            f.ShowDialog();
         }
     }
 }

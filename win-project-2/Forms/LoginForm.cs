@@ -46,7 +46,8 @@ namespace win_project_2
                 
                 MessageBox.Show("Đăng nhập thành công.");
                 GlobalVariables.isTho = await firebase.CheckIsTho(GlobalVariables.id);
-
+                FMain f = new FMain();
+                f.ShowDialog();
             }
             else
             {

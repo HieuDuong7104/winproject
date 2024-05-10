@@ -36,6 +36,28 @@ namespace win_project_2.Forms
 
         private async void Chat_click(object sender, EventArgs e)
         {
+
+        }
+
+        private async void Nopdon_click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_request_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void Nopdon_Click_1(object sender, EventArgs e)
+        {
+            var dt = new DB();
+            await dt.ApplyforJob(id_job, GlobalVariables.id, id_sender);
+            this.Close();
+        }
+
+        private async void Chat_Click_1(object sender, EventArgs e)
+        {
             var dt = new DB();
             await dt.AddtoContact(id_sender);
             string[] users = new string[] { GlobalVariables.id, id_sender };
@@ -44,19 +66,5 @@ namespace win_project_2.Forms
             FChat f = new FChat(id_sender);
             f.ShowDialog();
         }
-
-        private async void Nopdon_click(object sender, EventArgs e)
-        {
-            var dt = new DB();
-            await dt.ApplyforJob(id_job, GlobalVariables.id, id_sender);
-        }
-
-        private void lb_request_Click(object sender, EventArgs e)
-        {
-
-        }
-                                                   
-
-
     }
 }

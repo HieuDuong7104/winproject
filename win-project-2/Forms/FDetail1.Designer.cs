@@ -59,7 +59,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft YaHei", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(81, 42);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(32, 30);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(181, 27);
@@ -69,13 +69,13 @@
             // 
             // lb_tag
             // 
-            this.lb_tag.AutoSize = false;
             this.lb_tag.BackColor = System.Drawing.Color.Transparent;
-            this.lb_tag.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lb_tag.Location = new System.Drawing.Point(69, 240);
+            this.lb_tag.Font = new System.Drawing.Font("Microsoft YaHei UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tag.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lb_tag.Location = new System.Drawing.Point(55, 241);
             this.lb_tag.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lb_tag.Name = "lb_tag";
-            this.lb_tag.Size = new System.Drawing.Size(221, 44);
+            this.lb_tag.Size = new System.Drawing.Size(160, 122);
             this.lb_tag.TabIndex = 61;
             this.lb_tag.Text = "jobname";
             this.lb_tag.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,7 +192,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(66, 28);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 16);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(10, 41);
@@ -315,6 +315,7 @@
             this.Chat.TabIndex = 76;
             this.Chat.Text = "Nhắn tin";
             this.Chat.UseTransparentBackground = true;
+            this.Chat.Click += new System.EventHandler(this.Chat_Click_1);
             // 
             // Nopdon
             // 
@@ -337,6 +338,7 @@
             this.Nopdon.TabIndex = 75;
             this.Nopdon.Text = "Nộp đơn";
             this.Nopdon.UseTransparentBackground = true;
+            this.Nopdon.Click += new System.EventHandler(this.Nopdon_Click_1);
             // 
             // FDetail1
             // 

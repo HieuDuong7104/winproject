@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panelMenu2 = new System.Windows.Forms.Panel();
-            this.panelTittleBar = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnMinimize = new FontAwesome.Sharp.IconButton();
-            this.btnMaximize = new FontAwesome.Sharp.IconButton();
-            this.btnClose = new FontAwesome.Sharp.IconButton();
             this.btnNotify = new FontAwesome.Sharp.IconButton();
             this.btnSignOut = new FontAwesome.Sharp.IconButton();
             this.btnUser = new FontAwesome.Sharp.IconButton();
             this.btnChat = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.btnMenu = new FontAwesome.Sharp.IconButton();
+            this.panelTittleBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new FontAwesome.Sharp.IconButton();
+            this.btnMaximize = new FontAwesome.Sharp.IconButton();
+            this.btnClose = new FontAwesome.Sharp.IconButton();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu2.SuspendLayout();
             this.panelTittleBar.SuspendLayout();
             this.SuspendLayout();
@@ -60,84 +60,6 @@
             this.panelMenu2.Size = new System.Drawing.Size(307, 839);
             this.panelMenu2.TabIndex = 0;
             // 
-            // panelTittleBar
-            // 
-            this.panelTittleBar.BackColor = System.Drawing.Color.White;
-            this.panelTittleBar.Controls.Add(this.btnMinimize);
-            this.panelTittleBar.Controls.Add(this.btnMaximize);
-            this.panelTittleBar.Controls.Add(this.btnClose);
-            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTittleBar.Location = new System.Drawing.Point(307, 0);
-            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelTittleBar.Name = "panelTittleBar";
-            this.panelTittleBar.Size = new System.Drawing.Size(1153, 28);
-            this.panelTittleBar.TabIndex = 1;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(307, 28);
-            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1153, 811);
-            this.panelDesktop.TabIndex = 1;
-            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMinimize.FlatAppearance.BorderSize = 0;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btnMinimize.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMinimize.IconSize = 20;
-            this.btnMinimize.Location = new System.Drawing.Point(970, 0);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(61, 28);
-            this.btnMinimize.TabIndex = 2;
-            this.btnMinimize.UseVisualStyleBackColor = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click_1);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnMaximize.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnMaximize.FlatAppearance.BorderSize = 0;
-            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.Expand;
-            this.btnMaximize.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaximize.IconSize = 20;
-            this.btnMaximize.Location = new System.Drawing.Point(1031, 0);
-            this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(61, 28);
-            this.btnMaximize.TabIndex = 1;
-            this.btnMaximize.UseVisualStyleBackColor = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click_1);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.btnClose.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 20;
-            this.btnClose.Location = new System.Drawing.Point(1092, 0);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(61, 28);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // btnNotify
             // 
             this.btnNotify.Dock = System.Windows.Forms.DockStyle.Top;
@@ -154,7 +76,7 @@
             this.btnNotify.Name = "btnNotify";
             this.btnNotify.Size = new System.Drawing.Size(307, 112);
             this.btnNotify.TabIndex = 6;
-            this.btnNotify.Tag = "User";
+            this.btnNotify.Tag = "Notification";
             this.btnNotify.Text = "Notification";
             this.btnNotify.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNotify.UseVisualStyleBackColor = true;
@@ -269,6 +191,84 @@
             this.btnMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click_1);
+            // 
+            // panelTittleBar
+            // 
+            this.panelTittleBar.BackColor = System.Drawing.Color.White;
+            this.panelTittleBar.Controls.Add(this.btnMinimize);
+            this.panelTittleBar.Controls.Add(this.btnMaximize);
+            this.panelTittleBar.Controls.Add(this.btnClose);
+            this.panelTittleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTittleBar.Location = new System.Drawing.Point(307, 0);
+            this.panelTittleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelTittleBar.Name = "panelTittleBar";
+            this.panelTittleBar.Size = new System.Drawing.Size(1153, 28);
+            this.panelTittleBar.TabIndex = 1;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnMinimize.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMinimize.IconSize = 20;
+            this.btnMinimize.Location = new System.Drawing.Point(970, 0);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(61, 28);
+            this.btnMinimize.TabIndex = 2;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click_1);
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnMaximize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.IconChar = FontAwesome.Sharp.IconChar.Expand;
+            this.btnMaximize.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMaximize.IconSize = 20;
+            this.btnMaximize.Location = new System.Drawing.Point(1031, 0);
+            this.btnMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(61, 28);
+            this.btnMaximize.TabIndex = 1;
+            this.btnMaximize.UseVisualStyleBackColor = false;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click_1);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btnClose.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 20;
+            this.btnClose.Location = new System.Drawing.Point(1092, 0);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(61, 28);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(307, 28);
+            this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(1153, 811);
+            this.panelDesktop.TabIndex = 1;
+            this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
             // FMain
             // 

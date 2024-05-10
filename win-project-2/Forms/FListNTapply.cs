@@ -33,7 +33,7 @@ namespace win_project_2.Forms
                 {
                     UCWriteRV new_uc = new UCWriteRV(parts[2]);
                     new_uc.ParentFListNTapply = this;
-                    flowLayoutPanel1.Controls.Add(new_uc);
+                    flowLayoutPanel2.Controls.Add(new_uc);
                 }
                 else
                 {

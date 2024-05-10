@@ -49,6 +49,18 @@ namespace win_project_2.Forms
                     
                 }
             }
+            else
+            {
+                flowLayoutPanel1.Controls.Clear();
+                var dt = new DB();
+                List<Post> listpost = await dt.GetAllPosts();
+
+                foreach (Post post in listpost)
+                {
+                        var new_uc = new UCShowJobcs(post);
+                        flowLayoutPanel1.Controls.Add(new_uc);
+                }
+            }
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)

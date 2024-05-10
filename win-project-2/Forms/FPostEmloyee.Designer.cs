@@ -80,7 +80,7 @@
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(190, 74);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(344, 48);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(275, 38);
             this.guna2HtmlLabel4.TabIndex = 18;
             this.guna2HtmlLabel4.Text = "Thông tin công việc";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
@@ -173,7 +173,7 @@
             this.lb_des.BorderColor = System.Drawing.Color.DimGray;
             this.lb_des.BorderRadius = 4;
             this.lb_des.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_des.DefaultText = "Mô tả công việc";
+            this.lb_des.DefaultText = "";
             this.lb_des.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.lb_des.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.lb_des.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -197,7 +197,7 @@
             this.lb_price.BorderColor = System.Drawing.Color.DimGray;
             this.lb_price.BorderRadius = 4;
             this.lb_price.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_price.DefaultText = "Mức lương";
+            this.lb_price.DefaultText = "";
             this.lb_price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.lb_price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.lb_price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -221,7 +221,7 @@
             this.lb_skill.BorderColor = System.Drawing.Color.DimGray;
             this.lb_skill.BorderRadius = 4;
             this.lb_skill.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_skill.DefaultText = "Kỹ năng tối ";
+            this.lb_skill.DefaultText = "";
             this.lb_skill.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.lb_skill.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.lb_skill.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -245,7 +245,7 @@
             this.lb_loca.BorderColor = System.Drawing.Color.DimGray;
             this.lb_loca.BorderRadius = 4;
             this.lb_loca.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_loca.DefaultText = "Địa điểm làm việc";
+            this.lb_loca.DefaultText = "";
             this.lb_loca.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.lb_loca.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.lb_loca.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -270,7 +270,7 @@
             this.lb_namejob.BorderColor = System.Drawing.Color.DimGray;
             this.lb_namejob.BorderRadius = 4;
             this.lb_namejob.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.lb_namejob.DefaultText = "Tên công việc";
+            this.lb_namejob.DefaultText = "";
             this.lb_namejob.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.lb_namejob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.lb_namejob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

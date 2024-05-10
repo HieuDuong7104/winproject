@@ -55,12 +55,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lb_FavTho = new System.Windows.Forms.Label();
             this.lb_DoneJob = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lb_Profie = new System.Windows.Forms.Label();
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2Shapes4 = new Guna.UI2.WinForms.Guna2Shapes();
             this.bt_addFavTho = new Guna.UI2.WinForms.Guna2Button();
             this.bnt_Mess = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -252,7 +252,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(901, 187);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(510, 480);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(597, 480);
             this.flowLayoutPanel1.TabIndex = 44;
             // 
             // guna2Shapes7
@@ -264,7 +264,7 @@
             this.guna2Shapes7.PolygonSkip = 1;
             this.guna2Shapes7.Rotate = 0F;
             this.guna2Shapes7.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes7.Size = new System.Drawing.Size(677, 637);
+            this.guna2Shapes7.Size = new System.Drawing.Size(769, 637);
             this.guna2Shapes7.TabIndex = 45;
             this.guna2Shapes7.Text = "guna2Shapes7";
             this.guna2Shapes7.Zoom = 80;
@@ -381,6 +381,19 @@
             this.lb_DoneJob.TabIndex = 36;
             this.lb_DoneJob.Text = "0";
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(123, 109);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(141, 128);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 34;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // lb_Profie
             // 
             this.lb_Profie.AutoSize = true;
@@ -473,19 +486,6 @@
             this.bnt_Mess.Text = "Nhắn tin";
             this.bnt_Mess.UseTransparentBackground = true;
             this.bnt_Mess.Click += new System.EventHandler(this.bnt_Mess_Click);
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::win_project_2.Properties.Resources.avatar_trang_4;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(123, 109);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(141, 128);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 34;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // ThoDetail
             // 

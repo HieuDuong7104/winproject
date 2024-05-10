@@ -33,10 +33,10 @@
             this.lb_price = new System.Windows.Forms.Label();
             this.lb_location = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -106,20 +106,6 @@
             this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2Shapes1
-            // 
-            this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Shapes1.FillColor = System.Drawing.Color.White;
-            this.guna2Shapes1.Location = new System.Drawing.Point(-55, -15);
-            this.guna2Shapes1.Name = "guna2Shapes1";
-            this.guna2Shapes1.PolygonSkip = 1;
-            this.guna2Shapes1.Rotate = 0F;
-            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
-            this.guna2Shapes1.Size = new System.Drawing.Size(1042, 276);
-            this.guna2Shapes1.TabIndex = 70;
-            this.guna2Shapes1.Text = "s";
-            this.guna2Shapes1.Zoom = 80;
-            // 
             // guna2CirclePictureBox3
             // 
             this.guna2CirclePictureBox3.BackColor = System.Drawing.Color.Transparent;
@@ -159,6 +145,20 @@
             this.label1.Text = "vnd";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // guna2Shapes1
+            // 
+            this.guna2Shapes1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Shapes1.FillColor = System.Drawing.Color.White;
+            this.guna2Shapes1.Location = new System.Drawing.Point(-35, -17);
+            this.guna2Shapes1.Name = "guna2Shapes1";
+            this.guna2Shapes1.PolygonSkip = 1;
+            this.guna2Shapes1.Rotate = 0F;
+            this.guna2Shapes1.Shape = Guna.UI2.WinForms.Enums.ShapeType.Rounded;
+            this.guna2Shapes1.Size = new System.Drawing.Size(1042, 276);
+            this.guna2Shapes1.TabIndex = 77;
+            this.guna2Shapes1.Text = "s";
+            this.guna2Shapes1.Zoom = 80;
+            // 
             // UCShowJobcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,7 +175,7 @@
             this.Controls.Add(this.guna2Shapes1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCShowJobcs";
-            this.Size = new System.Drawing.Size(940, 282);
+            this.Size = new System.Drawing.Size(1203, 282);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -189,9 +189,9 @@
         private System.Windows.Forms.Label lb_price;
         private System.Windows.Forms.Label lb_location;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox3;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Shapes guna2Shapes1;
     }
 }

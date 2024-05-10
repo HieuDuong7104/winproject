@@ -66,8 +66,9 @@
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.ReadOnly = true;
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(595, 98);
+            this.guna2TextBox1.Size = new System.Drawing.Size(457, 98);
             this.guna2TextBox1.TabIndex = 13;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -129,7 +130,7 @@
             this.Controls.Add(this.guna2CirclePictureBox2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCRating";
-            this.Size = new System.Drawing.Size(789, 341);
+            this.Size = new System.Drawing.Size(551, 341);
             this.Load += new System.EventHandler(this.UCRating_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();

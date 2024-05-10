@@ -23,7 +23,7 @@ namespace win_project_2.UserControls
             guna2RatingStar1.Value = review.Rating;
             if (review.ImgUrl != "")
             {
-                guna2CirclePictureBox2.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(review.ImgUrl)));
+                guna2PictureBox1.Image = Image.FromStream(new MemoryStream(new WebClient().DownloadData(review.ImgUrl)));
             }
             guna2TextBox1.Text = review.Comment;
         }
